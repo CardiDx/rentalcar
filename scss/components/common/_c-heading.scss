@@ -1,0 +1,22 @@
+.c-heading {
+  margin-bottom: $indent-xl;
+
+  @include bp-sm {
+    margin-bottom: 4rem;
+  }
+}
+
+.c-heading__title {
+  @include type-headline-2;
+}
+
+.c-heading__description {
+  font-weight: $type-weight--medium;
+  line-height: 150%;
+  color: $color-grey;
+  margin-top: $indent-l;
+
+  @include bp-sm {
+    margin-top: $indent-m;
+  }
+}

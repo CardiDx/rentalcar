@@ -1,0 +1,41 @@
+.c-footer {
+  padding: $indent-xxl 0;
+  color: $color-black;
+  background-color: $color-black;
+
+  @include bp-md {
+    // padding: 8rem 0;
+  }
+
+  @include bp-sm {
+    // padding: 4rem 0;
+  }
+}
+
+.c-footer__copyright {
+  color: $color-white;
+  line-height: 130%;
+}
+
+.c-footer__copyright-text {
+  font-weight: $type-weight--bold;
+}
+
+.c-footer__design-author {
+  display: block;
+  color: $color-grey;
+}
+
+.c-footer__link {
+  color: $color-white;
+  font-weight: $type-weight--bold;
+  margin-right: $indent-xl;
+
+  @include link-events {
+    color: $color-white;
+  }
+}
+
+.c-footer__link:last-child {
+  margin-right: 0;
+}

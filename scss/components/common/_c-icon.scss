@@ -1,0 +1,46 @@
+.c-icon {
+  display: block;
+  width: $ui-size-s;
+  height: $ui-size-s;
+  background-color: $color-white;
+  mask: no-repeat center center;
+  -webkit-mask: no-repeat center center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  transition: background-color $motion-m;
+
+  &--large {
+    width: $ui-size-m;
+    height: $ui-size-m;
+  }
+
+  // variants
+  &--location {
+    mask-image: url(/img/icons/location.svg);
+    -webkit-mask-image: url(/img/icons/location.svg);
+  }
+
+  &--mail {
+    mask-image: url(/img/icons/mail.svg);
+    -webkit-mask-image: url(/img/icons/mail.svg);
+  }
+
+  &--long-arrow {
+    mask-image: url(/img/icons/long-arrow.svg);
+    -webkit-mask-image: url(/img/icons/long-arrow.svg);
+  }
+
+  &--date {
+    mask-image: url(/img/icons/date.svg);
+    -webkit-mask-image: url(/img/icons/date.svg);
+  }
+
+  &--dropdown-arrow {
+    mask-image: url(/img/icons/dropdown.svg);
+    -webkit-mask-image: url(/img/icons/dropdown.svg);
+  }
+}
+
+.c-icon--rotate {
+  transform: rotate(180deg);
+}

@@ -1,0 +1,50 @@
+.c-search-panel {
+  background-color: $color-white;
+  border-radius: 2.4rem;
+  padding: $indent-xxl;
+}
+
+.c-search-panel__title {
+  font-weight: $type-weight--bold;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin-bottom: $indent-m;
+}
+
+.с-search-panel__line {
+  display: flex;
+  flex-direction: row;
+}
+
+.с-search-panel__line > .c-search-panel__field {
+  margin-right: $indent-m;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.c-search-panel__field--flex {
+  display: flex;
+  width: 100%;
+}
+
+.с-search-panel__line--bottom {
+  align-items: center;
+  margin-top: $indent-l;
+}
+
+.с-search-panel__c-button {
+  justify-content: space-between;
+  min-width: 25rem;
+  margin-left: auto;
+}
+
+.с-search-panel__label {
+  display: flex;
+  flex-grow: 1;
+}
+
+.с-search-panel__c-button-icon {
+  margin-left: 1rem;
+}

@@ -1,0 +1,56 @@
+// Breakpoints
+
+$screen-xxl: 1620px;
+$screen-xl: 1460px;
+$screen-l: 1160px;
+$screen-m: 992px;
+$screen-s: 768px;
+$screen-xs: 480px;
+
+// Type
+
+$type-family: "Gilroy", sans-serif;
+$type-weight--light: 300;
+$type-weight--regular: 400;
+$type-weight--medium: 500;
+$type-weight--semi-bold: 600;
+$type-weight--bold: 700;
+$type-weight--extra-bold: 800;
+
+// Colors
+
+$color-primary: #39bfc0;
+$color-hover-primary: #8dcbf2;
+
+$color-secondary: #78b9f3;
+
+$color-divider: #e3e3e3;
+
+$color-white: #fff;
+$color-black: #191b1a;
+$color-grey: #919291;
+
+$color-error: #e3001b;
+
+// Indents
+
+$indent-xs: 0.4rem;
+$indent-s: 0.8rem;
+$indent-m: 1.6rem;
+$indent-l: 2.4rem;
+$indent-xl: 3.2rem;
+$indent-xxl: 4.8rem;
+
+// Transition
+
+$motion-s: 0.1s;
+$motion-m: 0.2s;
+$motion-l: 0.3s;
+
+// Ui size
+
+$ui-size-xs: 1.6rem;
+$ui-size-s: 2.4rem;
+$ui-size-m: 3.2rem;
+$ui-size-l: 4rem;
+$ui-size-xl: 4.8rem;

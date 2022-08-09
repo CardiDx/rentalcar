@@ -1,0 +1,122 @@
+.accordion-item {
+  position: relative;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.accordion-item__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-black;
+  font-weight: $type-weight--semi-bold;
+  font-size: 1.8rem;
+  line-height: 150%;
+  padding: $indent-l;
+  background: $color-white;
+  border-bottom: 0.01rem solid $color-divider;
+  position: relative;
+  z-index: 3;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.accordion-item:first-child .accordion-item__title {
+  border-top: 0.01rem solid $color-divider;
+}
+
+.accordion-item__text {
+  font-weight: $type-weight--medium;
+  line-height: 150%;
+}
+
+.accordion-item__icon {
+  width: 1.5rem;
+  background-color: $color-grey;
+  transition: transform $motion-m ease-in-out;
+}
+
+.accordion-item__description {
+  z-index: 2;
+  position: absolute;
+  padding: 0 $indent-l $indent-l $indent-l;
+  color: $color-grey;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform $motion-l ease;
+  transform: translateY(-3rem);
+}
+
+// Checked
+
+//hide checkbox
+.accordion-item__checkbox {
+  visibility: hidden;
+  position: absolute;
+}
+
+//show paragraph
+.accordion-item__checkbox:checked ~ .accordion-item__description {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  transform: translateY(0);
+  transition: all 0.5s ease;
+  border-bottom: 0.01rem solid $color-divider;
+}
+//show-active item
+.accordion-item__checkbox:checked + .accordion-item__title {
+  border-bottom: 0.01rem solid transparent;
+  padding-bottom: 1.2rem;
+}
+
+//active icon
+.accordion-item__checkbox:checked
+  + .accordion-item__title
+  .accordion-item__icon {
+  background-color: $color-secondary;
+  transform: rotate(180deg);
+}
+
+/*----------------------- Вопрос - ответ ------------------------------ */
+.accordion-item__title {
+  @include bp-sm() {
+    //font-size: 16px;
+  }
+  @include bp-md() {
+    //font-size: 18px;
+    // padding: 18px 30px;
+  }
+  @include bp-lg() {
+    //font-size: 20px;
+  }
+}
+
+.accordion-item__text {
+  @include bp-lg() {
+    font-size: 1rem;
+  }
+}
+
+.accordion-item {
+  @include bp-lg() {
+    // margin-top: 40px;
+    // margin-bottom: 30px;
+    //width: 460px;
+  }
+}
+
+// .accordion-item__icon {
+//   @include bp-lg() {
+//     width: 20px;
+
+//     &:after {
+//       width: 4px;
+//       height: 20px;
+//       right: 8px;
+//       top: -8px;
+//     }
+//   }
+// }

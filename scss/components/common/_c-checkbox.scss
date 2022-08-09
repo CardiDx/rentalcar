@@ -1,0 +1,40 @@
+.checkbox label {
+  font-weight: $type-weight--semi-bold;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding-left: 4.4rem;
+  line-height: 3.2rem;
+  margin-right: 6.4rem;
+}
+
+.checkbox label:before {
+  content: "";
+  width: $ui-size-m;
+  height: $ui-size-m;
+  position: absolute;
+  left: 0;
+
+  background: #fafafa;
+  border: 0.1rem solid #e3e3e3;
+  border-radius: 0.8rem;
+}
+
+.checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox label:before {
+  width: $ui-size-m;
+  height: $ui-size-m;
+}
+
+.checkbox input[type="checkbox"]:checked + label:before {
+  background-image: url("../../../img/icons/check.svg");
+  background-size: 1.4rem 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: $color-secondary;
+  width: $ui-size-m;
+  height: $ui-size-m;
+}

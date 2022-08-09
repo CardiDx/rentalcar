@@ -1,0 +1,48 @@
+.c-button {
+  display: inline-flex;
+  align-items: center;
+  padding: $indent-m $indent-l;
+  color: $color-white;
+  font-weight: $type-weight--semi-bold;
+  background-color: $color-secondary;
+  cursor: pointer;
+  transition: background-color $motion-m;
+  position: relative;
+  border-radius: 999rem;
+
+  @include bp-sm {
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: $color-hover-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &:active {
+    color: $color-white;
+  }
+
+  &:visited {
+    color: $color-white;
+  }
+}
+
+.c-button--border {
+  background-color: transparent;
+  border: 0.02rem solid $color-secondary;
+  border-radius: 10rem;
+}
+
+.c-button--link {
+  text-decoration-line: underline;
+  font-weight: $type-weight--semi-bold;
+  color: $color-secondary;
+}
