@@ -4,6 +4,12 @@
   color: $color-white;
 }
 
+.c-cta__title {
+  @include bp-xs {
+    max-width: 28rem;
+  }
+}
+
 .c-cta__description {
   color: rgba(255, 255, 255, 0.64);
 }
@@ -34,4 +40,12 @@
   right: 0.4rem;
   bottom: 0.4rem;
   z-index: 2;
+
+  @include bp-md {
+    position: unset;
+    font-size: 2rem;
+    justify-content: center;
+    border: 0.2rem solid $color-white;
+    margin-top: 1.2rem;
+  }
 }

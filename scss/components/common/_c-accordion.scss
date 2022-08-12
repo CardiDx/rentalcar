@@ -1,3 +1,9 @@
+.accordion-wrapper {
+  @include bp-md {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
 .accordion-item {
   position: relative;
   width: 100%;
@@ -21,6 +27,10 @@
   &:hover {
     cursor: pointer;
   }
+
+  @include bp-md {
+    align-items: flex-start;
+  }
 }
 
 .accordion-item:first-child .accordion-item__title {
@@ -30,12 +40,21 @@
 .accordion-item__text {
   font-weight: $type-weight--medium;
   line-height: 150%;
+
+  @include bp-md {
+    font-size: 1.6rem;
+  }
 }
 
 .accordion-item__icon {
   width: 1.5rem;
   background-color: $color-grey;
   transition: transform $motion-m ease-in-out;
+  margin-left: $indent-xl;
+
+  @include bp-md {
+    flex-shrink: 0;
+  }
 }
 
 .accordion-item__description {
@@ -91,12 +110,6 @@
   }
   @include bp-lg() {
     //font-size: 20px;
-  }
-}
-
-.accordion-item__text {
-  @include bp-lg() {
-    font-size: 1rem;
   }
 }
 

@@ -15,23 +15,14 @@
   }
 
   &:hover {
-    background-color: $color-hover-primary;
+    background-color: #8dcbf2;
+    color: $color-white;
   }
 
-  &:focus {
+  @include link-events {
     outline: none;
-  }
-
-  &:hover {
     color: $color-white;
-  }
-
-  &:active {
-    color: $color-white;
-  }
-
-  &:visited {
-    color: $color-white;
+    background-color: #8dcbf2;
   }
 }
 
@@ -39,6 +30,11 @@
   background-color: transparent;
   border: 0.02rem solid $color-secondary;
   border-radius: 10rem;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-white;
+  }
 }
 
 .c-button--link {

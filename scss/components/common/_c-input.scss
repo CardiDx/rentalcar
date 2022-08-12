@@ -5,9 +5,23 @@
   border: 0.1rem solid $color-divider;
   border-radius: 1.2rem;
   font-weight: $type-weight--medium;
+  width: 100%;
 
   &::placeholder {
     font-weight: inherit;
+  }
+
+  // &::invalid {
+  //   border: 2px dashed red;
+  // }
+
+  // &::valid {
+  //   border: 2px solid black;
+  // }
+
+  &:hover {
+    border: 0.2rem solid $color-secondary;
+    // margin: -0.2rem;
   }
 
   &--small {

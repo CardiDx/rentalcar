@@ -17,6 +17,7 @@
   margin-top: $indent-l;
 
   @include bp-sm {
+    font-size: 1.6rem;
     margin-top: $indent-m;
   }
 }

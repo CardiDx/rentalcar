@@ -3,9 +3,38 @@
   padding-left: 8rem;
   padding-right: 8rem;
 
+  @include bp-lg {
+  }
+
   @include bp-md {
-    // padding-top: 10rem;
-    // padding-bottom: 4rem;
+    padding-top: 6.4rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include bp-sm {
+  }
+
+  @include bp-xs {
+  }
+}
+
+.c-home__inner {
+  min-height: 77.5rem;
+  background: url("../../../img/home-intro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6.4rem;
+  // padding-top: 9.6rem;
+  // padding-bottom: 9.6rem;
+
+  @include bp-md {
+    padding-top: 4.8rem;
+    min-height: 57.6rem;
+    border-radius: 0;
+    background-position: left;
+    position: relative;
   }
 }
 
@@ -23,19 +52,20 @@
   font-size: 2rem;
   line-height: 150%;
   margin-top: $indent-l;
-}
 
-.c-home__inner {
-  min-height: 77.5rem;
-  background: url("../../../img/home-intro.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 6.4rem;
-  padding-top: 9.6rem;
-  padding-bottom: 9.6rem;
+  @include bp-md {
+    font-size: 1.6rem;
+  }
 }
 
 .c-home__search-panel {
   margin-top: 8rem;
+
+  @include bp-md {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 4.8rem;
+    margin-top: 0;
+  }
 }

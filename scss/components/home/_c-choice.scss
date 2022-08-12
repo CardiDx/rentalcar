@@ -1,9 +1,10 @@
 .c-choice {
   padding: 12.8rem 0 9.6rem 0;
 
-  // @include bp-md {
-  //   padding: 8rem 0;
-  // }
+  @include bp-md {
+    padding-top: 36rem;
+    padding-bottom: 5.3rem;
+  }
 
   // @include bp-sm {
   //   padding: 4rem 0;
@@ -45,7 +46,7 @@
 
   @include bp-md {
     max-width: 100%;
-    height: 24rem;
+    height: auto;
   }
 }
 
@@ -146,3 +147,17 @@
 //   max-width: 92.5rem;
 //   color: $color-secondary;
 // }
+
+.c-choice__cards-scroll {
+  @include bp-md {
+    overflow: auto;
+    width: 100%;
+    flex-wrap: nowrap;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 24px;
+  }
+}
+
+.card {
+  scroll-snap-align: start;
+}

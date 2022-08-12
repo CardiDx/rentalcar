@@ -39,15 +39,23 @@
             <div class="col-lg-3">
               <div class="c-header__right-side">
 
-                <!-- <div class="c-header__language">
-                  <button type="button" class="btn btn-primary dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
-                    EN
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">EN</a></li>
-                    <li><a class="dropdown-item" href="#">FR</a></li>
-                  </ul>
-                </div> -->
+
+                <div class="c-header__language select">
+                  <span class="select__current-language">En</span>
+                  <!-- <div>
+                    <span>En</span>
+                    <span>Fr</span>
+                  </div> -->
+                  <svg>
+                    <use xlink:href="#select-arrow-down"></use>
+                  </svg>
+                </div>
+                <!-- SVG Sprites-->
+                <svg class="sprites">
+                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                    <polyline points="1 1 5 5 9 1"></polyline>
+                  </symbol>
+                </svg>
 
                 <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
               </div>
@@ -67,7 +75,7 @@
           <div class="container">
             <div class="row">
 
-              <div class="col-lg-6">
+              <div class="col-12 col-lg-6">
                 <h1 class="c-home__title">Hey Buddy! Where are you driving to?</h1>
                 <p class="c-home__description">Enjoy reading with your children with the world's most high quality digital storybooks</p>
               </div>
@@ -113,19 +121,21 @@
 
 
                   <div class="с-search-panel__line с-search-panel__line--bottom">
-                    <div class="checkbox">
-                      <input id="check1" type="checkbox" name="check" value="check1">
-                      <label for="check1">Same PickUP & Drop place</label>
-                    </div>
+                    <div class="c-search-panel__checkbox-wrapper">
+                      <div class="checkbox">
+                        <input id="check1" type="checkbox" name="check" value="check1">
+                        <label for="check1">Same PickUP & Drop place</label>
+                      </div>
 
-                    <div class="checkbox">
-                      <input id="check2" type="checkbox" name="check" value="check1">
-                      <label for="check2">No limits</label>
-                    </div>
+                      <div class="checkbox">
+                        <input id="check2" type="checkbox" name="check" value="check1">
+                        <label for="check2">No limits</label>
+                      </div>
 
-                    <div class="checkbox">
-                      <input id="check3" type="checkbox" name="check" value="check1">
-                      <label for="check3">I am 26+</label>
+                      <div class="checkbox">
+                        <input id="check3" type="checkbox" name="check" value="check1">
+                        <label for="check3">I am 26+</label>
+                      </div>
                     </div>
 
 
@@ -147,8 +157,8 @@
               <h2 class="c-heading__title c-choice__title">Users's the best choices</h2>
             </div>
 
-            <div class="row">
-              <div class="col-lg-3">
+            <div class="row c-choice__cards-scroll">
+              <div class="col-12 col-lg-3 card">
                 <div class="c-choice__card">
                   <div class="c-choice__card-content">
 
@@ -165,7 +175,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-lg-3 card">
                 <div class="c-choice__card">
                   <div class="c-choice__card-content">
 
@@ -182,7 +192,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-lg-3 card">
                 <div class="c-choice__card">
                   <div class="c-choice__card-content">
 
@@ -199,7 +209,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3">
+              <div class="col-12 col-lg-3 card">
                 <div class="c-choice__card">
                   <div class="c-choice__card-content">
 
@@ -236,63 +246,65 @@
               <div class="col-lg-4">
                 <div class="c-heading">
                   <h2 class="c-faq__title c-heading__title">Do you have any questions?</h2>
-                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions, maybe you'll find yours.
-                    If you did not find the answer to your question, please <a class="link" href="#">contact us</a>.</p>
+                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions, maybe you'll find yours.</p>
+                  <p class="c-heading__description c-faq__description">If you did not find the answer to your question, please <a class="link" href="#">contact us</a>.</p>
                 </div>
               </div>
               <div class="col-lg-7 offset-lg-1">
-                <label class="accordion-item" for="number-one">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-one">
-                  <span class="accordion-item__title">Bennie F. Johnson takes the helm of AIGA as Executive Director<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't miss the chance to witness it yourself. </p>
-                  </div>
-                </label>
+                <div class="accordion-wrapper">
+                  <label class="accordion-item" for="number-one">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-one">
+                    <span class="accordion-item__title">Bennie F. Johnson takes the helm of AIGA as Executive Director<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't miss the chance to witness it yourself. </p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="number-two">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-two">
-                  <span class="accordion-item__title">Design Center at a glance <span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
+                  <label class="accordion-item" for="number-two">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-two">
+                    <span class="accordion-item__title">Design Center at a glance <span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="number-tree">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-tree">
-                  <span class="accordion-item__title">Check Out What Uber Air's Skyports Might Look Like<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
+                  <label class="accordion-item" for="number-tree">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-tree">
+                    <span class="accordion-item__title">Check Out What Uber Air's Skyports Might Look Like<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="number-four">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-four">
-                  <span class="accordion-item__title" data-caption="number-four">LE speakers by Braun Audio<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
+                  <label class="accordion-item" for="number-four">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-four">
+                    <span class="accordion-item__title" data-caption="number-four">LE speakers by Braun Audio<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="number-five">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-five">
-                  <span class="accordion-item__title" data-caption="number-five">Quelle Faire? Maker Media is in Peril<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description" id="number-five">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
+                  <label class="accordion-item" for="number-five">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-five">
+                    <span class="accordion-item__title" data-caption="number-five">Quelle Faire? Maker Media is in Peril<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description" id="number-five">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="number-six">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-six">
-                  <span class="accordion-item__title" data-caption="number-six">For once don't do it — NIKE's new powerful anti-racism campaign<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description" id="number-six">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
+                  <label class="accordion-item" for="number-six">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-six">
+                    <span class="accordion-item__title" data-caption="number-six">For once don't do it — NIKE's new powerful anti-racism campaign<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description" id="number-six">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -307,37 +319,38 @@
               <div class="col-lg-4">
                 <div class="c-heading">
                   <h2 class="c-faq__title c-heading__title">Additional Information</h2>
-                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions, maybe you'll find yours.
-                    If you did not find the answer to your question, please <a class="link" href="#">contact us</a>.</p>
+                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions, maybe you'll find yours.</p>
+                  <p class="c-heading__description c-faq__description">If you did not find the answer to your question, please <a class="link" href="#">contact us</a>.</p>
                 </div>
               </div>
               <div class="col-lg-7 offset-lg-1">
-                <label class="accordion-item" for="airport">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="airport">
-                  <span class="accordion-item__title">Airport<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't miss the chance to witness it yourself. </p>
-                  </div>
-                </label>
+                <div class="accordion-wrapper">
+                  <label class="accordion-item" for="airport">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="airport">
+                    <span class="accordion-item__title">Airport<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't miss the chance to witness it yourself. </p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="license">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="license">
-                  <span class="accordion-item__title">License<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
+                  <label class="accordion-item" for="license">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="license">
+                    <span class="accordion-item__title">License<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
 
-                <label class="accordion-item" for="additional">
-                  <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="additional">
-                  <span class="accordion-item__title">Additional<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
-                  <div class="accordion-item__description">
-                    <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
-                      ipsum.. Lorem ipsum..</p>
-                  </div>
-                </label>
-
+                  <label class="accordion-item" for="additional">
+                    <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="additional">
+                    <span class="accordion-item__title">Additional<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <div class="accordion-item__description">
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                        ipsum.. Lorem ipsum..</p>
+                    </div>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
@@ -361,8 +374,8 @@
                 <label class="c-label" for="email">
                   <span class="c-icon c-icon--mail c-cta__form-icon"></span>
                   <input class="c-input c-cta__form-input" type="email" id="email" placeholder="Email" required>
-                  <button class="c-button c-cta__form-button" type="submit">Subscribe</button>
                 </label>
+                <button class="c-button c-cta__form-button" type="submit">Subscribe</button>
               </form>
             </div>
           </div>
@@ -378,7 +391,7 @@
   <footer class="l-layout__footer">
     <div class="c-footer">
       <div class="container">
-        <div class="row">
+        <div class="row column-reverse flex-md-row-reverse">
           <div class="col-lg-4">
             <div class="c-footer__copyright">
               <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
@@ -387,9 +400,11 @@
           </div>
 
           <div class="col-lg-5 offset-lg-3">
-            <a class="link c-footer__link" href="#">Very important things</a>
-            <a class="link c-footer__link" href="#">Contact US</a>
-            <a class="link c-footer__link" href="#">Social networks icons</a>
+            <div class="c-footer__links">
+              <a class="link c-footer__link" href="#">Very important things</a>
+              <a class="link c-footer__link" href="#">Contact US</a>
+              <a class="link c-footer__link" href="#">Social networks icons</a>
+            </div>
           </div>
 
 

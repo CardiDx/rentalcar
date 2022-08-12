@@ -13,15 +13,19 @@
   }
 
   @include bp-md {
-    // height: 7.2rem;
-    // padding: 0;
+    max-height: 6.4rem;
+    padding: 1.3rem 0;
   }
 }
 
-// .c-header__mobile-column {
-//   display: flex;
-//   align-items: center;
-// }
+.c-header__mobile-column {
+  @include bp-sm {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
 .c-header__logo {
   cursor: pointer;
@@ -59,9 +63,14 @@
   cursor: pointer;
   z-index: 2;
 
-  @include bp-lg {
+  // @include bp-lg {
+  //   display: block;
+  //   margin-right: 1rem;
+  // }
+
+  @include bp-md {
     display: block;
-    margin-right: 1rem;
+    // margin-right: 1rem;
   }
 
   &::after,
@@ -69,8 +78,9 @@
     content: "";
     position: absolute;
     width: 100%;
-    height: 0.2rem;
-    background-color: $color-black;
+    height: 0.3rem;
+    border-radius: 99rem;
+    background-color: $color-secondary;
     transition: transform $motion-m;
   }
 
@@ -89,6 +99,43 @@
     transform: rotate(-45deg) translate(0.3rem, -0.3rem);
   }
 }
+
+.c-header__right-side {
+  display: flex;
+  align-items: center;
+  @include bp-md {
+    display: none;
+  }
+}
+
+.c-header__language {
+  display: inline-block;
+}
+
+.c-header__button {
+  flex-shrink: 0;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  color: $color-secondary;
+}
+
+// .c-header__social {
+//   margin-right: 2rem;
+
+//   @include bp-sm {
+//     display: none;
+//   }
+// }
+
+// .c-header__button {
+//   width: auto;
+//   height: 7.3rem;
+
+//   @include bp-xs {
+//     padding: 0 $indent-m;
+//     font-size: 1.2rem;
+//   }
+// }
 
 // .c-header__menu {
 //   display: flex;
@@ -142,39 +189,5 @@
 //     font-size: 1.6rem;
 //     padding: 1.2rem 0;
 //     margin-left: 0;
-//   }
-// }
-
-.c-header__right-side {
-  // display: flex;
-  // align-items: center;
-}
-
-.c-header__language {
-  display: inline-block;
-}
-
-.c-header__button {
-  display: inline-block;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
-  color: $color-secondary;
-}
-
-// .c-header__social {
-//   margin-right: 2rem;
-
-//   @include bp-sm {
-//     display: none;
-//   }
-// }
-
-// .c-header__button {
-//   width: auto;
-//   height: 7.3rem;
-
-//   @include bp-xs {
-//     padding: 0 $indent-m;
-//     font-size: 1.2rem;
 //   }
 // }

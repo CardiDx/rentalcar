@@ -15,6 +15,10 @@
 .c-footer__copyright {
   color: $color-white;
   line-height: 130%;
+
+  @include bp-md {
+    font-size: 1.6rem;
+  }
 }
 
 .c-footer__copyright-text {
@@ -26,6 +30,14 @@
   color: $color-grey;
 }
 
+.c-footer__links {
+  @include bp-md {
+    display: flex;
+    flex-direction: column;
+    margin-top: $indent-xxl;
+  }
+}
+
 .c-footer__link {
   color: $color-white;
   font-weight: $type-weight--bold;
@@ -34,8 +46,18 @@
   @include link-events {
     color: $color-white;
   }
+
+  @include bp-md {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    margin-bottom: $indent-m;
+  }
 }
 
 .c-footer__link:last-child {
   margin-right: 0;
+
+  @include bp-md {
+    margin-bottom: 0;
+  }
 }
