@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Driver Rent</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--==================== CSS ====================-->
+    <link href="css/search.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+</head>
+
+<body>
+
+    <div class="l-layout">
+        <!--==================== HEADER ====================-->
+
+        <header class="l-layout__header" id="header">
+
+            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled"
+                data-js-header-opened="c-header--opened">
+                <div class="container ">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-lg-3">
+                            <div class="c-header__mobile-column">
+                                <button class="c-header__burger" data-js-header-toggle
+                                    data-js-header-toggle-active="c-header__burger--active"
+                                    aria-label="mobile menu"></button>
+                                <a href="/" class="c-header__logo" aria-label="logo-link">
+                                    <div class="c-header__logo-text">DRIVER <span
+                                            class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="c-header__right-side">
+
+
+                                <div class="c-header__language select">
+                                    <span class="select__current-language">En</span>
+                                    <!-- <div>
+                    <span>En</span>
+                    <span>Fr</span>
+                  </div> -->
+                                    <svg>
+                                        <use xlink:href="#select-arrow-down"></use>
+                                    </svg>
+                                </div>
+                                <!-- SVG Sprites-->
+                                <svg class="sprites">
+                                    <symbol id="select-arrow-down" viewbox="0 0 10 6">
+                                        <polyline points="1 1 5 5 9 1"></polyline>
+                                    </symbol>
+                                </svg>
+
+                                <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us"
+                                    data-service="order-a-project">Check your booking</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+        <main>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <form class="c-search__search-panel c-search-panel">
+                            <div class="c-search-panel__title">Pick-up your car</div>
+
+                            <div class="с-search-panel__line">
+                                <div class="c-search-panel__field">
+                                    <label class="c-label" for="searchField">
+                                        <span class="c-icon c-icon--location c-label__icon"></span>
+                                        <input class="c-input c-input--large" type="search" name="search"
+                                            id="searchField" placeholder="Pick-up & Drop location" value=""
+                                            autocomplete="off">
+                                    </label>
+                                </div>
+
+
+                                <div class="c-search-panel__field c-search-panel__field--hidden">
+                                    <label class="c-label с-search-panel__label" for="searchField">
+                                        <span class="c-icon c-icon--date c-label__icon"></span>
+                                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp"
+                                            placeholder="Pick-up Date" value="" autocomplete="off">
+                                        <div class="c-input-group-append">
+                                            <span class="c-input-group-text">Time</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="c-search-panel__field c-search-panel__field--flex">
+                                    <label class="c-label с-search-panel__label" for="searchField">
+                                        <span class="c-icon c-icon--date c-label__icon"></span>
+                                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp"
+                                            placeholder="Pick-up Date" value="" autocomplete="off">
+                                        <div class="c-input-group-append">
+                                            <span class="c-input-group-text">Time</span>
+                                        </div>
+                                    </label>
+                                </div>
+
+                                <div class="c-search-panel__field c-search-panel__field--flex">
+                                    <label class="c-label с-search-panel__label" for="searchField">
+                                        <span class="c-icon c-icon--date c-label__icon"></span>
+                                        <input class="c-input c-input--small" type="text" name="return-date"
+                                            id="returnDate" placeholder="Return Date" value="" autocomplete="off">
+                                        <div class="c-input-group-append">
+                                            <span class="c-input-group-text">Time</span>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="с-search-panel__line с-search-panel__line--bottom">
+                                <div class="c-search-panel__checkbox-wrapper">
+                                    <div class="checkbox">
+                                        <input id="check1" type="checkbox" name="check" value="check1">
+                                        <label for="check1">Same PickUP & Drop place</label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <input id="check2" type="checkbox" name="check" value="check2">
+                                        <label for="check2">No limits</label>
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <input id="check3" type="checkbox" name="check" value="check3">
+                                        <label for="check3">I am 26+</label>
+                                    </div>
+                                </div>
+
+
+                                <button class="c-button с-search-panel__c-button">Search <span
+                                        class="c-icon c-icon--long-arrow с-search-panel__c-button-icon"></span></button>
+                            </div>
+
+                        </form>
+
+                        <form class="c-search-panel c-search-panel--accept">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                 
+                    <aside class="col-lg-3">
+                        <div class="aside-menu">
+                            <ul class="aside-menu__nav">
+                                <li class="aside-menu__item">
+                                    <input id="aside-menu__input_59" class="aside-menu__input" type="checkbox" name="categories">
+                                    <label for="aside-menu__input_59" class="aside-menu__label">
+                                        <a class="aside-menu__link aside-menu__link_parent" href="https://zoosfera.by/dlya-koshek/">Gear</a>
+                                        <span class="aside-menu__label-icon c-icon c-icon--dropdown-arrow"></span>
+                                    </label>
+                                    <div class="aside-menu__submenu">
+                                        <ul class="aside-menu__subnav">
+
+                                            <li class="aside-menu__item">
+                                                <div class="checkbox">Automatic (5)</div>
+                                            </li>
+                                            <li class="aside-menu__item">
+                                                <div class="checkbox">Manual (24)</div>
+                                            </li>
+                                            <li class="aside-menu__item">
+                                                <div class="checkbox">Robotic (12)</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <div class="col-lg-9">
+                        <div class="filter__params">
+                            <ul>
+                                <li>Small</li>
+                                <li>Medium</li>
+                                <li>Large</li>
+                                <li>Station wagons</li>
+                                <li>Premium class</li>
+                                <li>Minivan</li>
+                            </ul>
+                        </div>
+
+                        <div class="wrapper">
+                            <div class="wrapper__main">
+                                <div class="wrapper__header">
+                                    <h2 class="wrapper__header-title">Paris: <span class="count">515</span> cars available</h1>
+                                    <div class="listing__sort">
+                                        <div class="dropdown">
+                                            <div class="dropdown__controls"><label class="dropdown__label"
+                                                    for="#">Сначала</label>
+                                                <div class="dropdown__box"><button aria-pressed="false"
+                                                        class="dropdown__control dropdown__control--active dropdown-link"
+                                                        title="актуальные" type="button"><span
+                                                            class="dropdown-link__value">актуальные</span></button>
+                                                    <ul class="dropdown-list">
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton dropdown__listbutton--selected"
+                                                                type="button" data-item-label="актуальные"
+                                                                data-parent="false">актуальные</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="дешёвые"
+                                                                data-parent="false">дешёвые</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="дорогие"
+                                                                data-parent="false">дорогие</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="новые объявления"
+                                                                data-parent="false">новые объявления</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="старые объявления"
+                                                                data-parent="false">старые объявления</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="с наименьшим пробегом"
+                                                                data-parent="false">с наименьшим пробегом</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="новые по году"
+                                                                data-parent="false">новые по году</button></li>
+                                                        <li class="dropdown__listitem"><button
+                                                                class="dropdown__listbutton" type="button"
+                                                                data-item-label="старые по году"
+                                                                data-parent="false">старые по году</button></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="listing__items">
+                                    <div class="listing__item">
+                                        <div class="listing__item-body">
+                                            <img src="img/cars/opel-insignia.png" alt="opel insignia">
+                                            <div class="listing__item-body-content">
+                                                <h2 class="listing__item-title">Opel Insignia 2.0 Turbo</h2>
+                                                <div class="listing__item-tags">
+                                                    <div class="listing__item-tag">City</div>
+                                                    <div class="listing__item-tag">City</div>
+                                                    <div class="listing__item-tag">City</div>
+                                                </div>
+                                                <div class="listing__item-params">
+                                                    <ul>
+                                                        <li>Mechanical</li>
+                                                        <li>Mechanical</li>
+                                                        <li>Mechanical</li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li>Mechanical</li>
+                                                        <li>Mechanical</li>
+                                                        <li>Mechanical</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="listing__item-bottom">
+                                            <div class="listing__item-location">
+                                                <span class="c-icon c-icon--location"></span>
+                                                <div class="listing__item-location-text">
+                                                    <p>Paris: main airport</p>
+                                                    <p>8 Rue Beaurepaire, Paris</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="listing__item-prices">
+                                                <div class="listing__item-price">
+                                                    <span>Price for 30 days:</span>
+                                                    <div>$ 32 000</div>
+                                                </div>
+                                                <a href="#">View deal</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a class="" href="#">Show more</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+
+
+
+
+        <footer class="l-layout__footer">
+            <div class="c-footer">
+                <div class="container">
+                    <div class="row column-reverse flex-md-row">
+                        <div class="col-lg-4">
+                            <div class="c-footer__copyright">
+                                <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
+                                <span class="c-footer__design-author">Design by Recodkin. </span>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 offset-lg-3">
+                            <div class="c-footer__links">
+                                <a class="link c-footer__link" href="#">Very important things</a>
+                                <a class="link c-footer__link" href="#">Contact US</a>
+                                <a class="link c-footer__link" href="#">Social networks icons</a>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--==================== MAIN JS ====================-->
+        <script src="/js/app.min.js"></script>
+</body>
+
+</html>

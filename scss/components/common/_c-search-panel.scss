@@ -43,6 +43,8 @@
 }
 
 .c-search-panel__checkbox-wrapper {
+  display: flex;
+  
   @include bp-md {
     display: flex;
     flex-flow: row wrap;

@@ -8,10 +8,7 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <!--==================== CSS ====================-->
-  <link href="css/main.min.css" rel="stylesheet">
-  <!-- <link href="css/solid.css" rel="stylesheet">
-  <link href="css/regular.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="css/main.css" rel="stylesheet">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,14 +22,17 @@
 
     <header class="l-layout__header" id="header">
 
-      <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
+      <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled"
+        data-js-header-opened="c-header--opened">
         <div class="container ">
           <div class="row d-flex justify-content-between align-items-center">
             <div class="col-lg-3">
               <div class="c-header__mobile-column">
-                <button class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button>
+                <button class="c-header__burger" data-js-header-toggle
+                  data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button>
                 <a href="/" class="c-header__logo" aria-label="logo-link">
-                  <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+                  <div class="c-header__logo-text">DRIVER <span
+                      class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
                 </a>
               </div>
             </div>
@@ -57,7 +57,8 @@
                   </symbol>
                 </svg>
 
-                <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
+                <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us"
+                  data-service="order-a-project">Check your booking</a>
               </div>
             </div>
           </div>
@@ -77,7 +78,8 @@
 
               <div class="col-12 col-lg-6">
                 <h1 class="c-home__title">Hey Buddy! Where are you driving to?</h1>
-                <p class="c-home__description">Enjoy reading with your children with the world's most high quality digital storybooks</p>
+                <p class="c-home__description">Enjoy reading with your children with the world's most high quality
+                  digital storybooks</p>
               </div>
 
             </div>
@@ -91,14 +93,17 @@
                     <div class="c-search-panel__field">
                       <label class="c-label" for="searchField">
                         <span class="c-icon c-icon--location c-label__icon"></span>
-                        <input class="c-input c-input--large" type="search" name="search" id="searchField" placeholder="Pick-up & Drop location" value="" autocomplete="off">
+                        <input class="c-input c-input--large" type="search" name="search" id="searchField"
+                          placeholder="Pick-up & Drop location" value="" autocomplete="off">
                       </label>
                     </div>
+                    
 
-                    <div class="c-search-panel__field c-search-panel__field--flex">
+                    <div class="c-search-panel__field c-search-panel__field--hidden">
                       <label class="c-label с-search-panel__label" for="searchField">
                         <span class="c-icon c-icon--date c-label__icon"></span>
-                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp" placeholder="Pick-up Date" value="" autocomplete="off">
+                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp"
+                          placeholder="Pick-up Date" value="" autocomplete="off">
                         <div class="c-input-group-append">
                           <span class="c-input-group-text">Time</span>
                         </div>
@@ -108,7 +113,19 @@
                     <div class="c-search-panel__field c-search-panel__field--flex">
                       <label class="c-label с-search-panel__label" for="searchField">
                         <span class="c-icon c-icon--date c-label__icon"></span>
-                        <input class="c-input c-input--small" type="text" name="return-date" id="returnDate" placeholder="Return Date" value="" autocomplete="off">
+                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp"
+                          placeholder="Pick-up Date" value="" autocomplete="off">
+                        <div class="c-input-group-append">
+                          <span class="c-input-group-text">Time</span>
+                        </div>
+                      </label>
+                    </div>
+
+                    <div class="c-search-panel__field c-search-panel__field--flex">
+                      <label class="c-label с-search-panel__label" for="searchField">
+                        <span class="c-icon c-icon--date c-label__icon"></span>
+                        <input class="c-input c-input--small" type="text" name="return-date" id="returnDate"
+                          placeholder="Return Date" value="" autocomplete="off">
                         <div class="c-input-group-append">
                           <span class="c-input-group-text">Time</span>
                         </div>
@@ -128,18 +145,19 @@
                       </div>
 
                       <div class="checkbox">
-                        <input id="check2" type="checkbox" name="check" value="check1">
+                        <input id="check2" type="checkbox" name="check" value="check2">
                         <label for="check2">No limits</label>
                       </div>
 
                       <div class="checkbox">
-                        <input id="check3" type="checkbox" name="check" value="check1">
+                        <input id="check3" type="checkbox" name="check" value="check3">
                         <label for="check3">I am 26+</label>
                       </div>
                     </div>
 
 
-                    <button class="c-button с-search-panel__c-button">Search <span class="c-icon c-icon--long-arrow с-search-panel__c-button-icon"></span></button>
+                    <button class="c-button с-search-panel__c-button">Search <span
+                        class="c-icon c-icon--long-arrow с-search-panel__c-button-icon"></span></button>
                   </div>
 
                 </form>
@@ -165,12 +183,14 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png"
+                          alt="Создание электропроекта">
                       </picture>
                     </div>
 
                     <h3 class="c-choice__card-title">City car</h3>
-                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer
                     </p>
                   </div>
                 </div>
@@ -182,12 +202,14 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png" width="274" height="297">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297" alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297"
+                          alt="Создание электропроекта">
                       </picture>
                     </div>
 
                     <h3 class="c-choice__card-title">Big company</h3>
-                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer
                     </p>
                   </div>
                 </div>
@@ -199,12 +221,14 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png" width="274" height="297">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297" alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297"
+                          alt="Создание электропроекта">
                       </picture>
                     </div>
 
                     <h3 class="c-choice__card-title">Vans & Tracks</h3>
-                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer
                     </p>
                   </div>
                 </div>
@@ -216,12 +240,14 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png" width="274" height="297">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297" alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297"
+                          alt="Создание электропроекта">
                       </picture>
                     </div>
 
                     <h3 class="c-choice__card-title">Holiday</h3>
-                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    <p class="c-choice__card-description"> Lorem Ipsum has been the industry's standard dummy text ever
+                      since the 1500s, when an unknown printer
                     </p>
                   </div>
                 </div>
@@ -246,61 +272,77 @@
               <div class="col-lg-4">
                 <div class="c-heading">
                   <h2 class="c-faq__title c-heading__title">Do you have any questions?</h2>
-                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions, maybe you'll find yours.</p>
-                  <p class="c-heading__description c-faq__description">If you did not find the answer to your question, please <a class="link" href="#">contact us</a>.</p>
+                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions,
+                    maybe you'll find yours.</p>
+                  <p class="c-heading__description c-faq__description">If you did not find the answer to your question,
+                    please <a class="link" href="#">contact us</a>.</p>
                 </div>
               </div>
               <div class="col-lg-7 offset-lg-1">
                 <div class="accordion-wrapper">
                   <label class="accordion-item" for="number-one">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-one">
-                    <span class="accordion-item__title">Bennie F. Johnson takes the helm of AIGA as Executive Director<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Bennie F. Johnson takes the helm of AIGA as Executive
+                      Director<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't miss the chance to witness it yourself. </p>
+                      <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most
+                        comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't
+                        miss the chance to witness it yourself. </p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="number-two">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-two">
-                    <span class="accordion-item__title">Design Center at a glance <span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Design Center at a glance <span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="number-tree">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-tree">
-                    <span class="accordion-item__title">Check Out What Uber Air's Skyports Might Look Like<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Check Out What Uber Air's Skyports Might Look Like<span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="number-four">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-four">
-                    <span class="accordion-item__title" data-caption="number-four">LE speakers by Braun Audio<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title" data-caption="number-four">LE speakers by Braun Audio<span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="number-five">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-five">
-                    <span class="accordion-item__title" data-caption="number-five">Quelle Faire? Maker Media is in Peril<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title" data-caption="number-five">Quelle Faire? Maker Media is in
+                      Peril<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description" id="number-five">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="number-six">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-six">
-                    <span class="accordion-item__title" data-caption="number-six">For once don't do it — NIKE's new powerful anti-racism campaign<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title" data-caption="number-six">For once don't do it — NIKE's new
+                      powerful anti-racism campaign<span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description" id="number-six">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
@@ -319,34 +361,43 @@
               <div class="col-lg-4">
                 <div class="c-heading">
                   <h2 class="c-faq__title c-heading__title">Additional Information</h2>
-                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions, maybe you'll find yours.</p>
-                  <p class="c-heading__description c-faq__description">If you did not find the answer to your question, please <a class="link" href="#">contact us</a>.</p>
+                  <p class="c-heading__description c-faq__description">Check out the list of frequently asked questions,
+                    maybe you'll find yours.</p>
+                  <p class="c-heading__description c-faq__description">If you did not find the answer to your question,
+                    please <a class="link" href="#">contact us</a>.</p>
                 </div>
               </div>
               <div class="col-lg-7 offset-lg-1">
                 <div class="accordion-wrapper">
                   <label class="accordion-item" for="airport">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="airport">
-                    <span class="accordion-item__title">Airport<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Airport<span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't miss the chance to witness it yourself. </p>
+                      <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most
+                        comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't
+                        miss the chance to witness it yourself. </p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="license">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="license">
-                    <span class="accordion-item__title">License<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">License<span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
 
                   <label class="accordion-item" for="additional">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="additional">
-                    <span class="accordion-item__title">Additional<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Additional<span
+                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
-                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem ipsum..Lorem
+                      <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
+                        ipsum..Lorem
                         ipsum.. Lorem ipsum..</p>
                     </div>
                   </label>
@@ -364,7 +415,8 @@
             <div class="col-lg-6">
               <div class="c-heading">
                 <h2 class="c-heading__title c-cta__title ">Inform me about exclusive offers</h2>
-                <p class="c-heading__description c-cta__description">Enjoy reading with your children with the world's most high quality digital storybooks</p>
+                <p class="c-heading__description c-cta__description">Enjoy reading with your children with the world's
+                  most high quality digital storybooks</p>
               </div>
             </div>
 
@@ -391,7 +443,7 @@
   <footer class="l-layout__footer">
     <div class="c-footer">
       <div class="container">
-        <div class="row column-reverse flex-md-row-reverse">
+        <div class="row column-reverse flex-md-row">
           <div class="col-lg-4">
             <div class="c-footer__copyright">
               <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
@@ -414,24 +466,37 @@
     </div>
   </footer>
 
-  <!-- <div class="popup popup--contact-us mfp-hide">
-    <div class="popup-content">
-      <h3 class="popup__title">Оставить<span class="br-mob"></span> заявку</h3>
-      <form action="mail.php" id="main-form" class="popup-form send-form" method="POST">
-        <input type="text" name="user-name" class="popup__input" placeholder="Имя">
-        <input type="text" name="phone" class="popup__input" placeholder="Номер телефона">
-        <select name="service" class="popup__select">
-          <option value="unselected" selected>Тип услуги</option>
-          <option value="order-a-project">Заказать проект</option>
-          <option value="order-a-tracing">Заказать трассировку</option>
-          <option value="make-a-shield">Собрать щит</option>
-        </select>
-        <input type="submit" value="Заказать проект" class="popup__btn">
-      </form>
+  <div class="overlay">
+    <div class="c-popup">
+        <div class="c-popup__logo">
+          <div class="logo">DRIVER <span class="logo__secondary-text h-type-accent">RENT.</span>
+          </div>
+        </div>
+        <span class="c-popup__title">Manage your booking </span>
+        <form class="c-popup__form" id="main-form">
+          <label class="c-label" for="email">
+            <span class="c-icon c-icon--mail c-cta__form-icon"></span>
+            <input class="c-input" type="email" id="email" placeholder="Email" required>
+          </label>
+
+          <label class="c-label" for="booking-id">
+            <span class="c-icon c-icon--booking-id c-cta__form-icon"></span>
+            <input class="c-input" type="text" id="booking-id" placeholder="Booking ID number" required>
+          </label>
+
+          <div class="c-popup__description">
+            <p class="c-popup__description-subtitle">Don't have your booking reference number?</span>
+            <p>Just fill in your details to confirm a quote – or to view, change or cancel a booking.</span>
+          </div>
+
+          <button class="c-popup__btn c-button" type="submit">Find booking car</button>
+
+        </form>
+      <span class="c-icon c-icon--close c-popup__close"></span>
     </div>
   </div>
 
-  <div class="popup popup--thank-you mfp-hide" id="thankyou">
+  <!-- <div class="popup popup--thank-you mfp-hide" id="thankyou">
     <div class="popup-content popup-content--wide">
       <img src="/img/icons/popup-check.svg" alt="Заявка отправлена!" class="popup__svg">
       <h3 class="popup__title popup__title--mb15">Заявка<span class="br-mob"></span> отправлена!</h3>
@@ -439,7 +504,6 @@
     </div>
   </div> -->
 
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!--==================== MAIN JS ====================-->
   <script src="/js/app.min.js"></script>
 </body>

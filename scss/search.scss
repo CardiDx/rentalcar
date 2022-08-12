@@ -1,0 +1,42 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "vendors/reset";
+@import "vendors/bootstrap4grid.scss";
+
+// @import "component/common/c-aside-menu";
+@import "components/common/c-aside-menu";
+
+.c-search__search-panel {
+    margin-top: 16.4rem;
+}
+
+.wrapper__header-title {
+    @include type-headline-2;
+}
+
+
+.listing__item-title {
+    margin-bottom: $indent-m;
+
+    @include type-headline-3;
+}
+
+.listing__item-tags {
+    display: flex;
+    flex-direction: row;
+}
+
+.listing__item-tag {
+    padding: $indent-s $indent-m;
+    background-color: $color-secondary;
+    border-radius: 999rem;
+}
+
+.filter__params li {
+    display: inline-block;
+    padding: $indent-m $indent-xl;
+    border: 0.1rem solid $color-divider;
+    border-radius: 1.2rem;
+
+}

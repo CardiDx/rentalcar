@@ -1,28 +1,14 @@
 .c-input {
+  width: 100%;
+  box-sizing: border-box;
   color: $color-grey;
   background-color: #fafafa;
   padding: $indent-l $indent-l $indent-l 5rem;
-  border: 0.1rem solid $color-divider;
+  border: 0.2rem solid $color-divider;
   border-radius: 1.2rem;
   font-weight: $type-weight--medium;
-  width: 100%;
+  transition: border-width $indent-m linear;
 
-  &::placeholder {
-    font-weight: inherit;
-  }
-
-  // &::invalid {
-  //   border: 2px dashed red;
-  // }
-
-  // &::valid {
-  //   border: 2px solid black;
-  // }
-
-  &:hover {
-    border: 0.2rem solid $color-secondary;
-    // margin: -0.2rem;
-  }
 
   &--small {
     flex-grow: 1;
@@ -45,6 +31,24 @@
     padding-right: 1.6rem;
     padding-bottom: 1.6rem;
   }
+
+  &::placeholder {
+    font-weight: inherit;
+  }
+
+  // &::invalid {
+  //   border: 2px dashed red;
+  // }
+
+  // &::valid {
+  //   border: 2px solid black;
+  // }
+
+}
+
+label:hover .c-input {
+  border-width: 0.2rem;
+  border-color: $color-secondary;
 }
 
 .c-input-group-append {

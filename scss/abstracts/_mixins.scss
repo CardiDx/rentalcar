@@ -38,6 +38,7 @@
 @mixin type-headline-1 {
   font-size: 5.6rem;
   font-weight: $type-weight--medium;
+  line-height: 120%;
 
   @include bp-md {
     font-size: 3.8rem;
@@ -82,8 +83,8 @@
   line-height: 150%;
 
   @include bp-md {
-    font-size: 1.3rem;
-    line-height: 2rem;
+    // font-size: 1.3rem;
+    // line-height: 2rem;
   }
 }
 

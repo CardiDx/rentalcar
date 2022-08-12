@@ -1,107 +1,77 @@
-.br-mob {
-    display: none;
-    @include bp-md {
-        display: block;
-    }
-}
-
-.popup {
-    position: relative;
-    width: 98%;
-    max-width: 950px;
-    padding: 80px;
-    margin: 0 auto;
-    background: #F7F8FC;
-
-    @include bp-md {
-        padding: 23px 17px;
-    }
-}
-
-.mfp-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    display: inline-block;
-    width: 96px;
-    height: 96px;
-    font-size: 0;
-    line-height: 0;
-    opacity: 1;
-    background: url('/img/icons/popup-close.svg') 50% 50% no-repeat !important;
-}
-
-.popup-content {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: center;
-
+.overlay {
     width: 100%;
-    max-width: 340px;
-    margin: 0 auto;
+    height: 100%;
+    position: absolute;
+    background: rgba(25, 27, 26, 0.48);
+    backdrop-filter: blur(6.4rem);
+    z-index: 99;
+}
+
+.c-popup {
+    position: relative;
+    z-index: 9999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 495px;
+    padding: 10rem $indent-xxl $indent-xxl $indent-xxl;
+    background-color: $color-white;
+    border-radius: 2.4rem;
+
+    // @include bp-md {
+    //     padding: 23px 17px;
+    // }
+}
+
+.c-popup__logo{
+    margin-bottom: 6.4rem;
+}
+
+// .c-popup__content {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     justify-content: flex-start;
+//     align-items: center;
+
+//     width: 100%;
+//     max-width: 340px;
+//     margin: 0 auto;
+
+//     @include bp-md {
+//         align-items: flex-start;
+//     }
+// }
+
+
+.c-popup__title {
+    font-weight: $type-weight--bold;
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    margin-bottom: $indent-l;
 
     @include bp-md {
-        align-items: flex-start;
+        // margin-bottom: 30px;
+        // font-size: 40px;
+        // line-height: .8;
     }
 }
 
-.popup-content--wide {
-    max-width: 410px;
-}
+.c-popup__form {
 
-.popup__svg {
-    margin-bottom: 20px;
-    width: 40px;
-    height: 40px;
-}
-
-.popup__title {
-    margin-bottom: 60px;
-
-    font-family: $type-family--alt;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 46px;
-    line-height: 140%;
-    color: #315EFB;
-
-    @include bp-md {
-        margin-bottom: 30px;
-        font-size: 40px;
-        line-height: .8;
-    }
-}
-
-.popup__title--mb15 {
-    margin-bottom: 15px;
-}
-
-.popup__subtitle {
-    font-family: $type-family;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 150%;
-    color: #3C4256;
 
     @include bp-md {
         font-size: 12px;
     }
 }
 
-.popup-form {}
-
-.popup__input {
+.c-popup__input {
     margin-bottom: 24px;
     width: 100%;
     height: 50px;
     padding: 17px 20px 15px;
     background: #FFFFFF;
     border: 1px solid #EBEBEB;
-
-    font-family: $type-family;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -118,44 +88,24 @@
     }
 }
 
-.popup__select {
-    position: relative;
-    margin-bottom: 24px;
-    width: 100%;
-    height: 50px;
-    padding: 17px 20px 15px;
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    cursor: pointer;
-
-    font-family: $type-family;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 1;
-    color: #3C4256;
-
-    &:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-
-        display: inline-block;
-        width: 10px;
-        height: 6px;
-        background: url('/img/icons/popup-select-angle.svg') 50% 50% / contain no-repeat;
-    }
+.c-popup__description {
+    text-align: center;
+    color: $color-grey;
+    margin-top: $indent-l;
+    margin-bottom: $indent-xl;
 }
 
-.popup__btn {
+.c-popup__description-subtitle {
+    font-weight: $type-weight--bold;
+    line-height: 2rem;
+    color: $color-black;
+}
+
+.c-popup__btn {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-
-    font-family: $type-family--alt;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -170,4 +120,11 @@
     @include bp-md {
         height: 40px;
     }
+}
+.c-popup__close{
+    position: absolute;
+    right: 2.4rem;
+    top: 2.4rem;
+    width: $ui-size-s;
+    height: $ui-size-s;
 }

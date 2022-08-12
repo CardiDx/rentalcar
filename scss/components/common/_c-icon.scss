@@ -39,8 +39,20 @@
     mask-image: url(/img/icons/dropdown.svg);
     -webkit-mask-image: url(/img/icons/dropdown.svg);
   }
+  &--booking-id {
+    mask-image: url(/img/icons/booking-id.svg);
+    -webkit-mask-image: url(/img/icons/booking-id.svg);
+  }
+  &--close {
+    mask-image: url(/img/icons/close.svg);
+    -webkit-mask-image: url(/img/icons/close.svg);
+  }
 }
 
 .c-icon--rotate {
   transform: rotate(180deg);
+}
+
+.c-icon--dropdown-arrow{
+  background-color: #191B1A;
 }

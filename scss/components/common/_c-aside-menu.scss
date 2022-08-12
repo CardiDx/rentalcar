@@ -1,0 +1,13 @@
+.aside-menu{
+    padding: $indent-xl $indent-l;
+    background-color: $color-white;
+    border-radius: 2.4rem;
+}
+
+.aside-menu__label a{
+font-weight: 700;
+line-height: 130%;
+display: flex;
+align-items: center;
+color: #191B1A;
+}

@@ -50,10 +50,15 @@ function scripts() {
 }
 
 function styles() {
-  return src("scss/main.scss") // получим main.scss
+  // return src("scss/main.scss") // получим main.scss
+  return src([
+    "scss/main.scss",
+    "scss/search.scss",
+
+  ])
     .pipe(sourcemaps.init()) // инициализируем sourcemap
     .pipe(sass({ outputStyle: "compressed" }))
-    .pipe(concat("main.min.css")) // scss -> css
+    // .pipe(concat("main.min.css")) // scss -> css
     .pipe(
       autoprefixer({
         // добавим префиксы

@@ -24,8 +24,12 @@ html {
 body {
   font-family: $type-family;
   color: $color-black;
-  background-color: $color-white;
+  background-color: #FAFAFA;
   @include type-body-1;
+}
+
+div {
+  box-sizing: border-box;
 }
 
 button,
@@ -42,6 +46,35 @@ strong {
   font-weight: bold;
 }
 
+input{
+  outline: none;
+}
+
+:focus {
+  outline: none !important;
+}
+
+/* Упрощаем работу с изображениями */
 img {
   max-width: 100%;
+  display: block;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+
+select {
+  border: none;
+}
+
+ul, ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
