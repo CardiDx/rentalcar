@@ -1,0 +1,27 @@
+.c-header__logo {
+    cursor: pointer;
+  
+    @include link-events {
+      color: $color-black;
+    }
+  }
+  
+  .logo {
+    display: block;
+    text-align: center;
+    color: $color-black;
+    font-weight: 900;
+    font-size: 3.2rem;
+    line-height: 90%;
+  
+    @include bp-sm {
+      font-size: 14px;
+    }
+  }
+  
+  .logo__secondary-text {
+    display: inline-block;
+    font-weight: $type-weight--medium;
+    // font-size: 2.4rem;
+    line-height: 90%;
+  }
