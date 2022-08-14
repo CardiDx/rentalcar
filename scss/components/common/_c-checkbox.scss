@@ -1,6 +1,10 @@
 .checkbox {
   margin-right: 6.4rem;
 
+  @include bp-lg {
+    margin-right: 4rem;
+  }
+
   &:last-child {
     margin-right: 0;
   }
@@ -50,7 +54,6 @@
   height: $ui-size-m;
 }
 
-
-.c-search-panel__field--hidden{
+.c-search-panel__field--hidden {
   display: none;
 }

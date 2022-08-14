@@ -53,14 +53,36 @@
 }
 
 .c-search-panel__checkbox-wrapper .checkbox:first-child {
-  @include bp-md {
+  // @include bp-lg {
+  //   margin-right: 6.4rem;
+  //   width: auto;
+  // }
+
+  @include bp-sm {
     margin-bottom: $indent-m;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  // 1320px;
+  @include bp-xl {
+  }
+  //1200px;
+  @include bp-lg {
+  }
+  //992px;
+  @include bp-md {
+  }
+  //768px
+  @include bp-sm {
+  }
+  // 576px
+  @include bp-xs {
   }
 }
 
 .c-search-panel__field--flex {
   display: flex;
-  // width: 100%;
 }
 
 .c-search-panel__field--large {

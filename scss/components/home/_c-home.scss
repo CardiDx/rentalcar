@@ -4,6 +4,8 @@
   padding-right: 8rem;
 
   @include bp-lg {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   @include bp-md {

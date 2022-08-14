@@ -13,8 +13,14 @@
   }
 
   @include bp-md {
-    max-height: 6.4rem;
+    // max-height: 6.4rem;
     padding: 1.3rem 0;
+  }
+}
+
+.c-header--opened {
+  @include bp-md {
+    max-height: 100%;
   }
 }
 
@@ -23,10 +29,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+
+  @include bp-md {
+    flex-direction: column;
+  }
 }
 
 .c-header__mobile-column {
-  @include bp-sm {
+  @include bp-md {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -51,7 +61,8 @@
   line-height: 90%;
 
   @include bp-sm {
-    font-size: 14px;
+    // font-size: 14px;
+    font-size: 2.4rem;
   }
 }
 
@@ -65,20 +76,14 @@
 .c-header__burger {
   display: none;
   position: relative;
-  width: $ui-size-s;
-  height: $ui-size-s;
+  width: 2.8rem;
+  height: 2rem;
   font-size: 0;
   cursor: pointer;
   z-index: 2;
 
-  // @include bp-lg {
-  //   display: block;
-  //   margin-right: 1rem;
-  // }
-
   @include bp-md {
     display: block;
-    // margin-right: 1rem;
   }
 
   &::after,
@@ -91,22 +96,56 @@
     background-color: $color-secondary;
     transition: transform $motion-m;
   }
-
-  &::before {
-    top: 1rem;
-  }
-
-  &::after {
-    top: 1.8rem;
-  }
-
-  &--active::before {
-    transform: rotate(45deg) translate(0.3rem, 0.3rem);
-  }
-  &--active::after {
-    transform: rotate(-45deg) translate(0.3rem, -0.3rem);
-  }
 }
+
+.c-header__burger span {
+  top: 50%;
+  transform: scale(1) translate(0px, -50%);
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  transition: all 0.3s ease 0s;
+  background-color: $color-secondary;
+  border-radius: 999rem;
+}
+
+.c-header__burger span,
+.c-header__burger::before,
+.c-header__burger::after {
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  transition: transform $motion-m;
+  background-color: $color-secondary;
+}
+
+.c-header__burger::before {
+  top: 0;
+}
+
+.c-header__burger::after {
+  bottom: 0;
+}
+
+/* active burger */
+
+.c-header__burger--active span {
+  transform: scale(0) translate(0, -50%);
+}
+
+.c-header__burger--active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+
+.c-header__burger--active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+/* */
 
 .c-header__burger--active ~ .c-header__right-side {
   position: absolute;
@@ -123,6 +162,16 @@
   }
 }
 
+.c-header__right-side--opened {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: $color-white;
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
+}
+
 .c-header__language {
   display: inline-block;
 }
@@ -132,6 +181,10 @@
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
   color: $color-secondary;
+
+  @include bp-md {
+    width: auto;
+  }
 
   &:visited {
     color: $color-secondary;
@@ -151,76 +204,3 @@
     color: $color-white;
   }
 }
-
-// .c-header__social {
-//   margin-right: 2rem;
-
-//   @include bp-sm {
-//     display: none;
-//   }
-// }
-
-// .c-header__button {
-//   width: auto;
-//   height: 7.3rem;
-
-//   @include bp-xs {
-//     padding: 0 $indent-m;
-//     font-size: 1.2rem;
-//   }
-// }
-
-// .c-header__menu {
-//   display: flex;
-//   flex-direction: row;
-//   align-items: center;
-
-//   @include bp-lg {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: flex-start;
-//     align-items: center;
-//     position: fixed;
-//     top: 0;
-//     left: 100%;
-//     height: 100vh;
-//     width: 100vw;
-//     padding: 6.4rem 0 0 $indent-l;
-//     background-color: $color-divider;
-//     overflow: hidden;
-//     z-index: 1;
-//     transition: left $motion-s ease-out;
-
-//     .c-header--opened & {
-//       left: 0;
-//       transition-duration: $motion-m;
-//     }
-//   }
-// }
-
-// .c-header__menu-link {
-//   cursor: pointer;
-//   transition: color $motion-m;
-//   margin-left: $indent-xl;
-//   @include type-action;
-//   font-size: 1.6rem;
-
-//   @include link-events {
-//     color: $color-black;
-//   }
-
-//   &:hover {
-//     color: $color-primary;
-//   }
-
-//   @include bp-xl {
-//     font-size: 1.4rem;
-//     margin-left: $indent-m;
-//   }
-
-//   @include bp-lg {
-//     font-size: 1.6rem;
-//     padding: 1.2rem 0;
-//     margin-left: 0;
-//   }
-// }

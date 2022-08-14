@@ -46,7 +46,7 @@
 
   @include bp-md {
     max-width: 100%;
-    height: auto;
+    object-fit: contain;
   }
 }
 
@@ -149,15 +149,34 @@
 // }
 
 .c-choice__cards-scroll {
+  display: flex;
+  flex-direction: row;
+  margin: 0 -1.6rem;
+
   @include bp-md {
-    overflow: auto;
-    width: 100%;
+    // width: 100%;
     flex-wrap: nowrap;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 24px;
+    // scroll-snap-type: x mandatory;
+    // scroll-padding: 24px;
+    margin: 0 -1.2rem;
+    overflow-x: auto;
   }
 }
 
+.c-choice__cards-scroll::-webkit-scrollbar {
+  display: none;
+}
+
 .card {
-  scroll-snap-align: start;
+  width: 28rem;
+  max-width: 100%;
+  margin: 0 $indent-m;
+  // scroll-snap-align: start;
+
+  @include bp-md {
+    width: 28rem;
+    max-width: 28rem;
+    margin: 0 1.2rem;
+    flex-shrink: 0;
+  }
 }

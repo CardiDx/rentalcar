@@ -1,44 +1,17 @@
-const header = document.querySelector("[data-js-header]");
-const headerScrolledClass =
-  header.getAttribute("data-js-header-scrolled") || "";
-const headerOpenedClass = header.getAttribute("data-js-header-opened") || "";
-const headerToggle = document.querySelector("[data-js-header-toggle]");
-const headerToggleActiveClass =
-  headerToggle.getAttribute("data-js-header-toggle-active") || "";
+//open mobile menu
+const header = document.querySelector(".c-header");
+const headerHamburgerIcon = document.querySelector(".c-header__burger");
+const headerHamburger =
+  document.querySelector(".c-header__mobile-column") || "";
+const headerMobileMenu = document.querySelector(".c-header__right-side") || "";
 
-function animationHeader(item, currentPosition) {
-  if (!item) {
-    return;
-  }
-  currentPosition > 96
-    ? item.classList.add(headerScrolledClass)
-    : item.classList.remove(headerScrolledClass);
-}
-
-animationHeader(
-  header,
-  window.pageYOffset || document.documentElement.scrollTop
-);
-
-window.addEventListener("scroll", function () {
-  const scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  animationHeader(header, scrolled);
+headerHamburgerIcon.addEventListener("click", function () {
+  header.classList.toggle("c-header--opened");
+  headerMobileMenu.classList.toggle("c-header__right-side--opened");
+  headerHamburgerIcon.classList.toggle("c-header__burger--active");
 });
 
-headerToggle &&
-  header &&
-  (headerToggle.onclick = (e) => {
-    header.classList.toggle(headerOpenedClass);
-    e.target.classList.toggle(headerToggleActiveClass);
-  });
-
-var headerLinks = document.querySelectorAll(".c-header__menu-link");
-headerLinks.forEach(function (headerLink) {
-  headerLink.addEventListener("click", function () {
-    header.classList.remove("c-header--opened");
-    headerToggle.classList.remove("c-header__burger--active");
-  });
-});
+// checkbox serach panel
 
 let checkboxSearch = document.getElementById("check1");
 const addInput = document.querySelector(".c-search-panel__field--hidden");
