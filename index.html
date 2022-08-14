@@ -22,44 +22,28 @@
 
     <header class="l-layout__header" id="header">
 
-      <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled"
-        data-js-header-opened="c-header--opened">
+      <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
         <div class="container ">
-          <div class="row d-flex justify-content-between align-items-center">
-            <div class="col-lg-3">
-              <div class="c-header__mobile-column">
-                <button class="c-header__burger" data-js-header-toggle
-                  data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button>
-                <a href="/" class="c-header__logo" aria-label="logo-link">
-                  <div class="c-header__logo-text">DRIVER <span
-                      class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
-                </a>
-              </div>
+          <div class="c-header__inner">
+            <div class="c-header__mobile-column">
+              <button class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu"></button>
+              <a href="/" class="c-header__logo" aria-label="logo-link">
+                <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+              </a>
             </div>
-            <div class="col-lg-3">
-              <div class="c-header__right-side">
-
-
-                <div class="c-header__language select">
-                  <span class="select__current-language">En</span>
-                  <!-- <div>
-                    <span>En</span>
-                    <span>Fr</span>
-                  </div> -->
-                  <svg>
-                    <use xlink:href="#select-arrow-down"></use>
-                  </svg>
-                </div>
-                <!-- SVG Sprites-->
-                <svg class="sprites">
-                  <symbol id="select-arrow-down" viewbox="0 0 10 6">
-                    <polyline points="1 1 5 5 9 1"></polyline>
-                  </symbol>
-                </svg>
-
-                <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us"
-                  data-service="order-a-project">Check your booking</a>
+            <div class="c-header__right-side">
+              <div class="c-header__language select">
+                <label class="select__current-language" for="language-ckeckbox">
+                  <input class="select__language-checkbox" type="checkbox" id="language-ckeckbox">
+                  <span>En</span>
+                  <span class="c-icon c-icon--dropdown select__current-language-icon"></span>
+                  <div class="select__dropdown-menu">
+                    <div class="select__menu-item">En</div>
+                    <div class="select__menu-item">Fr</div>
+                  </div>
+                </label>
               </div>
+              <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
             </div>
           </div>
         </div>
@@ -77,11 +61,10 @@
             <div class="row">
 
               <div class="col-12 col-lg-6">
-                <h1 class="c-home__title">Hey Buddy! Where are you driving to?</h1>
+                <h1 class="c-home__title">Hey Buddy! Where are you <span class="h-type-bold">driving</span> to?</h1>
                 <p class="c-home__description">Enjoy reading with your children with the world's most high quality
                   digital storybooks</p>
               </div>
-
             </div>
 
             <div class="row">
@@ -90,20 +73,18 @@
                   <div class="c-search-panel__title">Pick-up your car</div>
 
                   <div class="с-search-panel__line">
-                    <div class="c-search-panel__field">
-                      <label class="c-label" for="searchField">
+                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                      <label class="c-label с-search-panel__label с-search-panel__label--large" for="searchField">
                         <span class="c-icon c-icon--location c-label__icon"></span>
-                        <input class="c-input c-input--large" type="search" name="search" id="searchField"
-                          placeholder="Pick-up & Drop location" value="" autocomplete="off">
+                        <input class="c-input c-input--large" type="search" name="search" id="searchField" placeholder="Pick-up & Drop location" value="" autocomplete="off">
                       </label>
                     </div>
-                    
 
-                    <div class="c-search-panel__field c-search-panel__field--hidden">
+
+                    <div class="c-search-panel__field c-search-panel__field--hidden ">
                       <label class="c-label с-search-panel__label" for="searchField">
                         <span class="c-icon c-icon--date c-label__icon"></span>
-                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp"
-                          placeholder="Pick-up Date" value="" autocomplete="off">
+                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp" placeholder="Pick-up Date" value="" autocomplete="off">
                         <div class="c-input-group-append">
                           <span class="c-input-group-text">Time</span>
                         </div>
@@ -113,8 +94,7 @@
                     <div class="c-search-panel__field c-search-panel__field--flex">
                       <label class="c-label с-search-panel__label" for="searchField">
                         <span class="c-icon c-icon--date c-label__icon"></span>
-                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp"
-                          placeholder="Pick-up Date" value="" autocomplete="off">
+                        <input class="c-input c-input--small" type="text" name="date-up" id="dateUp" placeholder="Pick-up Date" value="" autocomplete="off">
                         <div class="c-input-group-append">
                           <span class="c-input-group-text">Time</span>
                         </div>
@@ -124,8 +104,7 @@
                     <div class="c-search-panel__field c-search-panel__field--flex">
                       <label class="c-label с-search-panel__label" for="searchField">
                         <span class="c-icon c-icon--date c-label__icon"></span>
-                        <input class="c-input c-input--small" type="text" name="return-date" id="returnDate"
-                          placeholder="Return Date" value="" autocomplete="off">
+                        <input class="c-input c-input--small" type="text" name="return-date" id="returnDate" placeholder="Return Date" value="" autocomplete="off">
                         <div class="c-input-group-append">
                           <span class="c-input-group-text">Time</span>
                         </div>
@@ -156,8 +135,7 @@
                     </div>
 
 
-                    <button class="c-button с-search-panel__c-button">Search <span
-                        class="c-icon c-icon--long-arrow с-search-panel__c-button-icon"></span></button>
+                    <button class="c-button с-search-panel__c-button">Search <span class="c-icon c-icon--long-arrow с-search-panel__c-button-icon"></span></button>
                   </div>
 
                 </form>
@@ -183,8 +161,7 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png"
-                          alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" alt="Создание электропроекта">
                       </picture>
                     </div>
 
@@ -202,8 +179,7 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png" width="274" height="297">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297"
-                          alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297" alt="Создание электропроекта">
                       </picture>
                     </div>
 
@@ -221,8 +197,7 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png" width="274" height="297">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297"
-                          alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297" alt="Создание электропроекта">
                       </picture>
                     </div>
 
@@ -240,8 +215,7 @@
                     <div class="c-choice__card-image-wrap">
                       <picture>
                         <source type="image/webp" srcset="img/choice-car/city-car.png" width="274" height="297">
-                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297"
-                          alt="Создание электропроекта">
+                        <img class="c-choice__card-image  " src="img/choice-car/city-car.png" width="274" height="297" alt="Создание электропроекта">
                       </picture>
                     </div>
 
@@ -293,8 +267,7 @@
 
                   <label class="accordion-item" for="number-two">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-two">
-                    <span class="accordion-item__title">Design Center at a glance <span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Design Center at a glance <span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
                       <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
                         ipsum..Lorem
@@ -304,8 +277,7 @@
 
                   <label class="accordion-item" for="number-tree">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-tree">
-                    <span class="accordion-item__title">Check Out What Uber Air's Skyports Might Look Like<span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Check Out What Uber Air's Skyports Might Look Like<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
                       <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
                         ipsum..Lorem
@@ -315,8 +287,7 @@
 
                   <label class="accordion-item" for="number-four">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-four">
-                    <span class="accordion-item__title" data-caption="number-four">LE speakers by Braun Audio<span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title" data-caption="number-four">LE speakers by Braun Audio<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
                       <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
                         ipsum..Lorem
@@ -338,8 +309,7 @@
                   <label class="accordion-item" for="number-six">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="number-six">
                     <span class="accordion-item__title" data-caption="number-six">For once don't do it — NIKE's new
-                      powerful anti-racism campaign<span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                      powerful anti-racism campaign<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description" id="number-six">
                       <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
                         ipsum..Lorem
@@ -371,8 +341,7 @@
                 <div class="accordion-wrapper">
                   <label class="accordion-item" for="airport">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="airport">
-                    <span class="accordion-item__title">Airport<span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Airport<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
                       <p class="accordion-item__text">The Dropbox HQ in San Francisco is one of the best designed & most
                         comfortable offices I have ever witnessed. Great stuff! If you happen to visit SanFran, don't
@@ -382,8 +351,7 @@
 
                   <label class="accordion-item" for="license">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="license">
-                    <span class="accordion-item__title">License<span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">License<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
                       <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
                         ipsum..Lorem
@@ -393,8 +361,7 @@
 
                   <label class="accordion-item" for="additional">
                     <input class="accordion-item__checkbox" type="checkbox" name="accordion" id="additional">
-                    <span class="accordion-item__title">Additional<span
-                        class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
+                    <span class="accordion-item__title">Additional<span class="c-icon c-icon--dropdown-arrow accordion-item__icon"></span></span>
                     <div class="accordion-item__description">
                       <p class="accordion-item__text">Lorem ipsum... Lorem ipsum.. Lorem ipsum.. Lorem ipsum..Lorem
                         ipsum..Lorem
@@ -466,42 +433,57 @@
     </div>
   </footer>
 
-  <div class="overlay">
+  <!--==================== popups ====================-->
+  <!-- <div class="overlay">
     <div class="c-popup">
-        <div class="c-popup__logo">
-          <div class="logo">DRIVER <span class="logo__secondary-text h-type-accent">RENT.</span>
-          </div>
+      <div class="c-popup__logo">
+        <div class="logo">DRIVER <span class="logo__secondary-text h-type-accent">RENT.</span>
         </div>
-        <div class="c-popup__title">Manage your booking </div>
-        <form class="c-popup__form" id="main-form">
-          <label class="c-label c-popup__form-label" for="email">
-            <span class="c-icon c-icon--mail c-cta__form-icon"></span>
-            <input class="c-input" type="email" id="email" placeholder="Email" required>
-          </label>
+      </div>
+      <div class="c-popup__title">Manage your booking </div>
+      <form class="c-popup__form" id="main-form">
+        <label class="c-label c-popup__form-label" for="email">
+          <span class="c-icon c-icon--mail c-cta__form-icon"></span>
+          <input class="c-input" type="email" id="email" placeholder="Email" required>
+        </label>
 
-          <label class="c-label c-popup__form-label" for="booking-id">
-            <span class="c-icon c-icon--booking-id c-cta__form-icon"></span>
-            <input class="c-input" type="text" id="booking-id" placeholder="Booking ID number" required>
-          </label>
+        <label class="c-label c-popup__form-label" for="booking-id">
+          <span class="c-icon c-icon--booking-id c-cta__form-icon"></span>
+          <input class="c-input" type="text" id="booking-id" placeholder="Booking ID number" required>
+        </label>
 
-          <div class="c-popup__description">
-            <p class="c-popup__description-subtitle">Don't have your booking reference number?</span>
-            <p>Just fill in your details to confirm a quote – or to view, change or cancel a booking.</span>
-          </div>
+        <div class="c-popup__description">
+          <p class="c-popup__description-title">Don't have your booking reference number?</span>
+          <p class="c-popup__description-subtitle">Just fill in your details to confirm a quote – or to view, change or cancel a booking.</span>
+        </div>
 
-          <button class="c-popup__btn c-button" type="submit">Find booking car</button>
+        <button class="c-popup__btn c-button" type="submit">Find booking car</button>
 
-        </form>
+      </form>
       <span class="c-icon c-icon--close c-popup__close"></span>
     </div>
   </div>
 
-  <!-- <div class="popup popup--thank-you mfp-hide" id="thankyou">
-    <div class="popup-content popup-content--wide">
-      <img src="/img/icons/popup-check.svg" alt="Заявка отправлена!" class="popup__svg">
-      <h3 class="popup__title popup__title--mb15">Заявка<span class="br-mob"></span> отправлена!</h3>
-      <span class="popup__subtitle">Наш менеджер свяжется с Вами в ближайшее время!</span>
+  <div class="c-popup">
+    <div class="c-popup__logo">
+      <div class="logo">DRIVER <span class="logo__secondary-text h-type-accent">RENT.</span>
+      </div>
     </div>
+    <div class="c-popup__title">Don’t have booking ID</div>
+    <form class="c-popup__form" id="main-form">
+      <label class="c-label c-popup__form-label" for="email">
+        <span class="c-icon c-icon--mail c-cta__form-icon"></span>
+        <input class="c-input" type="email" id="email" placeholder="Email" required>
+      </label>
+
+      <div class="c-popup__description">
+        <p class="c-popup__description-subtitle">It’s in your confirmation email. If you’d like us to resend it, just tell us your email address (the one you used when you booked the car).</span>
+      </div>
+
+      <button class="c-popup__btn c-button" type="submit">Resend booking ID</button>
+
+    </form>
+    <span class="c-icon c-icon--close c-popup__close"></span>
   </div> -->
 
   <!--==================== MAIN JS ====================-->

@@ -2,57 +2,90 @@
   position: relative;
   outline: none;
 }
-.select svg {
-  position: absolute;
-  right: 12px;
-  top: calc(50% - 3px);
-  width: 10px;
-  height: 6px;
-  stroke-width: 2px;
-  stroke: #9098a9;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  pointer-events: none;
-}
 
-.select select {
-  -webkit-appearance: none;
-  padding: 7px 32px 7px 12px;
-  width: 100%;
-  cursor: pointer;
+.select__current-language {
+  display: flex;
+  align-items: center;
   font-weight: $type-weight--semi-bold;
-  transition: all 150ms ease;
+  color: #c6c6c6;
+  margin-right: $indent-l;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    color: $color-secondary;
+
+    .select__current-language-icon {
+      background-color: $color-secondary;
+    }
+  }
 }
 
-.select select:required:invalid {
-  color: #5a667f;
+.select__current-language-icon {
+  width: 1rem;
+  height: 1.6rem;
+  margin-left: 0.8rem;
+  background-color: #c6c6c6;
+  transition: transform $motion-m ease-in-out;
 }
 
-.select select option {
-  color: #223254;
-  padding: 4px 28px 4px 10px;
-  background: #fbfbfb;
-  border: 1px solid rgba(227, 227, 227, 0.4);
-}
-
-.select select option[value=""][disabled] {
-  display: none;
-}
-
-.select select:focus {
-  outline: none;
-  border-color: #07f;
-}
-
-.select select:hover + svg {
-  stroke: #07f;
-}
-
-.sprites {
+.select__dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  padding: 0.4rem 0;
+  border: 0.1rem solid rgba(227, 227, 227, 0.4);
+  border-radius: 0.4rem;
   position: absolute;
-  width: 0;
-  height: 0;
-  pointer-events: none;
-  user-select: none;
+  top: 3.2rem;
+  left: -10px;
+  z-index: 2;
+  opacity: 0;
+
+  &::after {
+    content: url("/img/icons/rectangle.svg");
+    position: absolute;
+    right: 0.7rem;
+    top: -1.4rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    z-index: 1;
+  }
+}
+
+.select__menu-item {
+  width: 5.5rem;
+  font-weight: $type-weight--semi-bold;
+  font-size: 1.4rem;
+  color: #191b1a;
+  line-height: 1.7rem;
+  padding: 0.4rem 0 0.4rem 1rem;
+  transition: background-color $indent-m ease-in-out,
+    color $indent-m ease-in-out;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-secondary;
+    color: white;
+  }
+}
+
+.select__language-checkbox {
+  visibility: hidden;
+  position: absolute;
+}
+
+.select__language-checkbox:checked ~ span {
+  color: $color-secondary;
+}
+
+.select__language-checkbox:checked ~ .select__dropdown-menu {
+  opacity: 1;
+}
+
+.select__language-checkbox:checked ~ .select__current-language-icon {
+  transform: rotate(180deg);
+  background-color: $color-secondary;
 }

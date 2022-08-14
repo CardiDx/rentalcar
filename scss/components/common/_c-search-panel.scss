@@ -44,7 +44,7 @@
 
 .c-search-panel__checkbox-wrapper {
   display: flex;
-  
+
   @include bp-md {
     display: flex;
     flex-flow: row wrap;
@@ -52,9 +52,24 @@
   }
 }
 
+.c-search-panel__checkbox-wrapper .checkbox:first-child {
+  @include bp-md {
+    margin-bottom: $indent-m;
+  }
+}
+
 .c-search-panel__field--flex {
   display: flex;
-  width: 100%;
+  // width: 100%;
+}
+
+.c-search-panel__field--large {
+  max-width: 58.5rem;
+  flex-grow: 1;
+
+  @include bp-lg {
+    max-width: 100%;
+  }
 }
 
 .с-search-panel__line--bottom {
@@ -75,6 +90,10 @@
 .с-search-panel__label {
   display: flex;
   flex-grow: 1;
+}
+
+.с-search-panel__label--large {
+  flex-grow: 58.5rem;
 }
 
 .с-search-panel__c-button-icon {

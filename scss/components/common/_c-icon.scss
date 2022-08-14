@@ -39,10 +39,17 @@
     mask-image: url(/img/icons/dropdown.svg);
     -webkit-mask-image: url(/img/icons/dropdown.svg);
   }
+
+  &--dropdown {
+    mask-image: url(/img/icons/dropdown-arrow.svg);
+    -webkit-mask-image: url(/img/icons/dropdown-arrow.svg);
+  }
+
   &--booking-id {
     mask-image: url(/img/icons/booking-id.svg);
     -webkit-mask-image: url(/img/icons/booking-id.svg);
   }
+
   &--close {
     mask-image: url(/img/icons/close.svg);
     -webkit-mask-image: url(/img/icons/close.svg);
@@ -53,6 +60,6 @@
   transform: rotate(180deg);
 }
 
-.c-icon--dropdown-arrow{
-  background-color: #191B1A;
+.c-icon--dropdown-arrow {
+  background-color: #191b1a;
 }

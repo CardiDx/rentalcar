@@ -24,7 +24,15 @@ html {
 body {
   font-family: $type-family;
   color: $color-black;
-  background-color: #FAFAFA;
+  background-color: #fafafa;
+  /* Не выделять текст */
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */
+  -khtml-user-select: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently*/
+
   @include type-body-1;
 }
 
@@ -46,7 +54,7 @@ strong {
   font-weight: bold;
 }
 
-input{
+input {
   outline: none;
 }
 
@@ -73,7 +81,8 @@ select {
   border: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   padding: 0;
   margin: 0;

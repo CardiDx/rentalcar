@@ -1,31 +1,32 @@
 .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: rgba(25, 27, 26, 0.48);
-    backdrop-filter: blur(6.4rem);
-    z-index: 99;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(25, 27, 26, 0.48);
+  backdrop-filter: blur(6.4rem);
+  z-index: 99;
 }
 
 .c-popup {
-    position: relative;
-    z-index: 9999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    max-width: 495px;
-    padding: 10rem $indent-xxl $indent-xxl $indent-xxl;
-    background-color: $color-white;
-    border-radius: 2.4rem;
+  position: relative;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 495px;
+  padding: 10rem $indent-xxl $indent-xxl $indent-xxl;
+  background-color: $color-white;
+  border-radius: 2.4rem;
+  position: relative;
 
-    // @include bp-md {
-    //     padding: 23px 17px;
-    // }
+  // @include bp-md {
+  //     padding: 23px 17px;
+  // }
 }
 
 .c-popup__logo {
-    margin-bottom: 6.4rem;
+  margin-bottom: 6.4rem;
 }
 
 // .c-popup__content {
@@ -43,94 +44,103 @@
 //     }
 // }
 
-
 .c-popup__title {
-    font-weight: $type-weight--bold;
-    font-size: 2.8rem;
-    line-height: 3.5rem;
-    margin-bottom: $indent-l;
-    text-align: center;
+  font-weight: $type-weight--bold;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  margin-bottom: $indent-l;
+  text-align: center;
 
-    @include bp-md {
-        // margin-bottom: 30px;
-        // font-size: 40px;
-        // line-height: .8;
-    }
+  @include bp-md {
+    // margin-bottom: 30px;
+    // font-size: 40px;
+    // line-height: .8;
+  }
 }
 
 .c-popup__form {
-
-
-    @include bp-md {
-        font-size: 12px;
-    }
+  @include bp-md {
+    font-size: 12px;
+  }
 }
 
 .c-popup__form-label {
-    margin-bottom: $indent-m;
+  margin-bottom: $indent-m;
 
-    &:last-child {
-        margin-bottom: 0;
-    }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .c-popup__input {
-    margin-bottom: 24px;
-    width: 100%;
-    height: 50px;
-    padding: 17px 20px 15px;
-    background: #FFFFFF;
-    border: 1px solid #EBEBEB;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
-    color: #3C4256;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 50px;
+  padding: 17px 20px 15px;
+  background: #ffffff;
+  border: 1px solid #ebebeb;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #3c4256;
 
-    @include bp-md {
-        margin-bottom: 20px;
-        height: 40px;
-        padding: 10px 0;
-        background: none;
-        border: none;
-        border-bottom: 1px solid #315EFB;
-    }
+  //   @include bp-md {
+  //     margin-bottom: 20px;
+  //     height: 40px;
+  //     padding: 10px 0;
+  //     background: none;
+  //     border: none;
+  //     border-bottom: 1px solid #315efb;
+  //   }
 }
 
 .c-popup__description {
-    text-align: center;
-    color: $color-grey;
-    margin-top: $indent-l;
-    margin-bottom: $indent-xl;
+  text-align: center;
+  color: $color-grey;
+  margin-top: $indent-l;
+  margin-bottom: $indent-xl;
+}
+
+.c-popup__description-title {
+  font-weight: $type-weight--bold;
+  line-height: 2rem;
+  color: $color-black;
 }
 
 .c-popup__description-subtitle {
-    font-weight: $type-weight--bold;
-    line-height: 2rem;
-    color: $color-black;
+  font-weight: $type-weight--medium;
+  margin-top: 1.2rem;
 }
 
 .c-popup__btn {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    font-weight: $type-weight--semi-bold;
-    font-size: 2rem;
-    line-height: 2.4rem;
-    width: 100%;
-    padding: $indent-m 0;
-    cursor: pointer;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-weight: $type-weight--semi-bold;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  width: 100%;
+  padding: $indent-m 0;
+  cursor: pointer;
 
-    @include bp-md {
-        // height: 40px;
-    }
+  @include bp-md {
+    // height: 40px;
+  }
 }
 
 .c-popup__close {
-    position: absolute;
-    right: 2.4rem;
-    top: 2.4rem;
-    width: $ui-size-s;
-    height: $ui-size-s;
+  position: absolute;
+  right: 2.4rem;
+  top: 2.4rem;
+  width: $ui-size-s;
+  height: $ui-size-s;
+  background-color: rgba(25, 27, 26, 0.24);
+  transition: background-color $motion-m ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-grey;
+  }
 }
