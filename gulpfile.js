@@ -51,24 +51,22 @@ function scripts() {
 
 function styles() {
   // return src("scss/main.scss") // получим main.scss
-  return src([
-    "scss/main.scss",
-    "scss/search.scss",
-
-  ])
-    .pipe(sourcemaps.init()) // инициализируем sourcemap
-    .pipe(sass({ outputStyle: "compressed" }))
-    // .pipe(concat("main.min.css")) // scss -> css
-    .pipe(
-      autoprefixer({
-        // добавим префиксы
-        overrideBrowserslist: ["last 10 version"],
-        grid: true,
-      })
-    )
-    .pipe(dest("css"))
-    .pipe(cleanCSS()) // минимизируем CSS
-    .pipe(browserSync.reload({ stream: true })); // перезагрузим сервер
+  return (
+    src(["scss/main.scss", "scss/search.scss", "scss/view.scss"])
+      .pipe(sourcemaps.init()) // инициализируем sourcemap
+      .pipe(sass({ outputStyle: "compressed" }))
+      // .pipe(concat("main.min.css")) // scss -> css
+      .pipe(
+        autoprefixer({
+          // добавим префиксы
+          overrideBrowserslist: ["last 10 version"],
+          grid: true,
+        })
+      )
+      .pipe(dest("css"))
+      .pipe(cleanCSS()) // минимизируем CSS
+      .pipe(browserSync.reload({ stream: true }))
+  ); // перезагрузим сервер
 }
 
 function watching() {

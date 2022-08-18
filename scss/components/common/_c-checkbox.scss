@@ -29,6 +29,7 @@
   background: #fafafa;
   border: 0.1rem solid #e3e3e3;
   border-radius: 0.8rem;
+  transition: border $motion-s ease-in;
 }
 
 .checkbox label:hover:before {
@@ -52,6 +53,12 @@
   background-color: $color-secondary;
   width: $ui-size-m;
   height: $ui-size-m;
+  border: none;
+}
+
+.checkbox__label-count {
+  color: $color-grey;
+  transition: color $motion-s ease-in;
 }
 
 .c-search-panel__field--hidden {

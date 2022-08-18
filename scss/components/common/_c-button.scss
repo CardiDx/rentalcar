@@ -27,9 +27,11 @@
 }
 
 .c-button--border {
+  padding: 1.2rem $indent-xl;
   background-color: transparent;
   border: 0.02rem solid $color-secondary;
   border-radius: 10rem;
+  color: $color-secondary;
 
   &:hover {
     background-color: $color-secondary;
@@ -41,4 +43,8 @@
   text-decoration-line: underline;
   font-weight: $type-weight--semi-bold;
   color: $color-secondary;
+}
+
+.c-button--green {
+  background-color: $color-primary;
 }

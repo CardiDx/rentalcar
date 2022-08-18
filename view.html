@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Driver Rent - view car</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--==================== CSS ====================-->
+    <link href="css/view.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+
+    <div class="l-layout">
+        <!--==================== HEADER ====================-->
+
+
+        <header class="l-layout__header" id="header">
+
+            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
+                <div class="container ">
+                    <div class="c-header__inner">
+                        <div class="c-header__mobile-column">
+                            <div class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
+                                <span></span>
+                            </div>
+
+                            <a href="/" class="c-header__logo" aria-label="logo-link">
+                                <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+                            </a>
+                        </div>
+                        <div class="c-header__right-side">
+                            <div class="c-header__language select">
+                                <label class="select__current-language" for="language-ckeckbox">
+                                    <input class="select__language-checkbox" type="checkbox" id="language-ckeckbox">
+                                    <span>En</span>
+                                    <span class="c-icon c-icon--dropdown select__current-language-icon"></span>
+                                    <div class="select__dropdown-menu">
+                                        <div class="select__menu-item">En</div>
+                                        <div class="select__menu-item">Fr</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!--==================== MAIN ====================-->
+
+        <main>
+
+            <section class="c-section c-section__search-panel">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <form class="c-search-panel">
+                                <div class="c-search-panel__title">Pick-up your car</div>
+
+                                <div class="с-search-panel__line">
+                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="searchField">
+                                            <span class="c-icon c-icon--location c-label__icon"></span>
+                                            <input class="c-input c-input--large" type="search" name="search" id="searchField" placeholder="Pick-up & Drop location" value="" autocomplete="off">
+                                        </label>
+                                    </div>
+
+
+                                    <div class="c-search-panel__field c-search-panel__field--hidden ">
+                                        <label class="c-label с-search-panel__label" for="searchField">
+                                            <span class="c-icon c-icon--date c-label__icon"></span>
+                                            <input class="c-input c-input--small" type="text" name="date-up" id="dateUp" placeholder="Pick-up Date" value="" autocomplete="off">
+                                            <div class="c-input-group-append">
+                                                <span class="c-input-group-text">Time</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="c-search-panel__field c-search-panel__field--flex">
+                                        <label class="c-label с-search-panel__label" for="searchField">
+                                            <span class="c-icon c-icon--date c-label__icon"></span>
+                                            <input class="c-input c-input--small" type="text" name="date-up" id="dateUp" placeholder="Pick-up Date" value="" autocomplete="off">
+                                            <div class="c-input-group-append">
+                                                <span class="c-input-group-text">Time</span>
+                                            </div>
+                                        </label>
+                                    </div>
+
+                                    <div class="c-search-panel__field c-search-panel__field--flex">
+                                        <label class="c-label с-search-panel__label" for="searchField">
+                                            <span class="c-icon c-icon--date c-label__icon"></span>
+                                            <input class="c-input c-input--small" type="text" name="return-date" id="returnDate" placeholder="Return Date" value="" autocomplete="off">
+                                            <div class="c-input-group-append">
+                                                <span class="c-input-group-text">Time</span>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="с-search-panel__line с-search-panel__line--bottom">
+                                    <div class="c-search-panel__checkbox-wrapper">
+                                        <div class="checkbox">
+                                            <input id="check1" type="checkbox" name="check" value="check1">
+                                            <label for="check1">Same PickUP & Drop place</label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <input id="check2" type="checkbox" name="check" value="check2">
+                                            <label for="check2">No limits</label>
+                                        </div>
+
+                                        <div class="checkbox">
+                                            <input id="check3" type="checkbox" name="check" value="check3">
+                                            <label for="check3">I am 26+</label>
+                                        </div>
+                                    </div>
+
+
+                                    <button class="c-button с-search-panel__c-button">Search <span class="c-icon c-icon--long-arrow с-search-panel__c-button-icon"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="c-section c-view-car">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-9">
+
+
+                            <div class="l-wrapper">
+
+                                <div class="l-wrapper__main">
+
+
+                                    <div class="listing-item">
+
+                                        <div class="listing-item__body c-view-car__none-border">
+                                            <img class="listing-item__img" src="img/cars/opel-insignia.png" alt="opel insignia">
+
+                                            <div class="listing-item__body-content">
+
+                                                <h2 class="listing-item__title">Opel Insignia 2.0 Turbo</h2>
+
+                                                <ul class="listing-item__tags tags">
+                                                    <li class="tags__item">City</li>
+                                                    <li class="tags__item">Electric</li>
+                                                    <li class="tags__item">Big company</li>
+                                                </ul>
+
+                                                <div class="listing-item__params-wrapper">
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-1.svg" alt="benefit-icon">
+                                                            Mechanical
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-3.svg" alt="benefit-icon">
+                                                            4 seats
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-5.svg" alt="benefit-icon">
+                                                            2 large bag
+                                                            <img src="img/view-section/info.svg" alt="info-icon">
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-2.svg" alt="benefit-icon">
+                                                            Diesel
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-4.svg" alt="benefit-icon">
+                                                            4,8L per 100km
+                                                            <img src="img/view-section/info.svg" alt="info-icon">
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-6.svg" alt="benefit-icon">
+                                                            750km per rental
+                                                            <img src="img/view-section/info.svg" alt="info-icon">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="listing-item__address listing-item__address--border">
+                                                    <img src="img/view-section/map.svg" alt="map-icon">
+                                                    <p class="listing-item__address-text"><span>Paris: main airport</span> <br>8 Rue Beaurepaire, Paris</p>
+                                                </div>
+
+                                                <div class="listing-item__extras">
+                                                    <div class="listing-item__extras-title">Extras:</div>
+                                                    <p class="listing-item__extras-desc">Child seats, additional drivers and more</p>
+
+                                                    <ul class="listing-item__extras-list">
+                                                        <li class="listing-item__extras-list-item">
+                                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                                            Baby seat <span>x 1</span>
+                                                        </li>
+
+                                                        <li class="listing-item__extras-list-item">
+                                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                                            Additional driver <span>x 3</span>
+                                                        </li>
+
+                                                        <li class="listing-item__extras-list-item">
+                                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                                            Additional driver <span>x 1</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="#" class="listing-item__extras-button c-button c-button--border ">Change extras</a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="price__wrapper">
+
+                                <div class="price__inner">
+                                    <h3 class="price__title">Car price breakdown</h3>
+
+                                    <p class="price__pretitle">To pay now:</p>
+
+                                    <ul class="price__list">
+                                        <li class="price__item">
+                                            <p class="price__item-name">Car rental price</p>
+                                            <p class="price__item-cost">$ 32000.33</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Subtotal</p>
+                                            <p class="price__item-cost">$ 32000.33</p>
+                                        </li>
+                                    </ul>
+
+                                    <p class="price__pretitle">Extras options</p>
+
+                                    <ul class="price__list">
+                                        <li class="price__item">
+                                            <p class="price__item-name">Baby seats:</p>
+                                            <p class="price__item-cost">$ 35.00</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Additional driver:</p>
+                                            <p class="price__item-cost">$ 2000.33</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Drink in car:</p>
+                                            <p class="price__item-cost">$ 0.33</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Subtotal</p>
+                                            <p class="price__item-cost">$ 2035.66</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price__total">
+                                        <p class="price__text">Price for 1 days:</p>
+                                        <p class="price__text price__text-bold">$ 34035.99</p>
+                                    </div>
+                                </div>
+
+                                <a class="listing-item__price-button c-button c-button--green" href="#">Go to checkout</a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+            </section>
+
+            <!-- <section class="view">
+                <div class="container">
+                    <div class="view__wrapper">
+
+                        <div class="view__inner">
+                            <div class="view__slider">
+                                <img src="./img/owl-slider/car-1.png" alt="slider-img">
+                            </div>
+
+                            <div class="view__content">
+
+                                <h3 class="view__title">Opel Insignia 2.0 Turbo</h3>
+
+                                <ul class="view__tags tags">
+                                    <li class="view__item tags__item">City</li>
+                                    <li class="view__item tags__item">Electric</li>
+                                    <li class="view__item tags__item">Big company</li>
+                                </ul>
+
+                                <ul class="view__benefits">
+                                    <li class="view__item item-benefits">
+                                        <img src="img/view-section/ben-1.svg" alt="benefit-icon">
+                                        Mechanical
+                                    </li>
+
+                                    <li class="view__item item-benefits">
+                                        <img src="img/view-section/ben-2.svg" alt="benefit-icon">
+                                        Diesel
+                                    </li>
+
+                                    <li class="view__item item-benefits">
+                                        <img src="img/view-section/ben-3.svg" alt="benefit-icon">
+                                        4 seats
+                                    </li>
+
+                                    <li class="view__item item-benefits">
+                                        <img src="img/view-section/ben-4.svg" alt="benefit-icon">
+                                        4,8L per 100km
+                                        <img src="img/view-section/info.svg" alt="info-icon">
+                                    </li>
+
+                                    <li class="view__item item-benefits">
+                                        <img src="img/view-section/ben-5.svg" alt="benefit-icon">
+                                        2 large bag
+                                        <img src="img/view-section/info.svg" alt="info-icon">
+                                    </li>
+
+                                    <li class="view__item item-benefits">
+                                        <img src="img/view-section/ben-6.svg" alt="benefit-icon">
+                                        750km per rental
+                                        <img src="img/view-section/info.svg" alt="info-icon">
+                                    </li>
+                                </ul>
+
+                                <div class="view__address">
+                                    <img src="img/view-section/map.svg" alt="map-icon">
+                                    <p class="view__text"><span>Paris: main airport</span> <br>8 Rue Beaurepaire, Paris</p>
+                                </div>
+
+                                <div class="extras__wrapper">
+                                    <p class="extras__title">Extras:</p>
+                                    <p class="extras__desc">Child seats, additional drivers and more</p>
+
+                                    <ul class="extras__list">
+                                        <li class="extras__item">
+                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                            Baby seat <span>x 1</span>
+                                        </li>
+
+                                        <li class="extras__item">
+                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                            Additional driver <span>x 3</span>
+                                        </li>
+
+                                        <li class="extras__item">
+                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                            Additional driver <span>x 1</span>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="extras__btn c-button--border">Change extras</a>
+                                </div>
+
+                            </div>
+                        </div>
+
+                  
+
+                    </div>
+                </div>
+            </section> -->
+
+
+        </main>
+
+    </div>
+
+    <footer class="l-layout__footer">
+        <div class="c-footer">
+            <div class="container">
+                <div class="row column-reverse flex-md-row">
+                    <div class="col-lg-4">
+                        <div class="c-footer__copyright">
+                            <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
+                            <span class="c-footer__design-author">Design by Recodkin. </span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 offset-lg-3">
+                        <div class="c-footer__links">
+                            <a class="link c-footer__link" href="#">Very important things</a>
+                            <a class="link c-footer__link" href="#">Contact US</a>
+                            <a class="link c-footer__link" href="#">Social networks icons</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="/js/app.min.js"></script>
+
+</body>
+
+</html>

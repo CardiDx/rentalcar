@@ -2,7 +2,8 @@
   display: block;
   width: $ui-size-s;
   height: $ui-size-s;
-  background-color: $color-white;
+  // background-color: $color-white;
+  background-color: $color-secondary;
   mask: no-repeat center center;
   -webkit-mask: no-repeat center center;
   mask-size: contain;
@@ -53,6 +54,16 @@
   &--close {
     mask-image: url(/img/icons/close.svg);
     -webkit-mask-image: url(/img/icons/close.svg);
+  }
+
+  &--sort {
+    mask-image: url(/img/icons/sort.svg);
+    -webkit-mask-image: url(/img/icons/sort.svg);
+  }
+
+  &--filter-arrow {
+    mask-image: url(/img/icons/filter-arrow.svg);
+    -webkit-mask-image: url(/img/icons/filter-arrow.svg);
   }
 }
 

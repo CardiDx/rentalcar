@@ -1,0 +1,17 @@
+.l-wrapper {
+}
+.l-wrapper__main {
+}
+.l-wrapper__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: $indent-l;
+}
+.l-wrapper__header-title {
+  display: inline-block;
+  @include type-headline-2;
+}
+.count {
+}

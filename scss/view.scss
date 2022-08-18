@@ -1,0 +1,43 @@
+// @import "/node_modules/magnific-popup/dist/magnific-popup.css";
+
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "vendors/reset";
+@import "vendors/bootstrap4grid.scss";
+
+@import "base/typography";
+@import "base/base";
+@import "base/helpers";
+
+@import "layout/l-layout";
+
+@import "components/common/c-icon";
+@import "components/common/c-button";
+
+@import "components/common/c-header";
+@import "components/common/c-footer";
+@import "components/common/c-input";
+@import "components/common/c-link";
+@import "components/common/c-heading";
+@import "components/common/c-cta";
+@import "components/common/c-logo";
+@import "components/common/c-tags";
+
+@import "components/common/c-accordion";
+@import "components/common/c-checkbox";
+@import "components/common/c-select";
+@import "components/common/c-search-panel";
+
+@import "components/home/c-home";
+@import "components/home/c-choice";
+@import "components/home/c-faq";
+
+@import "components/common/c-listing-item";
+
+.c-view-car {
+}
+
+.c-view-car__none-border {
+  border: none;
+}
