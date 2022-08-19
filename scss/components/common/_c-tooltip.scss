@@ -1,0 +1,26 @@
+.c-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.c-tooltip .tooltiptext {
+  visibility: hidden;
+  background-color: #191b1a;
+  padding: $indent-m $indent-l;
+  border-radius: 1.2rem;
+  position: absolute;
+  z-index: 1;
+
+  &::after {
+    width: 1.2rem;
+    height: 1.2rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -0.6rem;
+    left: 2.4rem;
+  }
+}
+
+.c-tooltip:hover .tooltiptext {
+  visibility: visible;
+}

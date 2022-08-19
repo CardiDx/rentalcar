@@ -2,6 +2,7 @@
   background-color: $color-white;
   border-radius: 2.4rem;
   padding: $indent-xxl;
+  margin-bottom: $indent-xxl;
 
   @include bp-md {
     box-shadow: 0 1.2rem 2.4rem rgba(25, 27, 26, 0.08);
@@ -24,7 +25,7 @@
   padding-right: $indent-xl;
   transition: background-color $motion-s linear;
 
-  @include link-events{
+  @include link-events {
     color: $color-grey;
     background-color: rgba(25, 27, 26, 0.1);
   }
@@ -46,7 +47,7 @@
   }
 }
 
-.с-search-panel__line>.c-search-panel__field {
+.с-search-panel__line > .c-search-panel__field {
   margin-right: $indent-m;
 
   @include bp-md {
@@ -86,19 +87,24 @@
   }
 
   // 1320px;
-  @include bp-xl {}
+  @include bp-xl {
+  }
 
   //1200px;
-  @include bp-lg {}
+  @include bp-lg {
+  }
 
   //992px;
-  @include bp-md {}
+  @include bp-md {
+  }
 
   //768px
-  @include bp-sm {}
+  @include bp-sm {
+  }
 
   // 576px
-  @include bp-xs {}
+  @include bp-xs {
+  }
 }
 
 .c-search-panel__field--flex {
@@ -140,4 +146,5 @@
 
 .с-search-panel__c-button-icon {
   margin-left: 1rem;
+  background-color: $color-white;
 }

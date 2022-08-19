@@ -10,6 +10,13 @@
 @import "components/common/c-tags";
 @import "components/common/c-listing-item";
 @import "components/common/c-filters";
+@import "components/common/c-tooltip";
+@import "components/common/c-slider";
+@import "components/common/c-car-popup";
+
+.c-section__search-panel {
+  padding-top: 16.4rem;
+}
 
 .c-search__search-panel {
   margin-top: 16.4rem;
@@ -23,4 +30,19 @@
   margin-bottom: $indent-m;
 
   @include type-headline-3;
+}
+
+.listing__button-wrapper {
+  text-align: center;
+}
+
+.listing__c-button.c-button--border {
+  border: 0.2rem solid $color-divider;
+  color: $color-grey;
+  transition: color $motion-m ease-in-out;
+
+  &:hover {
+    background-color: $color-divider;
+    color: $color-black;
+  }
 }

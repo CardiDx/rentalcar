@@ -19,6 +19,8 @@
 .aside-menu__tag-delete {
   display: inline-block;
   width: 8px;
+  margin-left: $indent-s;
+  cursor: pointer;
 }
 
 .aside-menu__reset-link.link {

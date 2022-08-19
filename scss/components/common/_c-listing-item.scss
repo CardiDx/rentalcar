@@ -21,22 +21,36 @@
   border-radius: 2.4rem;
   background-color: $color-white;
   padding: $indent-xl;
+  margin-bottom: $indent-l;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .listing-item__body {
   display: flex;
   border-bottom: 0.2rem dashed $color-divider;
+
+  @include bp-sm {
+    flex-direction: column;
+  }
 }
 
 .listing-item__img {
   width: 100%;
-  height: 100%;
+  max-width: 30rem;
+  height: 20rem;
   object-fit: cover;
 }
 
 .listing-item__body-content {
   width: 100%;
   padding-left: $indent-xxl;
+
+  @include bp-sm {
+    padding-left: 0;
+  }
 }
 .listing-item__title {
   font-weight: $type-weight--bold;
@@ -84,6 +98,10 @@
   display: flex;
   justify-content: space-between;
   padding-top: $indent-xl;
+
+  @include bp-sm {
+    flex-direction: column;
+  }
 }
 
 .listing-item__address {
@@ -95,6 +113,12 @@
   font-size: 1.6rem;
   line-height: 2rem;
   position: relative;
+
+  img {
+    @include bp-xs {
+      display: none;
+    }
+  }
 
   span {
     font-weight: 700;
@@ -118,10 +142,21 @@
 
 .listing-item__address-text {
 }
+
 .listing-item__prices {
+  @include bp-sm {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $indent-xl;
+  }
 }
 .listing-item__price {
   float: left;
+  @include bp-sm {
+    float: none;
+  }
 }
 
 .listing-item__price-fullprice {
@@ -142,6 +177,10 @@
   padding-left: $indent-xl;
   padding-right: $indent-xl;
   margin-left: $indent-xl;
+
+  @include bp-sm {
+    // display: inline-block;
+  }
 }
 
 /* ---- MORE INFO ----- */

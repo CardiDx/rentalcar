@@ -34,3 +34,11 @@
   border: 0.1rem solid $color-secondary;
   background-color: $color-secondary;
 }
+
+.c-filters__navigate {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  z-index: 5;
+}

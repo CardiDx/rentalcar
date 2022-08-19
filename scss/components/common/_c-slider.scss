@@ -1,58 +1,77 @@
-.c-slider{
-    width: 100%;
-    max-width: 30rem;
-    height: 20rem;
+.c-slider {
+  width: 100%;
+  max-width: 30rem;
+  height: 20rem;
 }
 
 .c-slider-navigate {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .c-slider-navigate__count-slides {
-    font-weight: $type-weight--bold;
-    color: $color-grey;
-    line-height: 100%;
-    padding: $indent-s 1.2rem;
-    background-color: rgba(25, 27, 26, 0.04);
-    border-radius: 0.4rem;
-
+  font-weight: $type-weight--bold;
+  color: $color-grey;
+  line-height: 100%;
+  padding: $indent-s 1.2rem;
+  background-color: rgba(25, 27, 26, 0.04);
+  border-radius: 0.4rem;
 }
 
-.c-slider-navigate__buttons {}
+.c-slider-navigate__buttons {
+}
 
 .c-slider-navigate__button {
-    width: 3rem;
-    height: 2.8rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+  width: 3rem;
+  height: 2.8rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-white;
+  border: 0.1rem solid #e3e3e3;
+  border-radius: 0.4rem;
+  transition: background-color $motion-m ease-in-out;
+  cursor: pointer;
+  padding: $indent-s 1.2rem;
+
+  &:hover {
+    background-color: $color-secondary;
+    border: 0.1rem solid $color-secondary;
+
+    .c-slider-navigate__button-c-icon {
+      background-color: $color-white;
+    }
+  }
+
+  &--prev {
+    .c-slider-navigate__button-c-icon {
+      background-color: $color-grey;
+    }
+  }
+
+  &--next {
+  }
+
+  .c-icon {
+    width: 0.6rem;
+    flex-shrink: 0;
+  }
+}
+
+// circle arrows
+
+.slider-arrow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: $color-secondary;
+  border-radius: 99rem;
+  cursor: pointer;
+
+  .c-icon {
+    width: 1.6rem;
     background-color: $color-white;
-    border: .1rem solid #E3E3E3;
-    border-radius: .4rem;
-    transition: background-color $motion-m ease-in-out;
-    cursor: pointer;
-    padding: $indent-s 1.2rem;
-
-    &:hover {
-        background-color: $color-secondary;
-        border: .1rem solid $color-secondary;
-
-        .c-slider-navigate__button-c-icon{
-            background-color: $color-white;
-        }
-    }
-
-    &--prev {
-        .c-slider-navigate__button-c-icon{
-            background-color: $color-grey;
-        }
-    }
-
-    &--next {}
-
-    .c-icon{
-        width: 0.6rem;
-        flex-shrink: 0
-    }
+  }
 }

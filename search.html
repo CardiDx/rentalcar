@@ -135,16 +135,16 @@
                 <div class="container">
                     <div class="row">
 
-                        <aside class="col-lg-3">
-                            <div class="aside-menu">
+                        <div class="col-lg-3">
+                            <aside class="aside-menu">
                                 <ul class="aside-menu__nav">
 
                                     <li class="aside-menu__item">
                                         <div class="aside-menu__submenu">
                                             <div class="aside-menu__accept-filters">
                                                 <ul class="aside-menu__tags tags">
-                                                    <li class="aside-menu__tag  tags__item">Gear: <span>Robotic</span><img class="aside-menu__tag-delete" src="/img/icons/close.svg" alt=""></li>
-                                                    <li class="aside-menu__tag tags__item">Vehicle class: <span>Large</span><img class="aside-menu__tag-delete" src="/img/icons/close.svg" alt=""></li>
+                                                    <li class="aside-menu__tag  tags__item">Gear: <span>Robotic</span><img class="aside-menu__tag-delete" src="/img/icons/close--white.svg" alt="icon close"></li>
+                                                    <li class="aside-menu__tag tags__item">Vehicle class: <span>Large</span><img class="aside-menu__tag-delete" src="/img/icons/close--white.svg" alt="icon close"></li>
                                                 </ul>
                                                 <div class="aside-menu__reset-link link">Reset filters</div>
                                             </div>
@@ -292,8 +292,8 @@
 
 
                                 </ul>
-                            </div>
-                        </aside>
+                            </aside>
+                        </div>
 
                         <div class="col-lg-9">
 
@@ -306,29 +306,30 @@
                                     <div class="c-filters__item">Station wagons</div>
                                     <div class="c-filters__item">Premium class</div>
                                     <div class="c-filters__item">Minivan</div>
+                                    <div class="c-filters__navigate slider-arrow slider-arrow--next">
+                                        <span class="c-icon c-icon--long-arrow"></span>
+                                    </div>
                                 </div>
 
                                 <div class="l-wrapper__main">
                                     <div class="l-wrapper__header">
                                         <h2 class="l-wrapper__header-title">Paris: <span class="count">515</span> cars available</h1>
                                             <div class="dropdown dropdown--width">
-                                                <div class="dropdown__controls">
-                                                    <label class="dropdown__label" for="#">
-                                                        <div class="dropdown__label-text"><span class="c-icon c-icon--sort dropdown__label-menu-icon"></span>
-                                                            Recomended</div>
-                                                        <span class="c-icon c-icon--dropdown dropdown__label-icon"></span>
-                                                    </label>
-                                                    <ul class="dropdown-list">
-                                                        <!-- <li class="dropdown__listitem"><button class="dropdown__listbutton dropdown__listbutton--selected" type="button" data-item-label="актуальные" data-parent="false">актуальные</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="дешёвые" data-parent="false">дешёвые</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="дорогие" data-parent="false">дорогие</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="новые объявления" data-parent="false">новые объявления</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="старые объявления" data-parent="false">старые объявления</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="с наименьшим пробегом" data-parent="false">с наименьшим пробегом</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="новые по году" data-parent="false">новые по году</button></li>
-                                                            <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="старые по году" data-parent="false">старые по году</button></li> -->
-                                                    </ul>
-                                                </div>
+                                                <label class="dropdown__label" for="#">
+                                                    <div class="dropdown__label-text"><span class="c-icon c-icon--sort dropdown__label-menu-icon"></span>
+                                                        Recomended</div>
+                                                    <span class="c-icon c-icon--dropdown dropdown__label-icon"></span>
+                                                </label>
+                                                <ul class="dropdown-list">
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton dropdown__listbutton--selected" type="button" data-item-label="актуальные" data-parent="false">актуальные</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="дешёвые" data-parent="false">дешёвые</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="дорогие" data-parent="false">дорогие</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="новые объявления" data-parent="false">новые объявления</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="старые объявления" data-parent="false">старые объявления</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="с наименьшим пробегом" data-parent="false">с наименьшим пробегом</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="новые по году" data-parent="false">новые по году</button></li>
+                                                    <li class="dropdown__listitem"><button class="dropdown__listbutton" type="button" data-item-label="старые по году" data-parent="false">старые по году</button></li>
+                                                </ul>
                                             </div>
                                     </div>
                                 </div>
@@ -365,7 +366,6 @@
                                                         <li class="listing-item__line item-benefits">
                                                             <img src="img/view-section/ben-5.svg" alt="benefit-icon">
                                                             2 large bag
-                                                            <img src="img/view-section/info.svg" alt="info-icon">
                                                         </li>
                                                     </ul>
 
@@ -378,13 +378,11 @@
                                                         <li class="listing-item__line item-benefits">
                                                             <img src="img/view-section/ben-4.svg" alt="benefit-icon">
                                                             4,8L per 100km
-                                                            <img src="img/view-section/info.svg" alt="info-icon">
                                                         </li>
 
                                                         <li class="listing-item__line item-benefits">
                                                             <img src="img/view-section/ben-6.svg" alt="benefit-icon">
                                                             750km per rental
-                                                            <img src="img/view-section/info.svg" alt="info-icon">
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -411,9 +409,155 @@
 
                                     </div>
 
+                                    <div class="listing-item">
+
+                                        <div class="listing-item__body">
+                                            <img class="listing-item__img" src="img/cars/opel-insignia.png" alt="opel insignia">
+
+                                            <div class="listing-item__body-content">
+
+                                                <h2 class="listing-item__title">Opel Insignia 2.0 Turbo</h2>
+
+                                                <ul class="listing-item__tags tags">
+                                                    <li class="tags__item">City</li>
+                                                    <li class="tags__item">Electric</li>
+                                                    <li class="tags__item">Big company</li>
+                                                </ul>
+
+                                                <div class="listing-item__params-wrapper">
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-1.svg" alt="benefit-icon">
+                                                            Mechanical
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-3.svg" alt="benefit-icon">
+                                                            4 seats
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-5.svg" alt="benefit-icon">
+                                                            2 large bag
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-2.svg" alt="benefit-icon">
+                                                            Diesel
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-4.svg" alt="benefit-icon">
+                                                            4,8L per 100km
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-6.svg" alt="benefit-icon">
+                                                            750km per rental
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="listing-item__bottom">
+                                            <div class="listing-item__address">
+                                                <img src="img/view-section/map.svg" alt="map-icon">
+                                                <p class="listing-item__address-text"><span>Paris: main airport</span> <br>8 Rue Beaurepaire, Paris</p>
+                                            </div>
+
+                                            <div class="listing-item__prices">
+                                                <div class="listing-item__price">
+                                                    <div class="listing-item__price-fullprice">Price for 30 days:</div>
+                                                    <div class="listing-item__price-text">$ 32 000</div>
+                                                </div>
+                                                <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                            </div>
 
 
-                                    <a class="c-button c-button--border" href="#">Show more</a>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing-item">
+
+                                        <div class="listing-item__body">
+                                            <img class="listing-item__img" src="img/cars/opel-insignia.png" alt="opel insignia">
+
+                                            <div class="listing-item__body-content">
+
+                                                <h2 class="listing-item__title">Opel Insignia 2.0 Turbo</h2>
+
+                                                <ul class="listing-item__tags tags">
+                                                    <li class="tags__item">City</li>
+                                                    <li class="tags__item">Electric</li>
+                                                    <li class="tags__item">Big company</li>
+                                                </ul>
+
+                                                <div class="listing-item__params-wrapper">
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-1.svg" alt="benefit-icon">
+                                                            Mechanical
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-3.svg" alt="benefit-icon">
+                                                            4 seats
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-5.svg" alt="benefit-icon">
+                                                            2 large bag
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-2.svg" alt="benefit-icon">
+                                                            Diesel
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-4.svg" alt="benefit-icon">
+                                                            4,8L per 100km
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-6.svg" alt="benefit-icon">
+                                                            750km per rental
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="listing-item__bottom">
+                                            <div class="listing-item__address">
+                                                <img src="img/view-section/map.svg" alt="map-icon">
+                                                <p class="listing-item__address-text"><span>Paris: main airport</span> <br>8 Rue Beaurepaire, Paris</p>
+                                            </div>
+
+                                            <div class="listing-item__prices">
+                                                <div class="listing-item__price">
+                                                    <div class="listing-item__price-fullprice">Price for 30 days:</div>
+                                                    <div class="listing-item__price-text">$ 32 000</div>
+                                                </div>
+                                                <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="listing__button-wrapper">
+                                        <a class="c-button c-button--border listing__c-button " href="#">Show more</a>
+                                    </div>
                                 </div>
 
                             </div>
@@ -453,6 +597,84 @@
                 </div>
             </div>
         </footer>
+
+        <!--==================== popups ====================-->
+        <!-- <div class="overlay">
+            <div class="c-car-popup">
+                <div class="с-car-popup__title">Add extras <span>(optional)</span></div>
+                <div class="с-car-popup__subtitle">Child seats, additional drivers and more</div>
+
+                <ul class="c-car-popuop__list">
+                    <li class="c-car-popup__list-item">
+                        <div class="c-car-popup__item-left">
+                            <div class="c-car-popup__item-title">Additional Driver</div>
+                            <div class="c-car-popup__item-coast-wrapper"><span class="c-car-popup__item-coast">UAH 1,958.04</span> each per rental</div>
+                            <p class="c-car-popup__item-description">Share the driving: journeys are always better when you can take turns at the wheel</p>
+                        </div>
+
+                        <div class="c-car-popup__item-right">
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--degree"></span></button>
+                            <label class="c-car-popup__item-count" for=""><input type="text" id="" value="0"></label>
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--plus"></span></button>
+                        </div>
+                    </li>
+                    <li class="c-car-popup__list-item">
+                        <div class="c-car-popup__item-left">
+                            <div class="c-car-popup__item-title">Additional Driver</div>
+                            <div class="c-car-popup__item-coast-wrapper"><span class="c-car-popup__item-coast">UAH 1,958.04</span> each per rental</div>
+                            <p class="c-car-popup__item-description">Share the driving: journeys are always better when you can take turns at the wheel</p>
+                        </div>
+
+                        <div class="c-car-popup__item-right">
+                            <div class="c-car-popup__item-mobile">
+                                <label class="c-car-popup__item-mobile-count" for="countValue1">Quantity:<input type="text" id="countValue1" value="0"></label>
+                            </div>
+                            <button class="c-car-popup__item-button c-car-popup__item-button--disable"><span class="c-icon c-icon--degree"></span></button>
+                            <label class="c-car-popup__item-count" for=""><input type="text" id="" value="0"></label>
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--plus"></span></button>
+                        </div>
+                    </li>
+                    <li class="c-car-popup__list-item">
+                        <div class="c-car-popup__item-left">
+                            <div class="c-car-popup__item-title">Additional Driver</div>
+                            <div class="c-car-popup__item-coast-wrapper"><span class="c-car-popup__item-coast">UAH 1,958.04</span> each per rental</div>
+                            <p class="c-car-popup__item-description">Share the driving: journeys are always better when you can take turns at the wheel</p>
+                        </div>
+
+                        <div class="c-car-popup__item-right">
+                            <div class="c-car-popup__item-mobile">
+                                <label class="c-car-popup__item-mobile-count" for="countValue2">Quantity:<input type="text" id="countValue2" value="0"></label>
+                            </div>
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--degree"></span></button>
+                            <label class="c-car-popup__item-count" for=""><input type="text" id="" value="0"></label>
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--plus"></span></button>
+                        </div>
+                    </li>
+                    <li class="c-car-popup__list-item">
+                        <div class="c-car-popup__item-left">
+                            <div class="c-car-popup__item-title">Additional Driver</div>
+                            <div class="c-car-popup__item-coast-wrapper"><span class="c-car-popup__item-coast">UAH 1,958.04</span> each per rental</div>
+                            <p class="c-car-popup__item-description">Share the driving: journeys are always better when you can take turns at the wheel</p>
+                        </div>
+
+                        <div class="c-car-popup__item-right">
+                            <div class="c-car-popup__item-mobile">
+                                <label class="c-car-popup__item-mobile-count" for="countValue3">Quantity: <input type="text" id="countValue3" value="0"></label>
+                            </div>
+
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--degree"></span></button>
+                            <label class="c-car-popup__item-count" for=""><input type="text" id="" value="0"></label>
+                            <button class="c-car-popup__item-button"><span class="c-icon c-icon--plus"></span></button>
+                        </div>
+                    </li>
+                </ul>
+
+                <p class="с-car-popup__note">** Please note: If you request any extras that are payable at pick-up, we can’t guarantee that you’ll get them, or that their prices will be the same as the prices you see here.</p>
+
+                <span class="c-icon c-icon--close c-popup__close"></span>
+            </div>
+        </div> -->
+
         <!--==================== MAIN JS ====================-->
         <script src="/js/app.min.js"></script>
 </body>
