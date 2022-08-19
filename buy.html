@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Driver Rent - buy car</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=5.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!--==================== CSS ====================-->
+    <link href="css/view.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+</head>
+
+<body>
+
+    <div class="l-layout buy-layout">
+        <!--==================== HEADER ====================-->
+
+
+        <header class="l-layout__header" id="header">
+
+            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
+                <div class="container ">
+                    <div class="c-header__inner">
+                        <div class="c-header__mobile-column">
+                            <div class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
+                                <span></span>
+                            </div>
+
+                            <a href="/" class="c-header__logo" aria-label="logo-link">
+                                <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+                            </a>
+                        </div>
+                        <div class="c-header__right-side">
+                            <div class="c-header__language select">
+                                <label class="select__current-language" for="language-ckeckbox">
+                                    <input class="select__language-checkbox" type="checkbox" id="language-ckeckbox">
+                                    <span>En</span>
+                                    <span class="c-icon c-icon--dropdown select__current-language-icon"></span>
+                                    <div class="select__dropdown-menu">
+                                        <div class="select__menu-item">En</div>
+                                        <div class="select__menu-item">Fr</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!--==================== MAIN ====================-->
+
+        <main>
+
+            <section class="c-section c-view-car">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="buy-section">
+                                <span class="buy-section__subtitle">Paris - Paris</span>
+                                <p class="buy-section__text">Wed, 3 Aug 2022, 10:00 - Wed, 4 Aug 2022, 10:00</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-9">
+
+                            <div class="buy-section">
+                                <h2 class="buy-section__title">Main driver’s details</h2>
+                                <p class="buy-section__text">As they appear on driving licence</p>
+
+                                <div class="buy-input-wrapper">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="email" class="buy-input__label">Email:</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="email">
+                                                    <input class="c-input c-input--large" type="search" name="search" id="email" placeholder="Enter your email" value="" autocomplete="off">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buy-input-wrapper">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="first-name" class="buy-input__label">First name:</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="first-name">
+                                                    <input class="c-input c-input--large" type="search" name="search" id="first-name" placeholder="Enter your first name" value="" autocomplete="off">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buy-input-wrapper">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="last-name" class="buy-input__label">Last name:</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="last-name">
+                                                    <input class="c-input c-input--large" type="search" name="search" id="last-name" placeholder="Enter your last name" value="" autocomplete="off">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buy-input-wrapper">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="gender" class="buy-input__label">Gender:</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="gender">
+                                                    <input class="c-input c-input--large" type="search" name="search" id="gender" placeholder="What is your gender?" value="" autocomplete="off">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buy-input-wrapper">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="phone-number" class="buy-input__label">Contact phone number:</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="phone-number">
+                                                    <input class="c-input c-input--large" type="search" name="search" id="phone-number" placeholder="Enter your phone number" value="" autocomplete="off">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="buy-input-wrapper">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-md-6 col-lg-3">
+                                            <label for="country" class="buy-input__label">Country:</label>
+                                        </div>
+                                        <div class="col-12 col-md-6 col-lg-6">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="country">
+                                                    <input class="c-input c-input--large" type="search" name="search" id="country" placeholder="Where do you live?" value="" autocomplete="off">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span class="but-input__notice">Our <strong>Privacy Notice</strong> explains how we use and protect your personal information.</span>
+
+                            </div>
+
+                            <div class="buy-section">
+<!--                                <div class="tabs-labels">-->
+<!--                                </div>-->
+                                <div class="buy-tabs">
+                                    <input type="radio" name="tabs" id="tabs-1" class="tabs-input" checked>
+                                    <label for="tabs-1" class="tabs-label tabs-label--left">Pay in Rent Center</label>
+                                    <div class="tabs-content">
+
+                                        <div class="tab-content-inner">
+                                            <div class="row align-items-center" style="margin-bottom: 24px;">
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <label for="driver-id" class="buy-input__label">Driver ID Number:</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="driver-id">
+                                                            <input class="c-input c-input--large" type="search" name="search" id="driver-id" placeholder="Enter your driver ID Number" value="" autocomplete="off">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-content-inner">
+                                            <div class="row align-items-center" style="margin-bottom: 24px;">
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <label for="country" class="buy-input__label">Country of obtaining rights:</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="country">
+                                                            <input class="c-input c-input--large" type="search" name="search" id="country" placeholder="Enter name country" value="" autocomplete="off">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="tab-content-inner">
+                                            <div class="checkbox" style="margin-bottom: 16px;">
+                                                <input id="check2" type="checkbox" name="check" value="check2">
+                                                <label for="check2">Avis terms and conditions of rental agreement to hire rental vehicle</label>
+                                            </div>
+
+                                            <div class="checkbox">
+                                                <input id="check3" type="checkbox" name="check" value="check3">
+                                                <label for="check3">I undertake to pay for the rental time in accordance with the rules of RENTAL DRIVER</label>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <input type="radio" name="tabs" id="tabs-2" class="tabs-input">
+                                    <label for="tabs-2" class="tabs-label tabs-label--right">Pay Online</label>
+                                    <div class="tabs-content">
+
+                                        <div class="tab-content-inner">
+                                            <div class="row align-items-center" style="margin-bottom: 24px;">
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <label for="cardholder-name" class="buy-input__label">Cardholder’s name:</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="cardholder-name">
+                                                            <input class="c-input c-input--large" type="search" name="search" id="cardholder-name" placeholder="Enter cardholder’s name" value="" autocomplete="off">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center" style="margin-bottom: 24px;">
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <label for="card-number" class="buy-input__label">Card number:</label>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-6">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="card-number">
+                                                            <input class="c-input c-input--large" type="search" name="search" id="card-number" placeholder="XXXX XXXX XXXX XXXX" value="" autocomplete="off">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row align-items-center">
+                                                <div class="col-12 col-md-6 col-lg-3">
+                                                    <label for="expire-date" class="buy-input__label">Expire date:</label>
+                                                </div>
+                                                <div class="col-6 col-md-3 col-lg-3">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="expire-date">
+                                                            <input class="c-input c-input--large" type="search" name="search" id="expire-date" placeholder="MM/YY" value="" autocomplete="off">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-md-3 col-lg-3">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="cvc">
+                                                            <input class="c-input c-input--large" type="search" name="search" id="cvc" placeholder="CVC" value="" autocomplete="off">
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="buy-section">
+
+                                <div class="l-wrapper__main">
+
+
+                                    <div class="listing-item">
+
+                                        <div class="listing-item__body c-view-car__none-border">
+                                            <img class="listing-item__img" src="img/cars/opel-insignia.png" alt="opel insignia">
+
+                                            <div class="listing-item__body-content">
+
+                                                <h2 class="listing-item__title">Opel Insignia 2.0 Turbo</h2>
+
+                                                <ul class="listing-item__tags tags">
+                                                    <li class="tags__item">City</li>
+                                                    <li class="tags__item">Electric</li>
+                                                    <li class="tags__item">Big company</li>
+                                                </ul>
+
+                                                <div class="listing-item__params-wrapper">
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-1.svg" alt="benefit-icon">
+                                                            Mechanical
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-3.svg" alt="benefit-icon">
+                                                            4 seats
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-5.svg" alt="benefit-icon">
+                                                            2 large bag
+                                                            <img src="img/view-section/info.svg" alt="info-icon">
+                                                        </li>
+                                                    </ul>
+
+                                                    <ul class="listing-item__benefits listing-item__params">
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-2.svg" alt="benefit-icon">
+                                                            Diesel
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-4.svg" alt="benefit-icon">
+                                                            4,8L per 100km
+                                                            <img src="img/view-section/info.svg" alt="info-icon">
+                                                        </li>
+
+                                                        <li class="listing-item__line item-benefits">
+                                                            <img src="img/view-section/ben-6.svg" alt="benefit-icon">
+                                                            750km per rental
+                                                            <img src="img/view-section/info.svg" alt="info-icon">
+                                                        </li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="listing-item__address listing-item__address--border">
+                                                    <img src="img/view-section/map.svg" alt="map-icon">
+                                                    <p class="listing-item__address-text"><span>Paris: main airport</span> <br>8 Rue Beaurepaire, Paris</p>
+                                                </div>
+
+                                                <div class="listing-item__extras">
+                                                    <div class="listing-item__extras-title">Extras:</div>
+                                                    <p class="listing-item__extras-desc">Child seats, additional drivers and more</p>
+
+                                                    <ul class="listing-item__extras-list">
+                                                        <li class="listing-item__extras-list-item">
+                                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                                            Baby seat <span>x 1</span>
+                                                        </li>
+
+                                                        <li class="listing-item__extras-list-item">
+                                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                                            Additional driver <span>x 3</span>
+                                                        </li>
+
+                                                        <li class="listing-item__extras-list-item">
+                                                            <img src="img/view-section/success.svg" alt="success-icon">
+                                                            Additional driver <span>x 1</span>
+                                                        </li>
+                                                    </ul>
+
+                                                    <a href="#" class="listing-item__extras-button c-button c-button--border ">Change extras</a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="buy-section">
+                                <h2 class="buy-section__title">Save money with us</h2>
+                                <p class="buy-section__text" style="margin-bottom: 24px;">We can send you discounts and other car rental offers, saving you even more money in the future.</p>
+
+                                <div class="checkbox">
+                                    <input id="check1" type="checkbox" name="check" value="check1">
+                                    <label for="check1">No thanks, maybe, next time</label>
+                                </div>
+                            </div>
+
+                            <div class="buy-section">
+                                <h2 class="buy-section__title">Terms and conditions</h2>
+                                <p class="buy-section__text">By clicking ‘Book Now’, you are confirming that you have read, understood and accepted our General terms and the Europcar rental terms.</p>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="price__wrapper">
+
+                                <div class="price__inner">
+                                    <h3 class="price__title">Car price breakdown</h3>
+
+                                    <p class="price__pretitle">To pay now:</p>
+
+                                    <ul class="price__list">
+                                        <li class="price__item">
+                                            <p class="price__item-name">Car rental price</p>
+                                            <p class="price__item-cost">$ 32000.33</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Subtotal</p>
+                                            <p class="price__item-cost">$ 32000.33</p>
+                                        </li>
+                                    </ul>
+
+                                    <p class="price__pretitle">Extras options</p>
+
+                                    <ul class="price__list">
+                                        <li class="price__item">
+                                            <p class="price__item-name">Baby seats:</p>
+                                            <p class="price__item-cost">$ 35.00</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Additional driver:</p>
+                                            <p class="price__item-cost">$ 2000.33</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Drink in car:</p>
+                                            <p class="price__item-cost">$ 0.33</p>
+                                        </li>
+
+                                        <li class="price__item">
+                                            <p class="price__item-name">Subtotal</p>
+                                            <p class="price__item-cost">$ 2035.66</p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="price__total">
+                                        <p class="price__text">Price for 1 days:</p>
+                                        <p class="price__text price__text-bold">$ 34035.99</p>
+                                    </div>
+                                </div>
+
+                                <a class="listing-item__price-button c-button c-button--green" href="#">Go to checkout</a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+
+    </div>
+
+    <footer class="l-layout__footer">
+        <div class="c-footer">
+            <div class="container">
+                <div class="row column-reverse flex-md-row">
+                    <div class="col-lg-4">
+                        <div class="c-footer__copyright">
+                            <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
+                            <span class="c-footer__design-author">Design by Recodkin. </span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 offset-lg-3">
+                        <div class="c-footer__links">
+                            <a class="link c-footer__link" href="#">Very important things</a>
+                            <a class="link c-footer__link" href="#">Contact US</a>
+                            <a class="link c-footer__link" href="#">Social networks icons</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--==================== MAIN JS ====================-->
+    <script src="/js/app.min.js"></script>
+
+</body>
+
+</html>
