@@ -65,6 +65,15 @@
     mask-image: url(/img/icons/filter-arrow.svg);
     -webkit-mask-image: url(/img/icons/filter-arrow.svg);
   }
+
+  &--small-arrow {
+    mask-image: url(/img/icons/small-arrow.svg);
+    -webkit-mask-image: url(/img/icons/small-arrow.svg);
+  }
+  &--small-arrow-prev {
+    mask-image: url(/img/icons/small-arrow--prev.svg);
+    -webkit-mask-image: url(/img/icons/small-arrow--prev.svg);
+  }
 }
 
 .c-icon--rotate {

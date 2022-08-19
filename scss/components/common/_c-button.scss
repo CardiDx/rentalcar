@@ -37,6 +37,11 @@
     background-color: $color-secondary;
     color: $color-white;
   }
+
+  @include link-events {
+    background-color: transparent;
+    color: $color-secondary;
+  }
 }
 
 .c-button--link {
@@ -47,4 +52,12 @@
 
 .c-button--green {
   background-color: $color-primary;
+
+&:hover{
+  background-color: #42dadb;
+}
+
+  @include link-events {
+    background-color: $color-primary;
+  }
 }

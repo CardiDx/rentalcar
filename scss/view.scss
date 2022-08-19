@@ -36,12 +36,16 @@
 @import "components/buy/c-buy";
 
 @import "components/common/c-listing-item";
+@import "components/common/c-aside-price";
+@import "components/common/c-slider";
 
 .c-view-car {}
 
 .c-view-car__none-border {
   border: none;
 }
+
+
 
 .c-multi-accordion {
   margin-top: 4.8rem;
@@ -73,4 +77,8 @@
 .c-multi-accordion__c-icon {
   background: rgba(25, 27, 26, 0.06);
   border-radius: 1.2rem;
+}
+
+.c-multi-accordion__accordion-item  .accordion-item:first-child .accordion-item__title{
+  border: none;
 }

@@ -1,0 +1,105 @@
+.c-aside-price {
+    padding: $indent-xl $indent-l;
+    background-color: $color-white;
+    border-radius: 2.4rem;
+}
+
+.c-aside-price__title {
+    font-weight: $type-weight--bold;
+    font-size: 2.4rem;
+    line-height: 110%;
+    margin-bottom: $indent-l;
+}
+
+.c-aside-price__pretitle {
+    font-weight: $type-weight--bold;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.c-aside-price__list {
+    padding-bottom: $indent-l;
+    border-bottom: 0.1rem solid $color-divider;
+    margin-bottom: $indent-l;
+}
+
+.c-aside-price__item {
+    display: flex;
+    justify-content: space-between;
+    color: $color-grey;
+    margin-bottom: $indent-s;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.c-aside-price__item-name {
+    font-weight: $type-weight--medium;
+    font-size: 1.6rem;
+}
+
+.c-aside-price__item-cost {
+    flex-shrink: 0;
+    font-weight: $type-weight--medium;
+}
+
+.c-aside-price__item--subtotal {
+    color: $color-black;
+
+    .c-aside-price__item-name {
+        position: relative;
+        z-index: 2;
+        background-color: $color-white;
+        width: 100%;
+
+        span {
+            background-color: $color-white;
+            position: relative;
+            z-index: 5;
+            line-height: 100%;
+        }
+
+        &::before {
+            content: "";
+            border-bottom: .2rem dashed $color-divider;
+            bottom: 0.6rem;
+            display: block;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            z-index: 1;
+        }
+    }
+
+    .c-aside-price__item-name,
+    .c-aside-price__item-cost {
+        font-weight: $type-weight--semi-bold;
+    }
+}
+
+.c-aside-price__total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.c-aside-price__text {
+    color: $color-grey;
+    font-weight: $type-weight--medium;
+    max-width: 7.5rem;
+}
+
+.c-aside-price__cost {
+    font-weight: $type-weight--semi-bold;
+    font-size: 2.4rem;
+    line-height: 3rem;
+    flex-shrink: 0;
+}
+
+.c-aside-price__c-button {
+    width: 100%;
+    justify-content: center;
+    margin-top: $indent-l;
+}
