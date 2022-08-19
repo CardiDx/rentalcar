@@ -1,0 +1,222 @@
+// ============== PAGE STYLES ==============
+
+.buy-layout {
+  padding: 163px 0 360px;
+
+  @include bp-md {
+    padding: 64px 0 96px;
+  }
+}
+
+.buy-layout main .container {
+  @include bp-md {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.buy-section {
+  margin-bottom: 48px;
+  padding: 32px;
+  background: #FFFFFF;
+  border-radius: 24px;
+
+  @include bp-md {
+    padding: 32px 24px;
+    filter: drop-shadow(0px 12px 24px rgba(25, 27, 26, 0.08));
+  }
+}
+
+.buy-section__title {
+  display: block;
+  margin: 0 0 12px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
+  align-items: center;
+  color: #191B1A;
+
+  @include bp-md {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+}
+
+.buy-section__subtitle {
+  display: block;
+  margin: 0;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  color: #191B1A;
+}
+
+.buy-section__text {
+  display: block;
+  margin: 0;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #919291;
+}
+
+.buy-section-checkbox {
+  width: 100%;
+  margin-top: 24px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buy-section-checkbox__input {
+  display: inline-block;
+  margin-right: 12px;
+  width: 32px;
+  height: 32px;
+  background: #FAFAFA;
+  border: 1px solid #E3E3E3;
+  border-radius: 8px;
+}
+
+.buy-section-checkbox__text {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  display: flex;
+  align-items: center;
+  color: #191B1A;
+}
+
+.buy-input-wrapper {
+  padding: 32px 0;
+  border-bottom: 1px solid #E3E3E3;
+}
+
+.buy-input__label {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #919291;
+
+  @include bp-md {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
+
+.buy-layout .c-search-panel__field {
+  @include bp-md {
+    height: 64px;
+  }
+}
+
+.but-input__notice {
+  display: block;
+  margin-top: 32px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #191B1A;
+}
+
+// ============== TABS ==============
+
+.buy-tabs {
+  position: relative;
+  //padding-top: 80px;
+  padding-top: 112px;
+}
+
+//.tabs-labels {
+//  width: 100%;
+//
+//  display: flex;
+//  flex-flow: row nowrap;
+//  justify-content: center;
+//  align-items: center;
+//}
+
+.tabs-label {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 80px;
+  cursor: pointer;
+  color: #191B1A;
+  background: #F6F6F6;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  @include bp-md {
+    font-size: 20px;
+  }
+}
+
+.tabs-label--left {
+  left: 0;
+  border-radius: 16px 0px 0px 16px;
+}
+
+.tabs-label--right {
+  right: 0;
+  border-radius: 0px 16px 16px 0px;
+}
+
+.tabs-input:checked + .tabs-label {
+  color: #FFFFFF;
+  background: #78B9F3;
+}
+
+.tabs-input {
+  display: none;
+}
+
+.tabs-content {
+  display: none;
+}
+
+.tabs-input:checked + .tabs-label + .tabs-content {
+  display: block;
+}
+
+.tab-content-inner {
+  padding-top: 32px;
+  border-top: 1px solid #E3E3E3;
+}
+
+.tab-content-inner .checkbox label {
+  @include bp-md {
+    font-size: 16px;
+    line-height: 130%;
+  }
+}
