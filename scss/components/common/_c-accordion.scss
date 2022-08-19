@@ -1,135 +1,196 @@
-.accordion-wrapper {
+.accordion-card {
+  margin-bottom: 48px;
+  padding: 32px;
+  background: #FFFFFF;
+  border-radius: 24px;
+
   @include bp-md {
-    margin-left: -16px;
-    margin-right: -16px;
+    padding: 32px 24px;
   }
 }
-.accordion-item {
+
+.accordion-card__input {
+  display: none;
+}
+
+.accordion-card-label {
+  position: relative;
   display: block;
-  position: relative;
-  width: 100%;
-  transition: 0.5s;
+  padding-right: 80px;
+  cursor: pointer;
 }
 
-.accordion-item__title {
-  display: flex;
-  justify-content: space-between;
+.accordion-card-label__title {
+  display: block;
+  margin: 0 0 12px;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 110%;
   align-items: center;
-  color: $color-black;
-  font-weight: $type-weight--semi-bold;
-  font-size: 1.8rem;
+  color: #191B1A;
+
+  @include bp-md {
+    font-size: 24px;
+    margin: 0 0 25px;
+  }
+}
+
+.accordion-card-label__text {
+  display: block;
+  margin: 0;
+
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
   line-height: 150%;
-  padding: $indent-l;
-  border-bottom: 0.01rem solid $color-divider;
-  position: relative;
-  z-index: 3;
-
-  &:hover {
-    cursor: pointer;
-  }
+  color: #919291;
 
   @include bp-md {
-    align-items: flex-start;
+    margin-right: -60px;
   }
 }
 
-.accordion-item:first-child .accordion-item__title {
-  border-top: 0.01rem solid $color-divider;
+.accordion-card-content {
+  display: none;
 }
 
-.accordion-item__text {
-  font-weight: $type-weight--medium;
+.accordion-card__input:checked + .accordion-card-label + .accordion-card-content {
+  display: block;
+  padding-top: 32px;
+
+  @include bp-md {
+    padding-top: 12px;
+  }
+}
+
+// ==================== INDICATOR ====================
+
+.accordion-card-label__indicator {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 48px;
+  height: 48px;
+  background: rgba(25, 27, 26, 0.06);
+  border-radius: 12px;
+  transition-duration: .3s;
+
+  @include bp-md {
+    top: -10px;
+  }
+}
+
+.accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator {
+  background: #78B9F3;
+}
+
+.accordion-card-label__indicator:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url('/img/icons/accordion-angle-gray.svg') 50% 50% / contain no-repeat;
+  transition-duration: .3s;
+}
+
+.accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator:after {
+  transform: translate(-50%, -50%) rotate(180deg);
+  background: url('/img/icons/accordion-angle-white.svg') 50% 50% / contain no-repeat;
+  transition-duration: .3s;
+}
+
+// ==================== SECOND LEVEL ====================
+
+.accordion-card-content-item {
+  padding: 24px 0;
+  border-top: 1px solid #E3E3E3;
+}
+
+.accordion-card-content-item:last-child {
+  padding-bottom: 0;
+}
+
+.accordion-card-content .accordion-card-label__title {
+  margin: 0 0 12px;
+  font-size: 18px;
   line-height: 150%;
 
   @include bp-md {
-    font-size: 1.6rem;
+    font-size: 15px;
+    line-height: 1.5;
   }
 }
 
-.accordion-item__icon {
-  width: 1.5rem;
-  background-color: $color-grey;
-  transition: transform $motion-m ease-in-out;
-  margin-left: $indent-xl;
+// ==================== SECOND LEVEL INDICATOR ====================
 
+.accordion-card-content .accordion-card-label__indicator {
+  position: absolute;
+  top: 5px;
+  right: 22px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 20px;
+  height: 20px;
+  background: none;
+  border-radius: 0;
+}
+
+.accordion-card-content .accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator {
+  background: none;
+  border-radius: 0;
+}
+
+.accordion-card-content .accordion-card-label__indicator:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: url('/img/icons/accordion-angle-gray.svg') 50% 50% / contain no-repeat;
+  transition-duration: .3s;
+}
+
+.accordion-card-content .accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator:after {
+  transform: translate(-50%, -50%) rotate(180deg);
+  background: url('/img/icons/accordion-angle-blue.svg') 50% 50% / contain no-repeat;
+  transition-duration: .3s;
+}
+
+.accordion-card-content .accordion-card-content {
+  padding-bottom: 0 !important;
+}
+
+.accordion-card-content .accordion-card-content p {
   @include bp-md {
-    flex-shrink: 0;
+    font-size: 16px;
+    line-height: 150%;
+    color: #919291;
   }
 }
 
-.accordion-item__description {
-  z-index: 2;
-  position: absolute;
-  padding: 0 $indent-l $indent-l $indent-l;
-  color: $color-grey;
-  opacity: 0;
-  visibility: hidden;
-  transition: transform $motion-l ease;
-  transform: translateY(-3rem);
+.accordion-card-content .accordion-card-label__title {
+  margin-bottom: 0 !important;
 }
-
-// Checked
-
-//hide checkbox
-.accordion-item__checkbox {
-  visibility: hidden;
-  position: absolute;
-}
-
-//show paragraph
-.accordion-item__checkbox:checked ~ .accordion-item__description {
-  opacity: 1;
-  visibility: visible;
-  position: relative;
-  transform: translateY(0);
-  transition: all 0.5s ease;
-  border-bottom: 0.01rem solid $color-divider;
-}
-//show-active item
-.accordion-item__checkbox:checked + .accordion-item__title {
-  border-bottom: 0.01rem solid transparent;
-  padding-bottom: 1.2rem;
-}
-
-//active icon
-.accordion-item__checkbox:checked
-  + .accordion-item__title
-  .accordion-item__icon {
-  background-color: $color-secondary;
-  transform: rotate(180deg);
-}
-
-/*----------------------- Вопрос - ответ ------------------------------ */
-.accordion-item__title {
-  @include bp-sm() {
-    //font-size: 16px;
-  }
-  @include bp-md() {
-    //font-size: 18px;
-    // padding: 18px 30px;
-  }
-  @include bp-lg() {
-    //font-size: 20px;
-  }
-}
-
-.accordion-item {
-  @include bp-lg() {
-    // margin-top: 40px;
-    // margin-bottom: 30px;
-    //width: 460px;
-  }
-}
-
-// .accordion-item__icon {
-//   @include bp-lg() {
-//     width: 20px;
-
-//     &:after {
-//       width: 4px;
-//       height: 20px;
-//       right: 8px;
-//       top: -8px;
-//     }
-//   }
-// }
