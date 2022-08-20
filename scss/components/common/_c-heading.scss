@@ -21,3 +21,11 @@
     margin-top: $indent-m;
   }
 }
+
+.c-heading .link {
+  color: $color-secondary;
+
+  @include link-events {
+    color: $color-secondary;
+  }
+}

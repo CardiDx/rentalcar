@@ -4538,6 +4538,13 @@ label:hover .c-input {
   }
 }
 
+.c-heading .link {
+  color: #78b9f3;
+}
+.c-heading .link:active, .c-heading .link:focus, .c-heading .link:visited {
+  color: #78b9f3;
+}
+
 .c-cta {
   padding: 4.8rem 0;
   background-color: #78b9f3;
