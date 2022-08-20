@@ -20,6 +20,10 @@
 
 .dropdown--width {
   min-width: 28.5rem;
+
+  @include bp-sm {
+    min-width: 100%;
+  }
 }
 
 .dropdown__label-text {

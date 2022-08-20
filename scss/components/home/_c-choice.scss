@@ -16,6 +16,17 @@
 }
 
 .c-choice__card {
+  width: 28rem;
+  max-width: 100%;
+  margin: 0 $indent-m;
+  // scroll-snap-align: start;
+
+  @include bp-md {
+    width: 28rem;
+    max-width: 28rem;
+    margin: 0 1.2rem;
+    flex-shrink: 0;
+  }
 }
 
 .c-choice__card-content {
@@ -42,11 +53,10 @@
   max-width: 27.4rem;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 
   @include bp-md {
     max-width: 100%;
-    object-fit: contain;
   }
 }
 
@@ -165,18 +175,4 @@
 
 .c-choice__cards-scroll::-webkit-scrollbar {
   display: none;
-}
-
-.card {
-  width: 28rem;
-  max-width: 100%;
-  margin: 0 $indent-m;
-  // scroll-snap-align: start;
-
-  @include bp-md {
-    width: 28rem;
-    max-width: 28rem;
-    margin: 0 1.2rem;
-    flex-shrink: 0;
-  }
 }

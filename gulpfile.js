@@ -50,11 +50,15 @@ function scripts() {
 }
 
 function styles() {
-  // return src("scss/main.scss") // получим main.scss
   return (
-    src(["scss/main.scss", "scss/search.scss", "scss/view.scss"])
+    src([
+      "scss/main.scss",
+      "scss/search.scss",
+      "scss/view.scss",
+      "scss/buy.scss",
+    ])
       .pipe(sourcemaps.init()) // инициализируем sourcemap
-      .pipe(sass({ outputStyle: "compressed" }))
+      .pipe(sass({})) // min files
       // .pipe(concat("main.min.css")) // scss -> css
       .pipe(
         autoprefixer({
@@ -64,7 +68,7 @@ function styles() {
         })
       )
       .pipe(dest("css"))
-      .pipe(cleanCSS()) // минимизируем CSS
+      // .pipe(cleanCSS()) // минимизируем CSS
       .pipe(browserSync.reload({ stream: true }))
   ); // перезагрузим сервер
 }

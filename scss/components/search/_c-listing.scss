@@ -1,0 +1,21 @@
+.listing__item-title {
+  margin-bottom: $indent-m;
+
+  @include type-headline-3;
+}
+
+.listing__button-wrapper {
+  text-align: center;
+}
+
+.listing__c-button.c-button--border {
+  width: auto;
+  border: 0.2rem solid $color-divider;
+  color: $color-grey;
+  transition: color $motion-m ease-in-out;
+
+  &:hover {
+    background-color: $color-divider;
+    color: $color-black;
+  }
+}

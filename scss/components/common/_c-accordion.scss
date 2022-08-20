@@ -1,11 +1,20 @@
 .accordion-card {
   margin-bottom: 48px;
   padding: 32px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 24px;
 
   @include bp-md {
     padding: 32px 24px;
+  }
+
+  @include bp-sm {
+    box-shadow: 0px 12px 24px rgba(25, 27, 26, 0.08);
+  }
+
+  @include bp-xs {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
   }
 }
 
@@ -24,13 +33,11 @@
   display: block;
   margin: 0 0 12px;
 
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 110%;
   align-items: center;
-  color: #191B1A;
+  color: #191b1a;
 
   @include bp-md {
     font-size: 24px;
@@ -42,8 +49,6 @@
   display: block;
   margin: 0;
 
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -58,7 +63,9 @@
   display: none;
 }
 
-.accordion-card__input:checked + .accordion-card-label + .accordion-card-content {
+.accordion-card__input:checked
+  + .accordion-card-label
+  + .accordion-card-content {
   display: block;
   padding-top: 32px;
 
@@ -83,19 +90,21 @@
   height: 48px;
   background: rgba(25, 27, 26, 0.06);
   border-radius: 12px;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 
   @include bp-md {
     top: -10px;
   }
 }
 
-.accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator {
-  background: #78B9F3;
+.accordion-card__input:checked
+  + .accordion-card-label
+  .accordion-card-label__indicator {
+  background: #78b9f3;
 }
 
 .accordion-card-label__indicator:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,21 +113,25 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url('/img/icons/accordion-angle-gray.svg') 50% 50% / contain no-repeat;
-  transition-duration: .3s;
+  background: url("/img/icons/accordion-angle-gray.svg") 50% 50% / contain
+    no-repeat;
+  transition-duration: 0.3s;
 }
 
-.accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator:after {
+.accordion-card__input:checked
+  + .accordion-card-label
+  .accordion-card-label__indicator:after {
   transform: translate(-50%, -50%) rotate(180deg);
-  background: url('/img/icons/accordion-angle-white.svg') 50% 50% / contain no-repeat;
-  transition-duration: .3s;
+  background: url("/img/icons/accordion-angle-white.svg") 50% 50% / contain
+    no-repeat;
+  transition-duration: 0.3s;
 }
 
 // ==================== SECOND LEVEL ====================
 
 .accordion-card-content-item {
   padding: 24px 0;
-  border-top: 1px solid #E3E3E3;
+  border-top: 1px solid #e3e3e3;
 }
 
 .accordion-card-content-item:last-child {
@@ -154,13 +167,16 @@
   border-radius: 0;
 }
 
-.accordion-card-content .accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator {
+.accordion-card-content
+  .accordion-card__input:checked
+  + .accordion-card-label
+  .accordion-card-label__indicator {
   background: none;
   border-radius: 0;
 }
 
 .accordion-card-content .accordion-card-label__indicator:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -169,14 +185,19 @@
   display: inline-block;
   width: 15px;
   height: 15px;
-  background: url('/img/icons/accordion-angle-gray.svg') 50% 50% / contain no-repeat;
-  transition-duration: .3s;
+  background: url("/img/icons/accordion-angle-gray.svg") 50% 50% / contain
+    no-repeat;
+  transition-duration: 0.3s;
 }
 
-.accordion-card-content .accordion-card__input:checked + .accordion-card-label .accordion-card-label__indicator:after {
+.accordion-card-content
+  .accordion-card__input:checked
+  + .accordion-card-label
+  .accordion-card-label__indicator:after {
   transform: translate(-50%, -50%) rotate(180deg);
-  background: url('/img/icons/accordion-angle-blue.svg') 50% 50% / contain no-repeat;
-  transition-duration: .3s;
+  background: url("/img/icons/accordion-angle-blue.svg") 50% 50% / contain
+    no-repeat;
+  transition-duration: 0.3s;
 }
 
 .accordion-card-content .accordion-card-content {

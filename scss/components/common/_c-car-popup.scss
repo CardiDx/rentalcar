@@ -175,6 +175,10 @@
   color: #919291;
 }
 .c-car-popup__item-mobile {
-  display: flex;
-  flex-grow: 1;
+  display: none;
+
+  @include bp-sm {
+    display: flex;
+    flex-grow: 1;
+  }
 }

@@ -1,0 +1,54 @@
+// result filters mobile footer
+.c-mobile-price {
+  display: none;
+
+  @include bp-md {
+    width: 100%;
+    padding: $indent-l;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0.1rem solid $color-divider;
+    background-color: $color-white;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.c-view-page__c-mobile-price {
+  @include bp-md {
+    display: flex;
+  }
+}
+
+.c-view-page__c-mobile-text {
+  font-weight: $type-weight--medium;
+  font-size: 1.4rem;
+  line-height: 110%;
+  color: $color-grey;
+}
+.c-view-page__c-mobile__price {
+  font-weight: $type-weight--bold;
+  font-size: 2.4rem;
+  line-height: 3rem;
+}
+
+.c-mobile-price__result-mobile-title {
+  @include bp-md {
+    display: block;
+    font-weight: $type-weight--bold;
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.c-mobile-price__result-mobile-link {
+  @include bp-md {
+    color: $color-secondary;
+    display: inline-block;
+  }
+}

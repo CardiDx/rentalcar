@@ -9,59 +9,47 @@
     <meta name="keywords" content="">
     <!--==================== CSS ====================-->
     <link href="css/view.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
 
 <body>
 
     <div class="l-layout">
         <!--==================== HEADER ====================-->
-
-
         <header class="l-layout__header" id="header">
-
-            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled"
-                data-js-header-opened="c-header--opened">
+            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
                 <div class="container ">
                     <div class="c-header__inner">
                         <div class="c-header__mobile-column">
-                            <div class="c-header__burger" data-js-header-toggle
-                                data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
+                            <div class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
                                 <span></span>
                             </div>
-
                             <a href="/" class="c-header__logo" aria-label="logo-link">
-                                <div class="c-header__logo-text">DRIVER <span
-                                        class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+                                <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
                             </a>
                         </div>
                         <div class="c-header__right-side">
-                            <div class="c-header__language select">
-                                <label class="select__current-language" for="language-ckeckbox">
-                                    <input class="select__language-checkbox" type="checkbox" id="language-ckeckbox">
+
+                            <div class="c-header__language c-select">
+                                <label class="c-select__current-language" for="language-ckeckbox">
+                                    <input class="c-select__language-checkbox" type="checkbox" id="language-ckeckbox">
                                     <span>En</span>
-                                    <span class="c-icon c-icon--dropdown select__current-language-icon"></span>
-                                    <div class="select__dropdown-menu">
-                                        <div class="select__menu-item">En</div>
-                                        <div class="select__menu-item">Fr</div>
+                                    <span class="c-icon c-icon--dropdown c-select__current-language-icon"></span>
+                                    <div class="c-select__dropdown-menu">
+                                        <div class="c-select__menu-item">En</div>
+                                        <div class="c-select__menu-item">Fr</div>
                                     </div>
                                 </label>
                             </div>
-                            <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us"
-                                data-service="order-a-project">Check your booking</a>
+
+                            <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </header>
+
         <!--==================== MAIN ====================-->
-
-        <main>
-
+        <main class="l-layout__body">
             <section class="c-section c-section__search-panel">
                 <div class="container">
                     <div class="row">
@@ -95,22 +83,17 @@
 
                                         <div class="listing-item__body c-view-car__none-border">
                                             <div class="c-slider">
-                                                <img class="listing-item__img" src="img/cars/opel-insignia.png"
-                                                    alt="opel insignia">
+                                                <img class="listing-item__img" src="img/cars/opel-insignia.png" alt="opel insignia">
                                                 <div class="c-slider-navigate">
                                                     <div class="c-slider-navigate__count-slides">
                                                         <span>1</span> of <span>5</span> photos
                                                     </div>
                                                     <div class="c-slider-navigate__buttons">
-                                                        <div
-                                                            class="c-slider-navigate__button c-slider-navigate__button--prev">
-                                                            <span
-                                                                class="c-icon c-icon--small-arrow-prev c-slider-navigate__button-c-icon"></span>
+                                                        <div class="c-slider-navigate__button c-slider-navigate__button--prev">
+                                                            <span class="c-icon c-icon--small-arrow-prev c-slider-navigate__button-c-icon"></span>
                                                         </div>
-                                                        <div
-                                                            class="c-slider-navigate__button c-slider-navigate__button--next">
-                                                            <span
-                                                                class="c-icon c-icon--small-arrow c-slider-navigate__button-c-icon"></span>
+                                                        <div class="c-slider-navigate__button c-slider-navigate__button--next">
+                                                            <span class="c-icon c-icon--small-arrow c-slider-navigate__button-c-icon"></span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -192,9 +175,7 @@
                                                         </li>
                                                     </ul>
 
-                                                    <a href="#"
-                                                        class="listing-item__extras-button c-button c-button--border ">Change
-                                                        extras</a>
+                                                    <a href="#" class="listing-item__extras-button c-button c-button--border ">Change extras</a>
                                                 </div>
 
 
@@ -250,7 +231,7 @@
                                         </li>
 
                                         <li class="c-aside-price__item c-aside-price__item--subtotal">
-                                            <p class="c-aside-price__item-name"><span>Subtotal  </span></p>
+                                            <p class="c-aside-price__item-name"><span>Subtotal </span></p>
                                             <p class="c-aside-price__item-cost">$ 2035.66</p>
                                         </li>
                                     </ul>
@@ -260,13 +241,9 @@
                                         <p class="c-aside-price__cost">$ 34035.99</p>
                                     </div>
                                 </div>
-
-
-
                             </div>
                             <a class="c-aside-price__c-button c-button c-button--green" href="#">Go to checkout</a>
                         </div>
-
 
                     </div>
             </section>
@@ -322,10 +299,20 @@
 
     </div>
 
+    <div class="c-mobile-price c-view-page__c-mobile-price">
+        <div>
+            <div class="c-view-page__c-mobile__text">Price for 1 days:</div>
+            <div class="c-view-page__c-mobile__price">$ 34035.99</div>
+        </div>
+        <div>
+            <a class="c-button c-button--green" href="#">Go to checkout</a>
+        </div>
+    </div>
+
     <footer class="l-layout__footer">
         <div class="c-footer">
             <div class="container">
-                <div class="row column-reverse flex-md-row">
+                <div class="row flex-column-reverse flex-lg-row">
                     <div class="col-lg-4">
                         <div class="c-footer__copyright">
                             <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
@@ -340,9 +327,6 @@
                             <a class="link c-footer__link" href="#">Social networks icons</a>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>

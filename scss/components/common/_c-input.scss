@@ -84,3 +84,11 @@ label:hover .c-input {
   transform: translateY(-50%);
   background-color: $color-secondary;
 }
+
+.c-input__tooltip-icon {
+  position: absolute;
+  right: 2.4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}

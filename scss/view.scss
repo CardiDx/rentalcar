@@ -1,5 +1,3 @@
-// @import "/node_modules/magnific-popup/dist/magnific-popup.css";
-
 @import "abstracts/variables";
 @import "abstracts/mixins";
 
@@ -16,32 +14,25 @@
 @import "components/common/c-button";
 
 @import "components/common/c-header";
-@import "components/common/c-footer";
+
 @import "components/common/c-input";
 @import "components/common/c-link";
-@import "components/common/c-heading";
-@import "components/common/c-cta";
 @import "components/common/c-logo";
-@import "components/common/c-tags";
 
 @import "components/common/c-accordion";
 @import "components/common/c-checkbox";
+@import "components/common/c-tags";
 @import "components/common/c-select";
 @import "components/common/c-search-panel";
-
-@import "components/home/c-home";
-@import "components/home/c-choice";
-@import "components/home/c-faq";
-
-@import "components/buy/c-buy";
 
 @import "components/common/c-listing-item";
 @import "components/common/c-aside-price";
 @import "components/common/c-slider";
 @import "components/common/c-multi-accordion";
+@import "components/common/c-mobile-price";
 
-.c-view-car {
-}
+@import "components/common/c-footer";
+@import "components/common/c-popup";
 
 .c-view-car__none-border {
   border: none;

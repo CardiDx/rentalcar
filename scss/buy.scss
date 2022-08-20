@@ -1,3 +1,51 @@
+@import "abstracts/variables";
+@import "abstracts/mixins";
+
+@import "vendors/reset";
+@import "vendors/bootstrap4grid.scss";
+
+@import "base/typography";
+@import "base/base";
+@import "base/helpers";
+
+@import "layout/l-wrapper";
+@import "layout/l-layout";
+
+// Files components
+@import "components/common/c-icon";
+@import "components/common/c-button";
+@import "components/common/c-input";
+@import "components/common/c-dropdown";
+@import "components/common/c-checkbox";
+@import "components/common/c-tags";
+@import "components/common/c-link";
+
+// Files for header
+@import "components/common/c-header";
+@import "components/common/c-select";
+@import "components/common/c-logo";
+
+// Files section
+@import "components/common/c-search-panel";
+@import "components/common/c-aside-menu";
+@import "components/common/c-aside-price";
+@import "components/common/c-slider";
+@import "components/common/c-filters";
+@import "components/common/c-listing-item";
+@import "components/common/c-tooltip";
+@import "components/common/c-mobile-price";
+
+// File for footer
+@import "components/common/c-footer";
+
+// File search page
+@import "components/search/c-search";
+@import "components/search/c-listing";
+
+// File popup
+@import "components/common/c-car-popup";
+@import "components/common/c-popup";
+
 // ============== PAGE STYLES ==============
 
 .buy-layout {
@@ -8,23 +56,36 @@
   }
 }
 
-.buy-layout main .container {
-  @include bp-md {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .buy-section {
   margin-bottom: $indent-xxl;
   padding: $indent-xl;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 2.4rem;
 
   @include bp-md {
     padding: $indent-xl $indent-l;
     filter: drop-shadow(0px 12px 24px rgba(25, 27, 26, 0.08));
   }
+
+  @include bp-xs {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
+  }
+}
+
+.buy-section__c-button {
+  width: 100%;
+  justify-content: center;
+  margin-top: $indent-l;
+}
+
+.buy-section .listing-item {
+  box-shadow: none;
+  margin-bottom: 0;
+}
+
+.buy-section .listing-item__body {
+  border: none;
 }
 
 .buy-section__title {
@@ -34,7 +95,7 @@
   font-size: 3.2rem;
   line-height: 110%;
   align-items: center;
-  color: #191B1A;
+  color: #191b1a;
 
   @include bp-md {
     margin-bottom: $indent-s;
@@ -48,7 +109,7 @@
   font-weight: $type-weight--bold;
   font-size: 2.4rem;
   line-height: 110%;
-  color: #191B1A;
+  color: #191b1a;
 }
 
 .buy-section__text {
@@ -75,25 +136,23 @@
   margin-right: 12px;
   width: 32px;
   height: 32px;
-  background: #FAFAFA;
-  border: 1px solid #E3E3E3;
+  background: #fafafa;
+  border: 1px solid #e3e3e3;
   border-radius: 8px;
 }
 
 .buy-section-checkbox__text {
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 100%;
   display: flex;
   align-items: center;
-  color: #191B1A;
+  color: #191b1a;
 }
 
 .buy-input-wrapper {
   padding: 32px 0;
-  border-bottom: 1px solid #E3E3E3;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .buy-input__label {
@@ -120,7 +179,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  color: #191B1A;
+  color: #191b1a;
 }
 
 // ============== TABS ==============
@@ -146,8 +205,8 @@
   width: 50%;
   height: 80px;
   cursor: pointer;
-  color: #191B1A;
-  background: #F6F6F6;
+  color: #191b1a;
+  background: #f6f6f6;
 
   display: flex;
   flex-flow: row nowrap;
@@ -177,8 +236,8 @@
 }
 
 .tabs-input:checked + .tabs-label {
-  color: #FFFFFF;
-  background: #78B9F3;
+  color: #ffffff;
+  background: #78b9f3;
 }
 
 .tabs-input {
@@ -195,7 +254,7 @@
 
 .tab-content-inner {
   padding-top: 32px;
-  border-top: 1px solid #E3E3E3;
+  border-top: 1px solid #e3e3e3;
 }
 
 .tab-content-inner .checkbox label {
@@ -205,6 +264,6 @@
   }
 }
 
-.c-input.buy-input-wrapper__c-input{
+.c-input.buy-input-wrapper__c-input {
   padding-left: $indent-l;
 }

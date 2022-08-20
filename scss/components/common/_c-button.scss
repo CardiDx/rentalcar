@@ -14,15 +14,15 @@
     width: 100%;
   }
 
-  &:hover {
-    background-color: #8dcbf2;
-    color: $color-white;
-  }
-
   @include link-events {
     outline: none;
     color: $color-white;
     background-color: #8dcbf2;
+  }
+
+  &:hover {
+    background-color: #8dcbf2;
+    color: $color-white;
   }
 }
 
@@ -33,14 +33,14 @@
   border-radius: 10rem;
   color: $color-secondary;
 
-  &:hover {
-    background-color: $color-secondary;
-    color: $color-white;
-  }
-
   @include link-events {
     background-color: transparent;
     color: $color-secondary;
+  }
+
+  &:hover {
+    background-color: $color-secondary;
+    color: $color-white;
   }
 }
 
@@ -53,11 +53,11 @@
 .c-button--green {
   background-color: $color-primary;
 
-&:hover{
-  background-color: #42dadb;
-}
-
   @include link-events {
     background-color: $color-primary;
+  }
+
+  &:hover {
+    background-color: #42dadb;
   }
 }

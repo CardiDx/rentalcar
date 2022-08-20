@@ -23,12 +23,17 @@
   padding: $indent-xl;
   margin-bottom: $indent-l;
 
-  &:last-child {
-    margin-bottom: 0;
+  @include bp-xs {
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
   }
 
-  @include bp-sm{
-    padding: $indent-m;
+  // &:last-child {
+  //   margin-bottom: 0;
+  // }
+
+  @include bp-sm {
+    padding: $indent-xl $indent-l;
     box-shadow: 0px 12px 24px rgba(25, 27, 26, 0.08);
   }
 }
@@ -76,6 +81,11 @@
   display: flex;
   flex-flow: row wrap;
 
+  @include bp-sm {
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
   .listing-item__params {
   }
 
@@ -95,6 +105,10 @@
 
     &:first-child {
       margin-right: $indent-xxl;
+
+      @include bp-sm {
+        margin-right: 0;
+      }
     }
   }
 }
@@ -149,6 +163,9 @@
 }
 
 .listing-item__prices {
+  display: flex;
+  align-items: center;
+
   @include bp-sm {
     display: flex;
     flex-direction: row;
@@ -184,7 +201,8 @@
   margin-left: $indent-xl;
 
   @include bp-sm {
-    // display: inline-block;
+    margin-left: 0;
+    font-size: 1.6rem;
   }
 }
 
@@ -230,4 +248,7 @@
 
 .listing-item__extras-button {
   margin-top: $indent-l;
+  @include bp-sm {
+    justify-content: center;
+  }
 }

@@ -1,11 +1,11 @@
 .c-filters {
-  display: flex;
+  width: 100%;
   position: relative;
-  margin-bottom: $indent-xxl;
 
   &:after {
     content: "";
     position: absolute;
+    top: 0;
     right: 0;
     width: 9.6rem;
     height: 100%;
@@ -13,8 +13,20 @@
       linear-gradient(90deg, rgba(250, 250, 250, 0) 0%, #fafafa 100%);
   }
 }
+
+.c-filters__wrapper {
+  display: flex;
+  margin-bottom: $indent-xxl;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .c-filters__item {
-  display: inline-flex;
+  display: block;
   font-size: 1.6rem;
   font-weight: $type-weight--bold;
   padding: $indent-m $indent-xl;
@@ -26,6 +38,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include bp-md {
+    padding: 1.2rem $indent-l;
   }
 }
 

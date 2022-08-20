@@ -1,0 +1,7 @@
+.c-section__search-panel {
+  padding-top: 16.4rem;
+
+  @include bp-xs {
+    padding-top: 0;
+  }
+}

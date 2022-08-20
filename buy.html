@@ -8,50 +8,40 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <!--==================== CSS ====================-->
-    <link href="css/view.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link href="css/buy.css" rel="stylesheet">
 </head>
 
 <body>
 
     <div class="l-layout buy-layout">
         <!--==================== HEADER ====================-->
-
-
         <header class="l-layout__header" id="header">
-
-            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled"
-                data-js-header-opened="c-header--opened">
+            <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
                 <div class="container ">
                     <div class="c-header__inner">
                         <div class="c-header__mobile-column">
-                            <div class="c-header__burger" data-js-header-toggle
-                                data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
+                            <div class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
                                 <span></span>
                             </div>
-
                             <a href="/" class="c-header__logo" aria-label="logo-link">
-                                <div class="c-header__logo-text">DRIVER <span
-                                        class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
+                                <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
                             </a>
                         </div>
                         <div class="c-header__right-side">
-                            <div class="c-header__language select">
-                                <label class="select__current-language" for="language-ckeckbox">
-                                    <input class="select__language-checkbox" type="checkbox" id="language-ckeckbox">
+
+                            <div class="c-header__language c-select">
+                                <label class="c-select__current-language" for="language-ckeckbox">
+                                    <input class="c-select__language-checkbox" type="checkbox" id="language-ckeckbox">
                                     <span>En</span>
-                                    <span class="c-icon c-icon--dropdown select__current-language-icon"></span>
-                                    <div class="select__dropdown-menu">
-                                        <div class="select__menu-item">En</div>
-                                        <div class="select__menu-item">Fr</div>
+                                    <span class="c-icon c-icon--dropdown c-select__current-language-icon"></span>
+                                    <div class="c-select__dropdown-menu">
+                                        <div class="c-select__menu-item">En</div>
+                                        <div class="c-select__menu-item">Fr</div>
                                     </div>
                                 </label>
                             </div>
-                            <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us"
-                                data-service="order-a-project">Check your booking</a>
+
+                            <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
                         </div>
                     </div>
                 </div>
@@ -72,7 +62,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-9">
+                        <div class="col-12 col-xl-9">
 
                             <div class="buy-section">
                                 <h2 class="buy-section__title">Main driver’s details</h2>
@@ -84,14 +74,9 @@
                                             <label for="email" class="buy-input__label">Email:</label>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
-                                            <div
-                                                class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                <label
-                                                    class="c-label с-search-panel__label с-search-panel__label--large"
-                                                    for="email">
-                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search"
-                                                        id="email" placeholder="Enter your email" value=""
-                                                        autocomplete="off">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="email">
+                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="email" placeholder="Enter your email" value="" autocomplete="off">
                                                 </label>
                                             </div>
                                         </div>
@@ -104,14 +89,9 @@
                                             <label for="first-name" class="buy-input__label">First name:</label>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
-                                            <div
-                                                class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                <label
-                                                    class="c-label с-search-panel__label с-search-panel__label--large"
-                                                    for="first-name">
-                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search"
-                                                        id="first-name" placeholder="Enter your first name" value=""
-                                                        autocomplete="off">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="first-name">
+                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="first-name" placeholder="Enter your first name" value="" autocomplete="off">
                                                 </label>
                                             </div>
                                         </div>
@@ -124,14 +104,9 @@
                                             <label for="last-name" class="buy-input__label">Last name:</label>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
-                                            <div
-                                                class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                <label
-                                                    class="c-label с-search-panel__label с-search-panel__label--large"
-                                                    for="last-name">
-                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search"
-                                                        id="last-name" placeholder="Enter your last name" value=""
-                                                        autocomplete="off">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="last-name">
+                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="last-name" placeholder="Enter your last name" value="" autocomplete="off">
                                                 </label>
                                             </div>
                                         </div>
@@ -144,14 +119,10 @@
                                             <label for="gender" class="buy-input__label">Gender:</label>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
-                                            <div
-                                                class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                <label
-                                                    class="c-label с-search-panel__label с-search-panel__label--large"
-                                                    for="gender">
-                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search"
-                                                        id="gender" placeholder="What is your gender?" value=""
-                                                        autocomplete="off">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="gender">
+                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="gender" placeholder="What is your gender?" value="" autocomplete="off">
+                                                    <span class="c-input__tooltip-icon c-icon c-icon--dropdown c-select__current-language-icon"></span>
                                                 </label>
                                             </div>
                                         </div>
@@ -165,14 +136,9 @@
                                                 number:</label>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
-                                            <div
-                                                class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                <label
-                                                    class="c-label с-search-panel__label с-search-panel__label--large"
-                                                    for="phone-number">
-                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search"
-                                                        id="phone-number" placeholder="Enter your phone number" value=""
-                                                        autocomplete="off">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="phone-number">
+                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="phone-number" placeholder="Enter your phone number" value="" autocomplete="off">
                                                 </label>
                                             </div>
                                         </div>
@@ -185,14 +151,9 @@
                                             <label for="country" class="buy-input__label">Country:</label>
                                         </div>
                                         <div class="col-12 col-md-6 col-lg-6">
-                                            <div
-                                                class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                <label
-                                                    class="c-label с-search-panel__label с-search-panel__label--large"
-                                                    for="country">
-                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search"
-                                                        id="country" placeholder="Where do you live?" value=""
-                                                        autocomplete="off">
+                                            <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                <label class="c-label с-search-panel__label с-search-panel__label--large" for="country">
+                                                    <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="country" placeholder="Where do you live?" value="" autocomplete="off">
                                                 </label>
                                             </div>
                                         </div>
@@ -219,15 +180,9 @@
                                                         Number:</label>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-6">
-                                                    <div
-                                                        class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                        <label
-                                                            class="c-label с-search-panel__label с-search-panel__label--large"
-                                                            for="driver-id">
-                                                            <input class="c-input c-input--large" type="search"
-                                                                name="search" id="driver-id"
-                                                                placeholder="Enter your driver ID Number" value=""
-                                                                autocomplete="off">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="driver-id">
+                                                            <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="driver-id" placeholder="Enter your driver ID Number" value="" autocomplete="off">
                                                         </label>
                                                     </div>
                                                 </div>
@@ -241,15 +196,9 @@
                                                         rights:</label>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-6">
-                                                    <div
-                                                        class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                        <label
-                                                            class="c-label с-search-panel__label с-search-panel__label--large"
-                                                            for="country">
-                                                            <input class="c-input c-input--large" type="search"
-                                                                name="search" id="country"
-                                                                placeholder="Enter name country" value=""
-                                                                autocomplete="off">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="country">
+                                                            <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="country" placeholder="Enter name country" value="" autocomplete="off">
                                                         </label>
                                                     </div>
                                                 </div>
@@ -259,14 +208,14 @@
                                         <div class="tab-content-inner">
                                             <div class="checkbox" style="margin-bottom: 16px;">
                                                 <input id="check2" type="checkbox" name="check" value="check2">
-                                                <label for="check2">Avis terms and conditions of rental agreement to
-                                                    hire rental vehicle</label>
+                                                <label for="check2">Avis terms and conditions of rental <span class="h-underline">agreement to
+                                                        hire rental vehicle</span></label>
                                             </div>
 
                                             <div class="checkbox">
                                                 <input id="check3" type="checkbox" name="check" value="check3">
                                                 <label for="check3">I undertake to pay for the rental time in accordance
-                                                    with the rules of RENTAL DRIVER</label>
+                                                    with the <span class="h-underline">rules of RENTAL DRIVER</span></label>
                                             </div>
                                         </div>
 
@@ -283,15 +232,9 @@
                                                         name:</label>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-6">
-                                                    <div
-                                                        class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                        <label
-                                                            class="c-label с-search-panel__label с-search-panel__label--large"
-                                                            for="cardholder-name">
-                                                            <input class="c-input c-input--large" type="search"
-                                                                name="search" id="cardholder-name"
-                                                                placeholder="Enter cardholder’s name" value=""
-                                                                autocomplete="off">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="cardholder-name">
+                                                            <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="cardholder-name" placeholder="Enter cardholder’s name" value="" autocomplete="off">
                                                         </label>
                                                     </div>
                                                 </div>
@@ -302,15 +245,9 @@
                                                         number:</label>
                                                 </div>
                                                 <div class="col-12 col-md-6 col-lg-6">
-                                                    <div
-                                                        class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                        <label
-                                                            class="c-label с-search-panel__label с-search-panel__label--large"
-                                                            for="card-number">
-                                                            <input class="c-input c-input--large" type="search"
-                                                                name="search" id="card-number"
-                                                                placeholder="XXXX XXXX XXXX XXXX" value=""
-                                                                autocomplete="off">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="card-number">
+                                                            <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="card-number" placeholder="XXXX XXXX XXXX XXXX" value="" autocomplete="off">
                                                         </label>
                                                     </div>
                                                 </div>
@@ -321,26 +258,17 @@
                                                         date:</label>
                                                 </div>
                                                 <div class="col-6 col-md-3 col-lg-3">
-                                                    <div
-                                                        class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                        <label
-                                                            class="c-label с-search-panel__label с-search-panel__label--large"
-                                                            for="expire-date">
-                                                            <input class="c-input c-input--large" type="search"
-                                                                name="search" id="expire-date" placeholder="MM/YY"
-                                                                value="" autocomplete="off">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="expire-date">
+                                                            <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="expire-date" placeholder="MM/YY" value="" autocomplete="off">
                                                         </label>
                                                     </div>
                                                 </div>
                                                 <div class="col-6 col-md-3 col-lg-3">
-                                                    <div
-                                                        class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
-                                                        <label
-                                                            class="c-label с-search-panel__label с-search-panel__label--large"
-                                                            for="cvc">
-                                                            <input class="c-input c-input--large" type="search"
-                                                                name="search" id="cvc" placeholder="CVC" value=""
-                                                                autocomplete="off">
+                                                    <div class="c-search-panel__field c-search-panel__field--flex c-search-panel__field--large">
+                                                        <label class="c-label с-search-panel__label с-search-panel__label--large" for="cvc">
+                                                            <input class="c-input c-input--large buy-input-wrapper__c-input" type="search" name="search" id="cvc" placeholder="CVC" value="" autocomplete="off">
+                                                            <img class="c-input__tooltip-icon " src="/img/icons/info.svg" alt="icon info">
                                                         </label>
                                                     </div>
                                                 </div>
@@ -351,116 +279,113 @@
                                 </div>
                             </div>
 
-                            <div class="listing-item">
-                                <div class="listing-item__body c-view-car__none-border">
-                                    <div class="c-slider">
-                                        <img class="listing-item__img" src="img/cars/opel-insignia.png"
-                                            alt="opel insignia">
-                                        <div class="c-slider-navigate">
-                                            <div class="c-slider-navigate__count-slides">
-                                                <span>1</span> of <span>5</span> photos
-                                            </div>
-                                            <div class="c-slider-navigate__buttons">
-                                                <div class="c-slider-navigate__button c-slider-navigate__button--prev">
-                                                    <span
-                                                        class="c-icon c-icon--small-arrow-prev c-slider-navigate__button-c-icon"></span>
+                            <div class="buy-section">
+                                <div class="listing-item">
+                                    <div class="listing-item__body">
+                                        <div class="c-slider">
+                                            <img class="listing-item__img" src="img/cars/opel-insignia.png" alt="opel insignia">
+                                            <div class="c-slider-navigate">
+                                                <div class="c-slider-navigate__count-slides">
+                                                    <span>1</span> of <span>5</span> photos
                                                 </div>
-                                                <div class="c-slider-navigate__button c-slider-navigate__button--next">
-                                                    <span
-                                                        class="c-icon c-icon--small-arrow c-slider-navigate__button-c-icon"></span>
+                                                <div class="c-slider-navigate__buttons">
+                                                    <div class="c-slider-navigate__button c-slider-navigate__button--prev">
+                                                        <span class="c-icon c-icon--small-arrow-prev c-slider-navigate__button-c-icon"></span>
+                                                    </div>
+                                                    <div class="c-slider-navigate__button c-slider-navigate__button--next">
+                                                        <span class="c-icon c-icon--small-arrow c-slider-navigate__button-c-icon"></span>
+                                                    </div>
                                                 </div>
                                             </div>
+                                        </div>
+
+                                        <div class="listing-item__body-content">
+
+                                            <h2 class="listing-item__title">Opel Insignia 2.0 Turbo</h2>
+
+                                            <ul class="listing-item__tags tags">
+                                                <li class="tags__item">City</li>
+                                                <li class="tags__item">Electric</li>
+                                                <li class="tags__item">Big company</li>
+                                            </ul>
+
+                                            <div class="listing-item__params-wrapper">
+                                                <ul class="listing-item__benefits listing-item__params">
+                                                    <li class="listing-item__line item-benefits">
+                                                        <img src="img/view-section/ben-1.svg" alt="benefit-icon">
+                                                        Mechanical
+                                                    </li>
+
+                                                    <li class="listing-item__line item-benefits">
+                                                        <img src="img/view-section/ben-3.svg" alt="benefit-icon">
+                                                        4 seats
+                                                    </li>
+
+                                                    <li class="listing-item__line item-benefits">
+                                                        <img src="img/view-section/ben-5.svg" alt="benefit-icon">
+                                                        2 large bag
+                                                        <img src="img/view-section/info.svg" alt="info-icon">
+                                                    </li>
+                                                </ul>
+
+                                                <ul class="listing-item__benefits listing-item__params">
+                                                    <li class="listing-item__line item-benefits">
+                                                        <img src="img/view-section/ben-2.svg" alt="benefit-icon">
+                                                        Diesel
+                                                    </li>
+
+                                                    <li class="listing-item__line item-benefits">
+                                                        <img src="img/view-section/ben-4.svg" alt="benefit-icon">
+                                                        4,8L per 100km
+                                                        <img src="img/view-section/info.svg" alt="info-icon">
+                                                    </li>
+
+                                                    <li class="listing-item__line item-benefits">
+                                                        <img src="img/view-section/ben-6.svg" alt="benefit-icon">
+                                                        750km per rental
+                                                        <img src="img/view-section/info.svg" alt="info-icon">
+                                                    </li>
+                                                </ul>
+                                            </div>
+
+                                            <div class="listing-item__address listing-item__address--border">
+                                                <img src="img/view-section/map.svg" alt="map-icon">
+                                                <p class="listing-item__address-text"><span>Paris: main airport</span> <br>8
+                                                    Rue Beaurepaire, Paris</p>
+                                            </div>
+
+                                            <div class="listing-item__extras">
+                                                <div class="listing-item__extras-title">Extras:</div>
+                                                <p class="listing-item__extras-desc">Child seats, additional drivers and
+                                                    more</p>
+
+                                                <ul class="listing-item__extras-list">
+                                                    <li class="listing-item__extras-list-item">
+                                                        <img src="img/view-section/success.svg" alt="success-icon">
+                                                        Baby seat <span>x 1</span>
+                                                    </li>
+
+                                                    <li class="listing-item__extras-list-item">
+                                                        <img src="img/view-section/success.svg" alt="success-icon">
+                                                        Additional driver <span>x 3</span>
+                                                    </li>
+
+                                                    <li class="listing-item__extras-list-item">
+                                                        <img src="img/view-section/success.svg" alt="success-icon">
+                                                        Additional driver <span>x 1</span>
+                                                    </li>
+                                                </ul>
+
+                                                <a href="#" class="listing-item__extras-button c-button c-button--border ">Change
+                                                    extras</a>
+                                            </div>
+
+
                                         </div>
                                     </div>
 
-                                    <div class="listing-item__body-content">
-
-                                        <h2 class="listing-item__title">Opel Insignia 2.0 Turbo</h2>
-
-                                        <ul class="listing-item__tags tags">
-                                            <li class="tags__item">City</li>
-                                            <li class="tags__item">Electric</li>
-                                            <li class="tags__item">Big company</li>
-                                        </ul>
-
-                                        <div class="listing-item__params-wrapper">
-                                            <ul class="listing-item__benefits listing-item__params">
-                                                <li class="listing-item__line item-benefits">
-                                                    <img src="img/view-section/ben-1.svg" alt="benefit-icon">
-                                                    Mechanical
-                                                </li>
-
-                                                <li class="listing-item__line item-benefits">
-                                                    <img src="img/view-section/ben-3.svg" alt="benefit-icon">
-                                                    4 seats
-                                                </li>
-
-                                                <li class="listing-item__line item-benefits">
-                                                    <img src="img/view-section/ben-5.svg" alt="benefit-icon">
-                                                    2 large bag
-                                                    <img src="img/view-section/info.svg" alt="info-icon">
-                                                </li>
-                                            </ul>
-
-                                            <ul class="listing-item__benefits listing-item__params">
-                                                <li class="listing-item__line item-benefits">
-                                                    <img src="img/view-section/ben-2.svg" alt="benefit-icon">
-                                                    Diesel
-                                                </li>
-
-                                                <li class="listing-item__line item-benefits">
-                                                    <img src="img/view-section/ben-4.svg" alt="benefit-icon">
-                                                    4,8L per 100km
-                                                    <img src="img/view-section/info.svg" alt="info-icon">
-                                                </li>
-
-                                                <li class="listing-item__line item-benefits">
-                                                    <img src="img/view-section/ben-6.svg" alt="benefit-icon">
-                                                    750km per rental
-                                                    <img src="img/view-section/info.svg" alt="info-icon">
-                                                </li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="listing-item__address listing-item__address--border">
-                                            <img src="img/view-section/map.svg" alt="map-icon">
-                                            <p class="listing-item__address-text"><span>Paris: main airport</span> <br>8
-                                                Rue Beaurepaire, Paris</p>
-                                        </div>
-
-                                        <div class="listing-item__extras">
-                                            <div class="listing-item__extras-title">Extras:</div>
-                                            <p class="listing-item__extras-desc">Child seats, additional drivers and
-                                                more</p>
-
-                                            <ul class="listing-item__extras-list">
-                                                <li class="listing-item__extras-list-item">
-                                                    <img src="img/view-section/success.svg" alt="success-icon">
-                                                    Baby seat <span>x 1</span>
-                                                </li>
-
-                                                <li class="listing-item__extras-list-item">
-                                                    <img src="img/view-section/success.svg" alt="success-icon">
-                                                    Additional driver <span>x 3</span>
-                                                </li>
-
-                                                <li class="listing-item__extras-list-item">
-                                                    <img src="img/view-section/success.svg" alt="success-icon">
-                                                    Additional driver <span>x 1</span>
-                                                </li>
-                                            </ul>
-
-                                            <a href="#"
-                                                class="listing-item__extras-button c-button c-button--border ">Change
-                                                extras</a>
-                                        </div>
-
-
-                                    </div>
                                 </div>
-
                             </div>
-
 
                             <div class="buy-section">
                                 <h2 class="buy-section__title">Save money with us</h2>
@@ -496,7 +421,7 @@
                                         </li>
 
                                         <li class="c-aside-price__item c-aside-price__item--subtotal">
-                                            <p class="c-aside-price__item-name">Subtotal</p>
+                                            <p class="c-aside-price__item-name"><span>Subtotal</span></p>
                                             <p class="c-aside-price__item-cost">$ 32000.33</p>
                                         </li>
                                     </ul>
@@ -520,7 +445,7 @@
                                         </li>
 
                                         <li class="c-aside-price__item c-aside-price__item--subtotal">
-                                            <p class="c-aside-price__item-name">Subtotal</p>
+                                            <p class="c-aside-price__item-name"><span>Subtotal </span></p>
                                             <p class="c-aside-price__item-cost">$ 2035.66</p>
                                         </li>
                                     </ul>
@@ -530,11 +455,8 @@
                                         <p class="c-aside-price__cost">$ 34035.99</p>
                                     </div>
                                 </div>
-
-
-
                             </div>
-                            <a class="c-aside-price__c-button c-button c-button--green" href="#">Go to checkout</a>
+                            <a class="buy-section__c-button c-button c-button--green" href="#">Book Now</a>
                         </div>
                     </div>
                 </div>
@@ -560,9 +482,6 @@
                             <a class="link c-footer__link" href="#">Social networks icons</a>
                         </div>
                     </div>
-
-
-
                 </div>
             </div>
         </div>

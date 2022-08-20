@@ -4,45 +4,43 @@
 @import "vendors/reset";
 @import "vendors/bootstrap4grid.scss";
 
+@import "base/typography";
+@import "base/base";
+@import "base/helpers";
+
 @import "layout/l-wrapper";
+@import "layout/l-layout";
+
+// Files components
+@import "components/common/c-icon";
+@import "components/common/c-button";
+@import "components/common/c-input";
 @import "components/common/c-dropdown";
-@import "components/common/c-aside-menu";
+@import "components/common/c-checkbox";
 @import "components/common/c-tags";
-@import "components/common/c-listing-item";
-@import "components/common/c-filters";
-@import "components/common/c-tooltip";
+@import "components/common/c-link";
+
+// Files for header
+@import "components/common/c-header";
+@import "components/common/c-select";
+@import "components/common/c-logo";
+
+// Files section
+@import "components/common/c-search-panel";
+@import "components/common/c-aside-menu";
 @import "components/common/c-slider";
+@import "components/common/c-filters";
+@import "components/common/c-listing-item";
+@import "components/common/c-tooltip";
+@import "components/common/c-mobile-price";
+
+// File for footer
+@import "components/common/c-footer";
+
+// File search page
+@import "components/search/c-search";
+@import "components/search/c-listing";
+
+// File popup
 @import "components/common/c-car-popup";
-
-.c-section__search-panel {
-  padding-top: 16.4rem;
-}
-
-.c-search__search-panel {
-  margin-top: 16.4rem;
-}
-
-.wrapper__header-title {
-  @include type-headline-2;
-}
-
-.listing__item-title {
-  margin-bottom: $indent-m;
-
-  @include type-headline-3;
-}
-
-.listing__button-wrapper {
-  text-align: center;
-}
-
-.listing__c-button.c-button--border {
-  border: 0.2rem solid $color-divider;
-  color: $color-grey;
-  transition: color $motion-m ease-in-out;
-
-  &:hover {
-    background-color: $color-divider;
-    color: $color-black;
-  }
-}
+@import "components/common/c-popup";

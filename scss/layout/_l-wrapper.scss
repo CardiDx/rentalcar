@@ -11,10 +11,21 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: $indent-l;
+
+  @include bp-sm {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
+
 .l-wrapper__header-title {
   display: inline-block;
   @include type-headline-2;
+
+  @include bp-sm {
+    flex-direction: column;
+    margin-bottom: $indent-l;
+  }
 }
 .count {
 }

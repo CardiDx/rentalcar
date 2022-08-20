@@ -9,11 +9,6 @@
     <meta name="keywords" content="">
     <!--==================== CSS ====================-->
     <link href="css/search.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
 </head>
 
@@ -21,9 +16,7 @@
 
     <div class="l-layout">
         <!--==================== HEADER ====================-->
-
         <header class="l-layout__header" id="header">
-
             <div class="c-header" data-js-header data-js-header-scrolled="c-header--scrolled" data-js-header-opened="c-header--opened">
                 <div class="container ">
                     <div class="c-header__inner">
@@ -31,38 +24,37 @@
                             <div class="c-header__burger" data-js-header-toggle data-js-header-toggle-active="c-header__burger--active" aria-label="mobile menu">
                                 <span></span>
                             </div>
-
                             <a href="/" class="c-header__logo" aria-label="logo-link">
                                 <div class="c-header__logo-text">DRIVER <span class="c-header__logo-text--accent h-type-accent">RENT.</span></div>
                             </a>
                         </div>
                         <div class="c-header__right-side">
-                            <div class="c-header__language select">
-                                <label class="select__current-language" for="language-ckeckbox">
-                                    <input class="select__language-checkbox" type="checkbox" id="language-ckeckbox">
+
+                            <div class="c-header__language c-select">
+                                <label class="c-select__current-language" for="language-ckeckbox">
+                                    <input class="c-select__language-checkbox" type="checkbox" id="language-ckeckbox">
                                     <span>En</span>
-                                    <span class="c-icon c-icon--dropdown select__current-language-icon"></span>
-                                    <div class="select__dropdown-menu">
-                                        <div class="select__menu-item">En</div>
-                                        <div class="select__menu-item">Fr</div>
+                                    <span class="c-icon c-icon--dropdown c-select__current-language-icon"></span>
+                                    <div class="c-select__dropdown-menu">
+                                        <div class="c-select__menu-item">En</div>
+                                        <div class="c-select__menu-item">Fr</div>
                                     </div>
                                 </label>
                             </div>
+
                             <a href="#openPopup" class="c-header__button c-button c-button--border show-sontact-us" data-service="order-a-project">Check your booking</a>
                         </div>
                     </div>
                 </div>
             </div>
-
         </header>
-
         <main class="l-layout__body">
 
             <section class="c-section c-section__search-panel">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <form class="c-search-panel">
+                            <form class="c-search-panel c-search-panel--mobile">
                                 <div class="c-search-panel__title">Pick-up your car</div>
 
                                 <div class="с-search-panel__line">
@@ -137,6 +129,18 @@
 
                         <div class="col-lg-3">
                             <aside class="aside-menu">
+
+                                <div class="aside-menu__mobile">
+                                    <div class="aside-menu__mobile-header">
+                                        <img src="/img/icons/filter.svg" alt="icon filter">
+                                        Filters
+                                    </div>
+                                    <button class="aside-menu__mobile-button">
+                                        open
+                                        <span class="c-icon c-icon--small-arrow"></span>
+                                    </button>
+                                </div>
+
                                 <ul class="aside-menu__nav">
 
                                     <li class="aside-menu__item">
@@ -292,6 +296,17 @@
 
 
                                 </ul>
+
+                                <div class="c-mobile-price">
+                                    <div class="c-mobile-price__result-mobile-text">
+                                        <div class="c-mobile-price__result-mobile-title">446 cars available</div>
+                                        <div class="c-mobile-price__result-mobile-link link">Clear all filters</div>
+                                    </div>
+                                    <div>
+                                        <a class="c-button c-button--green" href="#">Apply Filters</a>
+                                    </div>
+                                </div>
+
                             </aside>
                         </div>
 
@@ -300,14 +315,16 @@
 
                             <div class="l-wrapper">
                                 <div class="c-filters">
-                                    <div class="c-filters__item c-filters__item--active">Small</div>
-                                    <div class="c-filters__item">Medium</div>
-                                    <div class="c-filters__item">Large</div>
-                                    <div class="c-filters__item">Station wagons</div>
-                                    <div class="c-filters__item">Premium class</div>
-                                    <div class="c-filters__item">Minivan</div>
-                                    <div class="c-filters__navigate slider-arrow slider-arrow--next">
-                                        <span class="c-icon c-icon--long-arrow"></span>
+                                    <div class="c-filters__wrapper">
+                                        <div class="c-filters__item c-filters__item--active">Small</div>
+                                        <div class="c-filters__item">Medium</div>
+                                        <div class="c-filters__item">Large</div>
+                                        <div class="c-filters__item">Station wagons</div>
+                                        <div class="c-filters__item">Premium class</div>
+                                        <div class="c-filters__item">Minivan</div>
+                                        <div class="c-filters__navigate slider-arrow slider-arrow--next">
+                                            <span class="c-icon c-icon--long-arrow"></span>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -401,7 +418,9 @@
                                                     <div class="listing-item__price-fullprice">Price for 30 days:</div>
                                                     <div class="listing-item__price-text">$ 32 000</div>
                                                 </div>
-                                                <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                                <div>
+                                                    <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                                </div>
                                             </div>
 
 
@@ -474,7 +493,9 @@
                                                     <div class="listing-item__price-fullprice">Price for 30 days:</div>
                                                     <div class="listing-item__price-text">$ 32 000</div>
                                                 </div>
-                                                <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                                <div>
+                                                    <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                                </div>
                                             </div>
 
 
@@ -547,7 +568,9 @@
                                                     <div class="listing-item__price-fullprice">Price for 30 days:</div>
                                                     <div class="listing-item__price-text">$ 32 000</div>
                                                 </div>
-                                                <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                                <div>
+                                                    <a class="listing-item__price-button c-button c-button--green" href="#">View deal</a>
+                                                </div>
                                             </div>
 
 
@@ -575,7 +598,7 @@
         <footer class="l-layout__footer">
             <div class="c-footer">
                 <div class="container">
-                    <div class="row column-reverse flex-md-row">
+                    <div class="row flex-column-reverse flex-lg-row">
                         <div class="col-lg-4">
                             <div class="c-footer__copyright">
                                 <span class="c-footer__copyright-text">Driver Rent © 2022. All rights reserved.</span>
@@ -590,9 +613,6 @@
                                 <a class="link c-footer__link" href="#">Social networks icons</a>
                             </div>
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
