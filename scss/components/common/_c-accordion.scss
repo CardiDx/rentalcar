@@ -74,6 +74,10 @@
   }
 }
 
+.accordion-card-content--wrapper-for-second-level {
+  display: block;
+}
+
 // ==================== INDICATOR ====================
 
 .accordion-card-label__indicator {
@@ -135,7 +139,8 @@
 }
 
 .accordion-card-content-item:last-child {
-  padding-bottom: 0;
+  //padding-bottom: 0;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .accordion-card-content .accordion-card-label__title {

@@ -4707,6 +4707,10 @@ label:hover .c-input {
   }
 }
 
+.accordion-card-content--wrapper-for-second-level {
+  display: block;
+}
+
 .accordion-card-label__indicator {
   position: absolute;
   top: 0px;
@@ -4775,7 +4779,7 @@ label:hover .c-input {
 }
 
 .accordion-card-content-item:last-child {
-  padding-bottom: 0;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 .accordion-card-content .accordion-card-label__title {
