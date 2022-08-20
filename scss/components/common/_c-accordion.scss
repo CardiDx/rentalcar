@@ -78,6 +78,16 @@
   display: block;
 }
 
+.accordion-card-content--wrapper-for-second-level .accordion-card-content {
+  padding-top: 12px !important;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #919291;
+}
+
 // ==================== INDICATOR ====================
 
 .accordion-card-label__indicator {
