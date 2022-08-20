@@ -4,9 +4,13 @@
   padding: $indent-xxl;
   margin-bottom: $indent-xxl;
 
-  @include bp-md {
+  @include bp-sm {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
     box-shadow: 0 1.2rem 2.4rem rgba(25, 27, 26, 0.08);
     padding: $indent-xl $indent-l;
+    margin-left: -1.6rem;
+    margin-right: -1.6rem;
   }
 }
 
@@ -16,6 +20,11 @@
   align-items: center;
   margin-top: 16.4rem;
   margin-bottom: 4.8rem;
+
+  @include bp-sm {
+    flex-direction: column;
+    margin-top: 7.4rem;
+  }
 }
 
 .c-search-panel__accept-c-button {
@@ -24,6 +33,10 @@
   padding-left: $indent-xl;
   padding-right: $indent-xl;
   transition: background-color $motion-s linear;
+
+  @include bp-sm {
+    justify-content: center;
+  }
 
   @include link-events {
     color: $color-grey;
@@ -36,6 +49,19 @@
   font-size: 2.4rem;
   line-height: 3rem;
   margin-bottom: $indent-m;
+
+  @include bp-sm {
+    margin-bottom: 0;
+  }
+}
+
+.c-search-panel__descr {
+  font-weight: $type-weight--medium;
+  color: $color-grey;
+
+  @include bp-sm {
+    margin-bottom: $indent-xl;
+  }
 }
 
 .с-search-panel__line {
@@ -47,7 +73,7 @@
   }
 }
 
-.с-search-panel__line > .c-search-panel__field {
+.с-search-panel__line>.c-search-panel__field {
   margin-right: $indent-m;
 
   @include bp-md {
@@ -87,24 +113,19 @@
   }
 
   // 1320px;
-  @include bp-xl {
-  }
+  @include bp-xl {}
 
   //1200px;
-  @include bp-lg {
-  }
+  @include bp-lg {}
 
   //992px;
-  @include bp-md {
-  }
+  @include bp-md {}
 
   //768px
-  @include bp-sm {
-  }
+  @include bp-sm {}
 
   // 576px
-  @include bp-xs {
-  }
+  @include bp-xs {}
 }
 
 .c-search-panel__field--flex {

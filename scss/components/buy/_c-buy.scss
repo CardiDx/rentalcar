@@ -4,7 +4,7 @@
   padding: 16rem 0 12.8rem;
 
   @include bp-md {
-    padding: 64px 0 96px;
+    padding: 6.4rem 0 9.6rem;
   }
 }
 
@@ -16,43 +16,37 @@
 }
 
 .buy-section {
-  margin-bottom: 48px;
-  padding: 32px;
+  margin-bottom: $indent-xxl;
+  padding: $indent-xl;
   background: #FFFFFF;
-  border-radius: 24px;
+  border-radius: 2.4rem;
 
   @include bp-md {
-    padding: 32px 24px;
+    padding: $indent-xl $indent-l;
     filter: drop-shadow(0px 12px 24px rgba(25, 27, 26, 0.08));
   }
 }
 
 .buy-section__title {
   display: block;
-  margin: 0 0 12px;
-
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
+  margin: 0 0 1.2rem;
+  font-weight: $type-weight--bold;
+  font-size: 3.2rem;
   line-height: 110%;
   align-items: center;
   color: #191B1A;
 
   @include bp-md {
-    margin-bottom: 8px;
-    font-size: 24px;
+    margin-bottom: $indent-s;
+    font-size: 2.4rem;
   }
 }
 
 .buy-section__subtitle {
   display: block;
   margin: 0;
-
-  font-family: 'Gilroy';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
+  font-weight: $type-weight--bold;
+  font-size: 2.4rem;
   line-height: 110%;
   color: #191B1A;
 }
@@ -60,9 +54,6 @@
 .buy-section__text {
   display: block;
   margin: 0;
-
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -106,10 +97,8 @@
 }
 
 .buy-input__label {
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 1.6rem;
   line-height: 150%;
   color: #919291;
 
@@ -121,16 +110,13 @@
 
 .buy-layout .c-search-panel__field {
   @include bp-md {
-    height: 64px;
+    height: 6.4rem;
   }
 }
 
 .but-input__notice {
   display: block;
   margin-top: 32px;
-
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
@@ -168,8 +154,6 @@
   justify-content: center;
   align-items: center;
 
-  font-family: 'Gilroy';
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 110%;
@@ -219,4 +203,8 @@
     font-size: 16px;
     line-height: 130%;
   }
+}
+
+.c-input.buy-input-wrapper__c-input{
+  padding-left: $indent-l;
 }
