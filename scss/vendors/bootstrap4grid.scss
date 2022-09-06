@@ -22,6 +22,14 @@ html {
   margin-left: auto;
 }
 
+.container--mobile {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -50,14 +58,6 @@ html {
   .container {
     max-width: 1248px;
   }
-}
-
-.container--mobile {
-  width: 100%;
-  padding-right: 12px;
-  padding-left: 12px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .row {

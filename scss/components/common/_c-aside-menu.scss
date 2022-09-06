@@ -23,6 +23,17 @@
 .aside-menu__nav {
   @include bp-md {
     display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 10rem;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 99;
+    background-color: $color-white;
+    overflow-y: auto;
   }
 }
 
@@ -161,7 +172,15 @@
   margin-bottom: 0;
 }
 
-input range .price-input {
+.aside-menu__item:last-child .aside-menu__label {
+  padding-bottom: 0;
+}
+
+.aside-menu__item:last-child .aside-menu__input:checked ~ .aside-menu__label {
+  padding-bottom: 2.4rem;
+}
+
+input[type="range"] .price-input {
   width: 100%;
   display: flex;
   margin: 30px 0 35px;
